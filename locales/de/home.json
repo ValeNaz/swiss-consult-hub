@@ -1,0 +1,58 @@
+{
+  "hero": {
+    "title": "Ihr vertrauenswürdiger Partner für umfassende und integrierte Beratung",
+    "anchor1": "Personalisierte Lösungen",
+    "anchor2": "Multidisziplinäres Team",
+    "anchor3": "Professionalität und Transparenz",
+    "ctaPrimary": "Kostenlose Beratung anfordern",
+    "ctaSecondary": "Dienstleistungen entdecken",
+    "stats": {
+      "clients": "Betreute Kunden",
+      "areas": "Beratungsbereiche",
+      "offices": "Standorte in der Schweiz"
+    }
+  },
+  "process": {
+    "eyebrow": "So funktioniert es",
+    "title": "Drei einfache Schritte zur idealen Lösung",
+    "subtitle": "Ein klarer und transparenter Prozess von der ersten Analyse bis zu messbaren Ergebnissen",
+    "step1Title": "Entdecken",
+    "step1Description": "Erkunden Sie unsere Dienstleistungen und finden Sie die passende für Ihre Bedürfnisse",
+    "step2Title": "Kontaktieren Sie uns",
+    "step2Description": "Fordern Sie eine kostenlose Beratung mit unseren Experten an",
+    "step3Title": "Ergebnisse erzielen",
+    "step3Description": "Erhalten Sie dedizierte Unterstützung bis zur Erreichung Ihrer Ziele"
+  },
+  "servicesSection": {
+    "eyebrow": "Integrierte Dienstleistungen",
+    "title": "Was wir tun",
+    "subtitle": "Wir bieten ein Ökosystem von Lösungen, bei dem jede Beratung von einem dedizierten Ansprechpartner koordiniert wird. Wählen Sie Ihr Interessengebiet und bauen Sie mit uns einen maßgeschneiderten Weg auf."
+  },
+  "whyUs": {
+    "eyebrow": "Warum Swiss Consult Hub",
+    "title": "Wir vereinfachen strategische Entscheidungen für Privatpersonen und Unternehmen",
+    "subtitle": "Wir begleiten Sie von der ersten Analyse bis zum täglichen Betrieb mit einem Governance-Modell, das Koordination und Verantwortlichkeit gewährleistet.",
+    "point1": "Ein einziger Ansprechpartner für die Verwaltung komplexer Beratungen",
+    "point2": "Support verfügbar in Italienisch, Englisch, Französisch und Deutsch",
+    "point3": "Ständige Überwachung des Status und proaktive Follow-ups",
+    "value1Title": "Schweizer Präzision",
+    "value1Description": "Strukturierte Prozesse und kontinuierliche Qualitätskontrolle gewährleisten schnelle und zuverlässige Antworten.",
+    "value2Title": "Integrierter Ansatz",
+    "value2Description": "Wir koordinieren Spezialisten in den Bereichen Versicherung, Immobilien, Arbeit, Recht und Gesundheit.",
+    "value3Title": "Internationales Netzwerk",
+    "value3Description": "Ausgewählte Partner in der Schweiz und Europa ermöglichen grenzüberschreitende Unterstützung.",
+    "ctaTeam": "Unser Team kennenlernen",
+    "ctaServices": "Dienstleistungen entdecken"
+  },
+  "finalCta": {
+    "title": "Lassen Sie uns Ihre Ideen in greifbare Ergebnisse verwandeln",
+    "subtitle": "Von der ersten Orientierung bis zur kontinuierlichen Betreuung begleiten wir Sie mit einem maßgeschneiderten und messbaren Ansatz.",
+    "cta": "Eine persönliche Beratung anfordern"
+  },
+  "trustStats": {
+    "clients": "Betreute Kunden",
+    "areas": "Beratungsbereiche",
+    "offices": "Standorte in der Schweiz",
+    "partners": "Zertifizierte Partner"
+  }
+}

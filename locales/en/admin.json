@@ -1,0 +1,225 @@
+{
+  "dashboard": {
+    "title": "Dashboard",
+    "subtitle": "Overview of activities and performance",
+    "lastUpdate": "Updated now",
+    "loading": "Loading dashboard...",
+    "error": "Error loading data",
+    "period": {
+      "week": "Last week",
+      "month": "Last month",
+      "year": "Last year"
+    },
+    "stats": {
+      "totalRequests": "Total Requests",
+      "allRequests": "All requests",
+      "newRequests": "New Requests",
+      "toManage": "To manage",
+      "inProgress": "In Progress",
+      "inProgressDesc": "Being processed",
+      "completed": "Completed",
+      "rate": "Rate: {{rate}}%",
+      "pending": "{{count}} pending"
+    },
+    "cards": {
+      "requestsByService": "Requests by Service",
+      "servicesCount": "{{count}} services",
+      "noRequests": "No requests at the moment",
+      "requestsTrend": "Requests Trend",
+      "last30Days": "Last 30 days",
+      "keyMetrics": "Key Metrics",
+      "totalClients": "Total Clients",
+      "activeClients": "{{count}} active",
+      "activeRequests": "Active requests",
+      "closedRequests": "Closed requests",
+      "successRate": "Success Rate",
+      "conversionRate": "Conversion rate",
+      "recentRequests": "Recent Requests",
+      "viewAll": "View all →",
+      "noRecentRequests": "No recent requests",
+      "requestStatus": "Request Status",
+      "realTime": "Real-time"
+    },
+    "chart": {
+      "new": "New",
+      "inProgress": "In Progress",
+      "completed": "Completed"
+    },
+    "statusBoxes": {
+      "new": "New",
+      "toManage": "To manage",
+      "inProgress": "In Progress",
+      "active": "Active",
+      "completed": "Completed",
+      "rateLabel": "{{rate}}% rate"
+    }
+  },
+  "requests": {
+    "title": "Request Management",
+    "subtitle": "Monitor and manage all consultation requests",
+    "searchPlaceholder": "Search by name, email, service...",
+    "filters": {
+      "all": "All ({{count}})",
+      "new": "New ({{count}})",
+      "inProgress": "In Progress ({{count}})",
+      "completed": "Completed ({{count}})"
+    },
+    "bulkActions": {
+      "title": "Bulk Actions",
+      "selectAll": "Select all",
+      "deselectAll": "Deselect all",
+      "selected": "{{count}} selected",
+      "markAsNew": "Mark as New",
+      "markAsInProgress": "Mark as In Progress",
+      "markAsCompleted": "Mark as Completed",
+      "archive": "Archive",
+      "delete": "Delete",
+      "confirmDelete": "Are you sure you want to delete {{count}} requests?",
+      "confirmArchive": "Are you sure you want to archive {{count}} requests?"
+    },
+    "table": {
+      "client": "Client",
+      "service": "Service",
+      "status": "Status",
+      "date": "Date",
+      "actions": "Actions",
+      "noDescription": "No description"
+    },
+    "status": {
+      "nuova": "New",
+      "in_lavorazione": "In Progress",
+      "completata": "Completed",
+      "archiviata": "Archived"
+    },
+    "actions": {
+      "view": "View",
+      "edit": "Edit",
+      "delete": "Delete",
+      "archive": "Archive"
+    },
+    "empty": "No requests found",
+    "noRequests": "There are no requests at the moment"
+  },
+  "requestDetail": {
+    "title": "Request Detail",
+    "backToList": "← Back to requests",
+    "clientInfo": "Client Information",
+    "requestInfo": "Request Details",
+    "status": "Status",
+    "serviceType": "Service type",
+    "createdAt": "Creation date",
+    "updatedAt": "Last update",
+    "description": "Description",
+    "notes": "Notes",
+    "noNotes": "No notes",
+    "attachments": "Attachments",
+    "noAttachments": "No attachments",
+    "actions": "Actions",
+    "updateStatus": "Update Status",
+    "addNote": "Add Note",
+    "uploadFile": "Upload File",
+    "deleteRequest": "Delete Request",
+    "confirmDelete": "Are you sure you want to delete this request?",
+    "saveChanges": "Save Changes",
+    "cancel": "Cancel"
+  },
+  "clients": {
+    "title": "Client Management",
+    "subtitle": "View and manage all clients",
+    "searchPlaceholder": "Search by name, email, phone...",
+    "filters": {
+      "all": "All ({{count}})",
+      "active": "Active ({{count}})",
+      "inactive": "Inactive ({{count}})"
+    },
+    "table": {
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone",
+      "requests": "Requests",
+      "lastContact": "Last Contact",
+      "actions": "Actions"
+    },
+    "actions": {
+      "viewProfile": "View Profile",
+      "edit": "Edit",
+      "delete": "Delete"
+    },
+    "empty": "No clients found",
+    "noClients": "There are no clients at the moment"
+  },
+  "reports": {
+    "title": "Reports and Statistics",
+    "subtitle": "Performance analysis and metrics",
+    "generateReport": "Generate Report",
+    "exportData": "Export Data",
+    "dateRange": "Period",
+    "from": "From",
+    "to": "To"
+  },
+  "settings": {
+    "title": "Settings",
+    "subtitle": "Configure admin panel preferences",
+    "general": "General",
+    "notifications": "Notifications",
+    "security": "Security",
+    "appearance": "Appearance",
+    "saveSettings": "Save Settings"
+  },
+  "users": {
+    "title": "User Management",
+    "subtitle": "Manage admin users",
+    "addUser": "Add User",
+    "table": {
+      "name": "Name",
+      "email": "Email",
+      "role": "Role",
+      "status": "Status",
+      "actions": "Actions"
+    },
+    "roles": {
+      "admin": "Administrator",
+      "manager": "Manager",
+      "operator": "Operator"
+    },
+    "status": {
+      "active": "Active",
+      "inactive": "Inactive"
+    }
+  },
+  "navigation": {
+    "dashboard": "Dashboard",
+    "requests": "Requests",
+    "clients": "Clients",
+    "users": "Users",
+    "reports": "Reports",
+    "settings": "Settings",
+    "logout": "Logout"
+  },
+  "notifications": {
+    "newRequest": "New request received",
+    "requestUpdated": "Request updated",
+    "requestCompleted": "Request completed",
+    "markAllRead": "Mark all as read",
+    "noNotifications": "No notifications"
+  },
+  "layout": {
+    "adminPanel": "Admin Panel",
+    "defaultAdmin": "Admin",
+    "administrator": "Administrator"
+  },
+  "login": {
+    "title": "Login to Admin Panel",
+    "subtitle": "Enter your credentials to access",
+    "email": "Email",
+    "password": "Password",
+    "loginButton": "Login",
+    "loggingIn": "Logging in...",
+    "forgotPassword": "Forgot password?",
+    "errors": {
+      "invalidCredentials": "Invalid email or password",
+      "serverError": "Server error. Please try again later.",
+      "requiredFields": "Please fill in all fields"
+    }
+  }
+}

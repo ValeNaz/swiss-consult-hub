@@ -1,0 +1,58 @@
+{
+  "hero": {
+    "title": "Swiss Consult Hub",
+    "subtitle": "Un hub de consultants multidisciplinaires partageant la même approche : précision suisse, vision internationale, attention aux personnes."
+  },
+  "mission": {
+    "eyebrow": "Notre mission",
+    "title": "Accompagner les particuliers et les entreprises dans les décisions stratégiques",
+    "subtitle": "Nous créons des parcours sur mesure basés sur une analyse précise, une responsabilité partagée et des résultats mesurables. Notre méthode intègre des conseils spécialisés avec un chef de projet dédié qui coordonne toutes les phases.",
+    "points": [
+      "Analyse initiale gratuite pour identifier les objectifs et les priorités.",
+      "Task force interdisciplinaire construite sur le profil du client.",
+      "Suivi constant avec rapports périodiques et étapes évolutives."
+    ],
+    "ctaServices": "Découvrir les services",
+    "ctaMeeting": "Réserver un rendez-vous"
+  },
+  "pillars": {
+    "pillar1Title": "Gouvernance transparente",
+    "pillar1Description": "Chaque projet est coordonné par un consultant senior qui partage la feuille de route, les jalons et l'état des activités avec le client.",
+    "pillar2Title": "Méthode interdisciplinaire",
+    "pillar2Description": "Des équipes spécialisées collaborent sur l'assurance, l'immobilier, l'emploi, le juridique, le commercial et le médical pour offrir des solutions intégrées.",
+    "pillar3Title": "Relation de confiance",
+    "pillar3Description": "Nous investissons du temps dans l'écoute pour construire des relations durables basées sur le professionnalisme et la responsabilité mutuelle."
+  },
+  "history": {
+    "eyebrow": "Notre histoire",
+    "title": "Un parcours de croissance constante",
+    "subtitle": "Des premières consultations en assurance au réseau multidisciplinaire actuel : nous continuons à investir dans les personnes et les compétences pour anticiper les besoins des clients.",
+    "timeline": {
+      "2018": "Swiss Consult Hub naît à Lucerne avec une équipe dédiée au conseil en assurance et crédit.",
+      "2020": "Ouverture des bureaux de Zurich et Lugano pour couvrir les principaux pôles économiques de la Suisse.",
+      "2023": "Introduction des services de conciergerie médicale et expansion du réseau de partenaires internationaux."
+    }
+  },
+  "offices": {
+    "title": "Nos bureaux",
+    "lucerne": "Lucerne · Emmenbrücke (Siège)",
+    "zurich": "Zurich · Opfikon",
+    "lugano": "Lugano · Paradiso",
+    "network": "Réseau international en Italie et en France"
+  },
+  "team": {
+    "title": "Une équipe internationale de spécialistes",
+    "description": "Des professionnels ayant une formation en assurance, juridique, commercial, RH et médical travaillent côte à côte avec une direction opérationnelle unique. Nous parlons italien, anglais, français et allemand pour soutenir les clients et partenaires internationaux.",
+    "points": [
+      "Ateliers périodiques pour mettre à jour les compétences réglementaires et de marché.",
+      "Formation continue sur les soft skills et la gestion client.",
+      "Partenariats avec des cabinets d'avocats, des conseillers fiscaux et des cliniques privées en Suisse et à l'étranger."
+    ]
+  },
+  "finalCta": {
+    "title": "Nous sommes prêts à grandir ensemble",
+    "subtitle": "De la planification à la gestion quotidienne, Swiss Consult Hub crée une valeur mesurable pour votre entreprise. Découvrez comment nous pouvons vous soutenir.",
+    "ctaConsultation": "Réserver une consultation",
+    "ctaServices": "Explorer les services"
+  }
+}

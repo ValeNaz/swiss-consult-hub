@@ -1,0 +1,264 @@
+/* ====================================
+   Services Marquee - Infinite Scroll Animation
+   ==================================== */
+
+.services-marquee {
+  width: 100%;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: var(--space-4) 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
+.services-marquee::before,
+.services-marquee::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 120px;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.services-marquee::before {
+  left: 0;
+  background: linear-gradient(to right, rgba(10, 37, 64, 0.8), transparent);
+}
+
+.services-marquee::after {
+  right: 0;
+  background: linear-gradient(to left, rgba(10, 37, 64, 0.8), transparent);
+}
+
+.services-marquee-track {
+  /* Animation controlled via JS requestAnimationFrame for precise constant speed.
+     No CSS animation needed - transform is updated frame by frame at SPEED_PX_PER_SEC */
+  display: flex;
+  gap: var(--space-6);
+  will-change: transform;
+  transition: none; /* No CSS transitions - pure RAF control */
+}
+
+/* ====================================
+   Service Marquee Item
+   ==================================== */
+
+.service-marquee-item {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-3) var(--space-5);
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-full);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  transition: all var(--transition-base);
+  cursor: pointer;
+  white-space: nowrap;
+  text-decoration: none;
+  color: inherit;
+}
+
+.service-marquee-item:hover {
+  transform: translateY(-2px) scale(1.05);
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Service Icon */
+.service-marquee-icon {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  padding: var(--space-1);
+  transition: all var(--transition-base);
+}
+
+.service-marquee-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+}
+
+.service-marquee-item:hover .service-marquee-icon {
+  background: rgba(255, 255, 255, 0.2);
+  transform: rotate(360deg);
+}
+
+/* Service Title */
+.service-marquee-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.95);
+  letter-spacing: 0.02em;
+  transition: color var(--transition-fast);
+}
+
+.service-marquee-item:hover .service-marquee-title {
+  color: #ffffff;
+}
+
+/* ====================================
+   Service-specific colors
+   ==================================== */
+
+.service-marquee-item.service-assicurativa:hover {
+  border-color: var(--service-assicurativa);
+  box-shadow: 0 8px 24px rgba(37, 99, 235, 0.3);
+}
+
+.service-marquee-item.service-assicurativa:hover .service-marquee-icon {
+  background: rgba(37, 99, 235, 0.2);
+}
+
+.service-marquee-item.service-immobiliare:hover {
+  border-color: var(--service-immobiliare);
+  box-shadow: 0 8px 24px rgba(5, 150, 105, 0.3);
+}
+
+.service-marquee-item.service-immobiliare:hover .service-marquee-icon {
+  background: rgba(5, 150, 105, 0.2);
+}
+
+.service-marquee-item.service-lavorativa:hover {
+  border-color: var(--service-lavorativa);
+  box-shadow: 0 8px 24px rgba(234, 88, 12, 0.3);
+}
+
+.service-marquee-item.service-lavorativa:hover .service-marquee-icon {
+  background: rgba(234, 88, 12, 0.2);
+}
+
+.service-marquee-item.service-legale:hover {
+  border-color: var(--service-legale);
+  box-shadow: 0 8px 24px rgba(124, 58, 237, 0.3);
+}
+
+.service-marquee-item.service-legale:hover .service-marquee-icon {
+  background: rgba(124, 58, 237, 0.2);
+}
+
+.service-marquee-item.service-commerciale:hover {
+  border-color: var(--service-commerciale);
+  box-shadow: 0 8px 24px rgba(219, 39, 119, 0.3);
+}
+
+.service-marquee-item.service-commerciale:hover .service-marquee-icon {
+  background: rgba(219, 39, 119, 0.2);
+}
+
+.service-marquee-item.service-medica:hover {
+  border-color: var(--service-medica);
+  box-shadow: 0 8px 24px rgba(8, 145, 178, 0.3);
+}
+
+.service-marquee-item.service-medica:hover .service-marquee-icon {
+  background: rgba(8, 145, 178, 0.2);
+}
+
+.service-marquee-item.service-creditizia:hover {
+  border-color: var(--service-creditizia);
+  box-shadow: 0 8px 24px rgba(79, 70, 229, 0.3);
+}
+
+.service-marquee-item.service-creditizia:hover .service-marquee-icon {
+  background: rgba(79, 70, 229, 0.2);
+}
+
+/* ====================================
+   Tablet & Mobile Responsive
+   ==================================== */
+
+/* Animation controlled via JS RAF - no CSS durations needed */
+
+@media (max-width: 1023px) {
+  .services-marquee {
+    padding: var(--space-3) 0;
+  }
+
+  .services-marquee-track {
+    gap: var(--space-4);
+  }
+
+  .service-marquee-item {
+    padding: var(--space-2) var(--space-4);
+    gap: var(--space-2);
+  }
+
+  .service-marquee-icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .service-marquee-title {
+    font-size: 13px;
+  }
+
+  .services-marquee::before,
+  .services-marquee::after {
+    width: 80px;
+  }
+}
+
+@media (max-width: 767px) {
+  .services-marquee {
+    padding: var(--space-2) 0;
+  }
+
+  .services-marquee-track {
+    gap: var(--space-5);
+  }
+
+  .service-marquee-item {
+    padding: var(--space-2) var(--space-4);
+  }
+
+  .service-marquee-icon {
+    width: 22px;
+    height: 22px;
+  }
+
+  .service-marquee-title {
+    font-size: 13px;
+  }
+
+  .services-marquee::before,
+  .services-marquee::after {
+    width: 60px;
+  }
+}
+
+/* ====================================
+   Reduced Motion Support
+   ==================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  .services-marquee-track {
+    animation: none;
+  }
+
+  .services-marquee-track {
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .service-marquee-item {
+    scroll-snap-align: start;
+  }
+}

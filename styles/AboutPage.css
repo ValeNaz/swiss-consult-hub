@@ -1,0 +1,302 @@
+/* ====================================
+   About Page - Mission Section Styles
+   ==================================== */
+
+.mission-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.mission-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(135deg, var(--neutral-50) 0%, rgba(220, 20, 60, 0.02) 100%);
+  z-index: -1;
+  border-radius: var(--radius-xl);
+}
+
+.mission-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-16);
+  align-items: flex-start;
+}
+
+.mission-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+  padding-right: var(--space-6);
+}
+
+.mission-list {
+  margin-top: var(--space-6);
+  margin-bottom: var(--space-8);
+}
+
+/* ====================================
+   Pillars Container & Cards
+   ==================================== */
+
+.pillars-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.pillar-card {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: var(--space-5);
+  align-items: flex-start;
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+  border: 1px solid var(--neutral-200);
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-base);
+  position: relative;
+  overflow: hidden;
+}
+
+.pillar-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: var(--neutral-200);
+  transition: all var(--transition-base);
+}
+
+.pillar-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--primary-navy);
+}
+
+.pillar-card.pillar-1:hover::before {
+  background: var(--accent-red);
+}
+
+.pillar-card.pillar-2:hover::before {
+  background: var(--primary-navy);
+}
+
+.pillar-card.pillar-3:hover::before {
+  background: var(--service-assicurativa);
+}
+
+.pillar-number {
+  font-family: var(--font-heading);
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--neutral-200);
+  transition: all var(--transition-base);
+  user-select: none;
+}
+
+.pillar-card:hover .pillar-number {
+  color: var(--neutral-300);
+  transform: scale(1.1);
+}
+
+.pillar-card.pillar-1:hover .pillar-number {
+  color: rgba(220, 20, 60, 0.15);
+}
+
+.pillar-card.pillar-2:hover .pillar-number {
+  color: rgba(10, 37, 64, 0.15);
+}
+
+.pillar-card.pillar-3:hover .pillar-number {
+  color: rgba(37, 99, 235, 0.15);
+}
+
+.pillar-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  padding-top: var(--space-2);
+}
+
+.pillar-content h3 {
+  font-family: var(--font-heading);
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--primary-navy);
+  margin: 0;
+  transition: color var(--transition-fast);
+}
+
+.pillar-card:hover .pillar-content h3 {
+  color: var(--accent-red);
+}
+
+.pillar-content p {
+  font-size: var(--text-body);
+  color: var(--neutral-700);
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* ====================================
+   Tablet Responsive (768px - 1023px)
+   ==================================== */
+
+@media (max-width: 1023px) and (min-width: 768px) {
+  .mission-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-12);
+  }
+
+  .mission-content {
+    padding-right: 0;
+  }
+
+  .mission-section::before {
+    display: none;
+  }
+
+  .pillars-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-4);
+  }
+
+  .pillar-card {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    gap: var(--space-3);
+    padding: var(--space-5);
+  }
+
+  .pillar-number {
+    font-size: 48px;
+  }
+
+  .pillar-content {
+    padding-top: 0;
+  }
+
+  .pillar-content h3 {
+    font-size: 18px;
+  }
+
+  .pillar-content p {
+    font-size: 14px;
+  }
+}
+
+/* ====================================
+   Mobile Responsive (< 768px)
+   ==================================== */
+
+@media (max-width: 767px) {
+  .mission-section {
+    padding: var(--mobile-section-padding) 0;
+  }
+
+  .mission-section::before {
+    display: none;
+  }
+
+  .mission-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-10);
+  }
+
+  .mission-content {
+    padding-right: 0;
+  }
+
+  .mission-content .section-title {
+    font-size: var(--text-h2-mobile);
+  }
+
+  .mission-content .section-subtitle {
+    font-size: var(--text-body-mobile);
+  }
+
+  .mission-list {
+    margin-top: var(--space-4);
+    margin-bottom: var(--space-6);
+  }
+
+  .pillars-container {
+    gap: var(--space-4);
+  }
+
+  .pillar-card {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    gap: var(--space-3);
+    padding: var(--mobile-card-padding);
+  }
+
+  .pillar-number {
+    font-size: 40px;
+    text-align: left;
+  }
+
+  .pillar-content {
+    padding-top: 0;
+  }
+
+  .pillar-content h3 {
+    font-size: 18px;
+  }
+
+  .pillar-content p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .cta-group {
+    flex-direction: column;
+    gap: var(--space-3);
+  }
+
+  .cta-group .btn {
+    width: 100%;
+  }
+}
+
+/* ====================================
+   Animation Enhancement
+   ==================================== */
+
+@media (prefers-reduced-motion: no-preference) {
+  .pillar-card {
+    animation: fadeInUp 0.6s ease-out backwards;
+  }
+
+  .pillar-card.pillar-1 {
+    animation-delay: 0.1s;
+  }
+
+  .pillar-card.pillar-2 {
+    animation-delay: 0.2s;
+  }
+
+  .pillar-card.pillar-3 {
+    animation-delay: 0.3s;
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}

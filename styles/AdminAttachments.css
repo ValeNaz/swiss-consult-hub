@@ -1,0 +1,248 @@
+/* ================================================
+   ADMIN ATTACHMENTS STYLES
+   ================================================ */
+
+/* Attachments Grid */
+.attachments-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+/* Attachment Item */
+.attachment-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background: var(--color-surface, #f9fafb);
+  border: 1px solid var(--color-border, #e5e7eb);
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.attachment-item:hover {
+  background: var(--color-surface-hover, #f3f4f6);
+  border-color: var(--color-primary, #3b82f6);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transform: translateY(-1px);
+}
+
+.attachment-item:active {
+  transform: translateY(0);
+}
+
+/* Attachment Icon */
+.attachment-icon {
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-radius: 8px;
+}
+
+/* Attachment Info */
+.attachment-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.attachment-name {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--color-text-primary, #111827);
+  margin-bottom: 0.25rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.attachment-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+  color: var(--color-text-secondary, #6b7280);
+}
+
+.attachment-type {
+  padding: 0.125rem 0.5rem;
+  background: var(--color-primary-light, #dbeafe);
+  color: var(--color-primary, #3b82f6);
+  border-radius: 4px;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+.attachment-size,
+.attachment-date {
+  display: inline-flex;
+  align-items: center;
+}
+
+/* Download Button */
+.btn-download {
+  flex-shrink: 0;
+  padding: 0.5rem;
+  background: var(--color-primary, #3b82f6);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-download:hover {
+  background: var(--color-primary-dark, #2563eb);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(59, 130, 246, 0.3);
+}
+
+/* Attachments Badge (in list) */
+.attachments-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.25rem 0.5rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.td-center {
+  text-align: center;
+}
+
+.th-center {
+  text-align: center;
+}
+
+.text-muted {
+  color: var(--color-text-muted, #9ca3af);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .attachments-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .attachment-item {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .attachment-info {
+    width: 100%;
+  }
+}
+
+/* Empty State for Attachments */
+.no-attachments {
+  padding: 2rem;
+  text-align: center;
+  color: var(--color-text-secondary, #6b7280);
+  font-size: 0.9rem;
+}
+
+.no-attachments svg {
+  opacity: 0.3;
+  margin-bottom: 0.5rem;
+}
+
+/* Upload Progress */
+.upload-progress {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background: var(--color-surface, #f9fafb);
+  border-radius: 8px;
+  border: 1px solid var(--color-border, #e5e7eb);
+}
+
+.upload-progress-bar {
+  width: 100%;
+  height: 8px;
+  background: var(--color-border, #e5e7eb);
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+}
+
+.upload-progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--color-primary, #3b82f6) 0%, #2563eb 100%);
+  transition: width 0.3s ease;
+}
+
+.upload-progress-text {
+  display: block;
+  text-align: center;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-primary, #3b82f6);
+}
+
+/* Attachment Item Wrapper */
+.attachment-item-wrapper {
+  position: relative;
+}
+
+/* Attachment Actions */
+.attachment-actions {
+  display: flex;
+  gap: 0.5rem;
+  flex-shrink: 0;
+}
+
+.btn-delete {
+  flex-shrink: 0;
+  padding: 0.5rem;
+  background: transparent;
+  color: var(--color-error, #ef4444);
+  border: 1px solid var(--color-error, #ef4444);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-delete:hover {
+  background: var(--color-error, #ef4444);
+  color: white;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(239, 68, 68, 0.3);
+}
+
+.btn-delete:active {
+  transform: translateY(0);
+}
+
+/* Card Actions */
+.card-actions {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.card-actions .btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+}

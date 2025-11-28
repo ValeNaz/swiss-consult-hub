@@ -1,0 +1,41 @@
+{
+  "banner": {
+    "title": "We Use Cookies",
+    "settingsTitle": "Cookie Settings",
+    "description": "We use cookies to improve your experience on our site. Essential cookies are always active. You can choose which cookies to accept.",
+    "readMore": "Read our",
+    "cookiePolicy": "Cookie Policy",
+    "and": "and",
+    "privacyPolicy": "Privacy Policy",
+    "closeButton": "Close banner",
+    "buttons": {
+      "customize": "Customize",
+      "rejectAll": "Reject All",
+      "acceptAll": "Accept All",
+      "back": "← Back",
+      "savePreferences": "Save Preferences"
+    }
+  },
+  "categories": {
+    "essential": {
+      "title": "Essential Cookies",
+      "badge": "Always Active",
+      "description": "Necessary for the site to function. Include authentication, preferences and basic functionality.",
+      "ariaLabel": "Essential cookies always active"
+    },
+    "analytics": {
+      "title": "Analytics Cookies",
+      "badgeEnabled": "Enabled",
+      "badgeDisabled": "Disabled",
+      "description": "Help us understand how you use the site to improve user experience. Includes Google Analytics with anonymized IP.",
+      "ariaLabel": "Analytics cookies"
+    },
+    "marketing": {
+      "title": "Marketing Cookies",
+      "badgeEnabled": "Enabled",
+      "badgeDisabled": "Disabled",
+      "description": "Used to show relevant advertising. Currently not used, but available for future implementations.",
+      "ariaLabel": "Marketing cookies"
+    }
+  }
+}

@@ -1,0 +1,342 @@
+/**
+ * Data Subject Rights Page Styling
+ */
+
+/* Rights Grid */
+.rights-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--space-5);
+    margin: var(--space-8) 0;
+}
+
+.right-card {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border: 1px solid var(--neutral-200);
+    border-radius: var(--radius-lg);
+    padding: var(--space-6);
+    transition: var(--transition-fast);
+}
+
+.right-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--service-creditizia);
+}
+
+.right-icon {
+    font-size: 2.5rem;
+    margin-bottom: var(--space-4);
+}
+
+.right-card h3 {
+    font-size: var(--text-lg);
+    font-weight: 600;
+    color: var(--primary-navy);
+    margin: 0 0 var(--space-3) 0;
+}
+
+.right-card p {
+    font-size: var(--text-sm);
+    line-height: 1.6;
+    color: var(--neutral-600);
+    margin: 0;
+}
+
+/* Form */
+.rights-form {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.form-section {
+    margin-bottom: var(--space-6);
+}
+
+.form-label {
+    display: block;
+    font-size: var(--text-base);
+    font-weight: 600;
+    color: var(--neutral-900);
+    margin-bottom: var(--space-2);
+}
+
+.form-label.required::after {
+    content: " *";
+    color: var(--accent-red);
+}
+
+.form-input,
+.form-textarea {
+    width: 100%;
+    padding: var(--space-3) var(--space-4);
+    border: 1px solid var(--neutral-300);
+    border-radius: var(--radius-md);
+    font-size: var(--text-base);
+    color: var(--neutral-900);
+    background: white;
+    transition: var(--transition-fast);
+}
+
+.form-input:focus,
+.form-textarea:focus {
+    outline: none;
+    border-color: var(--service-creditizia);
+    box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
+}
+
+.form-input::placeholder,
+.form-textarea::placeholder {
+    color: var(--neutral-400);
+}
+
+.form-textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.form-hint {
+    font-size: var(--text-sm);
+    color: var(--neutral-600);
+    margin-top: var(--space-2);
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-4);
+}
+
+/* Radio Group */
+.radio-group {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--space-3);
+}
+
+.radio-card {
+    position: relative;
+    display: block;
+    cursor: pointer;
+}
+
+.radio-card input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.radio-content {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    padding: var(--space-4);
+    border: 2px solid var(--neutral-200);
+    border-radius: var(--radius-md);
+    background: white;
+    transition: var(--transition-fast);
+}
+
+.radio-card:hover .radio-content {
+    border-color: var(--service-creditizia);
+    background: var(--neutral-50);
+}
+
+.radio-card input[type="radio"]:checked + .radio-content {
+    border-color: var(--service-creditizia);
+    background: rgba(79, 70, 229, 0.05);
+    box-shadow: var(--shadow-sm);
+}
+
+.radio-card input[type="radio"]:focus + .radio-content {
+    outline: 2px solid var(--service-creditizia);
+    outline-offset: 2px;
+}
+
+.radio-icon {
+    font-size: 1.5rem;
+}
+
+.radio-title {
+    font-size: var(--text-sm);
+    font-weight: 500;
+    color: var(--neutral-900);
+}
+
+/* Form Notice */
+.form-notice {
+    display: flex;
+    gap: var(--space-3);
+    padding: var(--space-4);
+    background: #fffbeb;
+    border: 1px solid #fbbf24;
+    border-radius: var(--radius-md);
+    margin: var(--space-6) 0;
+    font-size: var(--text-sm);
+    color: var(--neutral-800);
+}
+
+.form-notice svg {
+    flex-shrink: 0;
+    color: #f59e0b;
+    margin-top: 2px;
+}
+
+/* Submit Button */
+.form-submit {
+    width: 100%;
+    padding: var(--space-4) var(--space-6);
+    background: linear-gradient(135deg, var(--service-creditizia) 0%, var(--primary-navy) 100%);
+    color: white;
+    border: none;
+    border-radius: var(--radius-md);
+    font-size: var(--text-lg);
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition-fast);
+}
+
+.form-submit:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+}
+
+.form-submit:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.form-submit:focus {
+    outline: 2px solid var(--service-creditizia);
+    outline-offset: 2px;
+}
+
+.form-privacy {
+    text-align: center;
+    font-size: var(--text-sm);
+    color: var(--neutral-600);
+    margin-top: var(--space-4);
+}
+
+.form-privacy a {
+    color: var(--service-creditizia);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.form-privacy a:hover {
+    text-decoration: underline;
+}
+
+/* Success Message */
+.success-message {
+    text-align: center;
+    padding: var(--space-12) var(--space-6);
+    background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%);
+    border: 2px solid #10b981;
+    border-radius: var(--radius-lg);
+    margin: var(--space-6) 0;
+}
+
+.success-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto var(--space-6);
+    background: #10b981;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    animation: scaleIn 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes scaleIn {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+.success-message h3 {
+    font-size: var(--text-2xl);
+    font-weight: 700;
+    color: #065f46;
+    margin: 0 0 var(--space-4) 0;
+}
+
+.success-message p {
+    font-size: var(--text-base);
+    color: #047857;
+    margin: 0 0 var(--space-3) 0;
+}
+
+.success-note {
+    font-size: var(--text-sm) !important;
+    color: #059669 !important;
+    font-style: italic;
+}
+
+/* FAQ */
+.faq-item {
+    padding: var(--space-5);
+    background: var(--neutral-50);
+    border-left: 4px solid var(--service-creditizia);
+    border-radius: var(--radius-md);
+    margin-bottom: var(--space-4);
+}
+
+.faq-item h4 {
+    font-size: var(--text-base);
+    font-weight: 600;
+    color: var(--primary-navy);
+    margin: 0 0 var(--space-2) 0;
+}
+
+.faq-item p {
+    font-size: var(--text-sm);
+    color: var(--neutral-700);
+    margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .rights-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .radio-group {
+        grid-template-columns: 1fr;
+    }
+
+    .success-icon {
+        width: 64px;
+        height: 64px;
+    }
+
+    .success-message h3 {
+        font-size: var(--text-xl);
+    }
+}
+
+/* Accessibility */
+.form-input:focus-visible,
+.form-textarea:focus-visible,
+.form-submit:focus-visible {
+    outline: 2px solid var(--service-creditizia);
+    outline-offset: 2px;
+}
+
+/* Print */
+@media print {
+    .rights-form,
+    .success-message {
+        page-break-inside: avoid;
+    }
+}

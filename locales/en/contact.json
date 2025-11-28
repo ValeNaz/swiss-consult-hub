@@ -1,0 +1,129 @@
+{
+  "hero": {
+    "eyebrow": "Contact Us",
+    "title": "We're here to help you",
+    "subtitle": "Get in touch for personalized consultation. Our team is available to answer all your questions and guide you to the best solution for your needs."
+  },
+  "quickContact": {
+    "email": "Email",
+    "phone": "Phone",
+    "locations": "Locations",
+    "hours": "Hours",
+    "offices": {
+      "emmenbrucke": {
+        "name": "Emmenbrücke (Head Office)",
+        "address": "Spinnereistrasse 5, 6220"
+      },
+      "zurich": {
+        "name": "Zurich",
+        "address": "Thurgauerstrasse 117, 8152 Opfikon"
+      },
+      "lugano": {
+        "name": "Lugano",
+        "address": "Via delle Scuole 3B, 6900 Paradiso"
+      },
+      "lucerne": {
+        "name": "Lucerne",
+        "address": "Sagirain 4, 6233 Büron"
+      }
+    },
+    "schedule": {
+      "weekdays": "Monday - Friday",
+      "weekdaysHours": "08:30 - 18:00",
+      "saturday": "Saturday",
+      "saturdayHours": "By appointment"
+    }
+  },
+  "subjects": {
+    "selectPlaceholder": "Select a subject",
+    "credit": "Credit consulting",
+    "insurance": "Insurance consulting",
+    "realEstate": "Real estate consulting",
+    "employment": "Employment consulting",
+    "legal": "Legal consulting",
+    "medical": "Medical consulting",
+    "tax": "Tax consulting",
+    "other": "Other"
+  },
+  "contactForm": {
+    "title": "Send us a message",
+    "subtitle": "Fill out the form and we'll respond within 24 business hours",
+    "labels": {
+      "fullName": "Full name*",
+      "email": "Email*",
+      "phone": "Phone*",
+      "company": "Company (optional)",
+      "subject": "Subject*",
+      "message": "Message*"
+    },
+    "placeholders": {
+      "fullName": "John Smith",
+      "email": "john@example.com",
+      "phone": "+41 41 242 0442",
+      "company": "Your company",
+      "message": "Describe how we can help you..."
+    },
+    "buttons": {
+      "submit": "Send message",
+      "submitting": "Sending..."
+    },
+    "success": {
+      "title": "Message sent successfully!",
+      "message": "Thank you for contacting us. Our team will respond within 24 business hours."
+    }
+  },
+  "infoCards": {
+    "call": {
+      "title": "Call directly",
+      "description": "Prefer to speak with someone? Call our team during office hours."
+    },
+    "email": {
+      "title": "Send an email",
+      "description": "Contact us via email for more detailed communication."
+    },
+    "visit": {
+      "title": "Visit our offices",
+      "description": "Come visit us at one of our locations in Switzerland.",
+      "offices": {
+        "emmenbrucke": "Emmenbrücke",
+        "emmenbruckeAddress": "Spinnereistrasse 5",
+        "zurich": "Zurich",
+        "zurichAddress": "Thurgauerstrasse 117"
+      }
+    },
+    "hours": {
+      "title": "Opening hours",
+      "weekdays": "Monday - Friday",
+      "weekdaysHours": "08:30 - 18:00",
+      "saturday": "Saturday",
+      "saturdayHours": "By appointment"
+    }
+  },
+  "cta": {
+    "title": "Can't find what you're looking for?",
+    "description": "Our team of experts is ready to guide you to the solution that best fits your needs.",
+    "button": "Back to home"
+  },
+  "form": {
+    "title": "Contact request",
+    "subtitle": "Do you have questions or would you like to schedule an appointment with our business consultants? Fill out the form and we will contact you as soon as possible.",
+    "firstName": "First name",
+    "lastName": "Last name",
+    "email": "Email",
+    "phone": "Phone number",
+    "notes": "Notes or special requests",
+    "placeholders": {
+      "firstName": "John",
+      "lastName": "Smith",
+      "email": "john.smith@example.com",
+      "phone": "+41 78 123 45 67",
+      "notes": "Describe your needs or specify if you prefer to be contacted at a particular time..."
+    },
+    "submit": "Send request",
+    "submitting": "Sending...",
+    "success": "Request sent successfully! We will contact you within 24 hours to schedule an appointment.",
+    "error": "An error occurred. Please try again later.",
+    "privacy": "By submitting this form, you agree to the processing of your personal data according to our",
+    "privacyLink": "privacy policy"
+  }
+}

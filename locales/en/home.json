@@ -1,0 +1,58 @@
+{
+  "hero": {
+    "title": "Your trusted partner for comprehensive and integrated consulting",
+    "anchor1": "Personalized solutions",
+    "anchor2": "Multidisciplinary team",
+    "anchor3": "Professionalism and transparency",
+    "ctaPrimary": "Request a free consultation",
+    "ctaSecondary": "Explore services",
+    "stats": {
+      "clients": "Clients served",
+      "areas": "Consulting areas",
+      "offices": "Offices in Switzerland"
+    }
+  },
+  "process": {
+    "eyebrow": "How it works",
+    "title": "Three simple steps to your ideal solution",
+    "subtitle": "A clear and transparent process guiding you from the first analysis to measurable results",
+    "step1Title": "Discover",
+    "step1Description": "Explore our services and identify the one that best fits your needs",
+    "step2Title": "Contact us",
+    "step2Description": "Request a free consultation with our experts",
+    "step3Title": "Get results",
+    "step3Description": "Receive dedicated support until your goals are achieved"
+  },
+  "servicesSection": {
+    "eyebrow": "Integrated services",
+    "title": "What we do",
+    "subtitle": "We offer an ecosystem of solutions where every consultation is coordinated by a dedicated account. Choose your area of interest and build a tailored path with us."
+  },
+  "whyUs": {
+    "eyebrow": "Why Swiss Consult Hub",
+    "title": "We simplify strategic decisions for individuals and companies",
+    "subtitle": "We stand by your side from the first analysis to day-to-day operations, ensuring coordination and accountability on every project.",
+    "point1": "A single point of contact to manage complex consulting needs",
+    "point2": "Support available in Italian, English, French and German",
+    "point3": "Constant monitoring of case status and proactive follow-ups",
+    "value1Title": "Swiss precision",
+    "value1Description": "Structured processes and continuous quality control ensure fast and reliable responses to every request.",
+    "value2Title": "Integrated approach",
+    "value2Description": "We coordinate specialists in insurance, real estate, employment, legal and healthcare.",
+    "value3Title": "International network",
+    "value3Description": "Selected partners in Switzerland and Europe allow us to support cross-border journeys as well.",
+    "ctaTeam": "Meet our team",
+    "ctaServices": "Explore services"
+  },
+  "finalCta": {
+    "title": "Let's turn your ideas into tangible results",
+    "subtitle": "From the first orientation to ongoing management, we support you with a tailored and measurable approach.",
+    "cta": "Request a dedicated consultation"
+  },
+  "trustStats": {
+    "clients": "Clients served",
+    "areas": "Consulting areas",
+    "offices": "Offices in Switzerland",
+    "partners": "Certified partners"
+  }
+}

@@ -1,0 +1,715 @@
+{
+  "privacyPolicy": {
+    "title": "Datenschutzerklärung",
+    "lastUpdate": "Zuletzt aktualisiert: 7. November 2025",
+
+    "section1": {
+      "title": "1. Einführung",
+      "intro": "Swiss Consult Hub (im Folgenden \"wir\", \"unser\" oder \"Swiss Consult Hub\") verpflichtet sich, die Privatsphäre und persönlichen Daten seiner Kunden und Website-Besucher zu schützen. Diese Datenschutzerklärung beschreibt, wie wir Ihre persönlichen Daten in Übereinstimmung mit dem Schweizer Bundesgesetz über den Datenschutz (DSG) und der Datenschutz-Grundverordnung (DSGVO) der Europäischen Union, soweit anwendbar, erfassen, verwenden, speichern und schützen.",
+      "companyInfo": {
+        "title": "Unternehmensinformationen",
+        "legalName": "Firmenname:",
+        "legalNameValue": "Swiss Consult Hub GmbH",
+        "legalAddress": "Eingetragener Sitz:",
+        "legalAddressValue": "Spinnereistrasse 5, 6220 Emmenbrücke, Luzern, Schweiz",
+        "email": "E-Mail:",
+        "emailValue": "info@swissconsulthub.ch",
+        "phone": "Telefon:",
+        "phoneValue": "+41 412 420 442",
+        "dpo": "Datenschutzbeauftragter:",
+        "dpoValue": "dpo@swissconsulthub.ch"
+      }
+    },
+
+    "section2": {
+      "title": "2. Erfasste Personendaten",
+      "intro": "Wir erfassen verschiedene Kategorien von Personendaten, um unsere Beratungsdienstleistungen bereitzustellen:",
+      "subsection1": {
+        "title": "2.1 Identifizierende Daten",
+        "items": [
+          "Vor- und Nachname",
+          "E-Mail-Adresse",
+          "Telefonnummer",
+          "Postanschrift (Straße, Stadt, Postleitzahl, Kanton)",
+          "Geburtsdatum (für medizinische und Versicherungsberatung)"
+        ]
+      },
+      "subsection2": {
+        "title": "2.2 Berufliche Daten",
+        "items": [
+          "Firmenname",
+          "Berufsbezeichnung",
+          "Branche",
+          "Berufserfahrung (für Arbeitsberatung)"
+        ]
+      },
+      "subsection3": {
+        "title": "2.3 Sensible Daten (nur mit ausdrücklicher Einwilligung erfasst)",
+        "items": [
+          "Kreditberatung: Finanzbeträge, Kredithistorie, Vermögen",
+          "Versicherungsberatung: Gesundheitszustand, Lebensgewohnheiten",
+          "Medizinische Beratung: Medizinische Daten, Krankheiten, Therapien (höchste Vertraulichkeit)",
+          "Steuerberatung: Steuernummer, Einkommen, Steuererklärungen",
+          "Rechtsberatung: Sensible rechtliche Informationen"
+        ]
+      },
+      "subsection4": {
+        "title": "2.4 Technische Daten",
+        "items": [
+          "IP-Adresse",
+          "Browser-Typ und -Version",
+          "Betriebssystem",
+          "Verwendetes Gerät",
+          "Besuchte Seiten und Verweildauer",
+          "Cookies und Tracking-Technologien (siehe Cookie-Richtlinie)"
+        ]
+      },
+      "subsection5": {
+        "title": "2.5 Angehängte Dokumente",
+        "items": [
+          "Persönliche Dokumente (Personalausweis, Aufenthaltsbewilligung)",
+          "Lohnabrechnungen und Arbeitsverträge",
+          "Kontoauszüge und Finanzdokumente",
+          "Medizinische Berichte (mit höchster Vertraulichkeit behandelt)",
+          "Steuer- und Rechtsdokumente"
+        ]
+      }
+    },
+
+    "section3": {
+      "title": "3. Zwecke der Verarbeitung",
+      "intro": "Ihre persönlichen Daten werden zu folgenden Zwecken verarbeitet:",
+      "items": [
+        "Bereitstellung von Beratungsdienstleistungen: Kredit-, Versicherungs-, Immobilien-, Arbeits-, Rechts-, Medizin- und Steuerberatung",
+        "Folgekommunikation: Aktualisierungen zum Antragsstatus, Termine, Dokumentation",
+        "Serviceverbesserung: Analyse und Verbesserung der Servicequalität",
+        "Rechtliche und steuerliche Compliance: Einhaltung schweizerischer und europäischer Vorschriften",
+        "Betrugsprävention: Identitätsprüfung und Betrugspräventionsaktivitäten",
+        "Marketing (nur mit Einwilligung): Newsletter, personalisierte Angebote, Werbemitteilungen"
+      ]
+    },
+
+    "section4": {
+      "title": "4. Rechtsgrundlage für die Verarbeitung",
+      "intro": "Die Verarbeitung Ihrer persönlichen Daten basiert auf folgenden Rechtsgrundlagen:",
+      "items": [
+        "Vertrag: Zur Bereitstellung der angeforderten Beratungsdienstleistungen",
+        "Einwilligung: Für Marketingkommunikation und Verarbeitung sensibler Daten",
+        "Rechtliche Verpflichtung: Zur Einhaltung steuerlicher, rechtlicher und branchenspezifischer Vorschriften",
+        "Berechtigtes Interesse: Zur Serviceverbesserung und Betrugsprävention"
+      ]
+    },
+
+    "section5": {
+      "title": "5. Datenempfänger",
+      "intro": "Ihre persönlichen Daten können weitergegeben werden an:",
+      "items": [
+        "Internes Team: Autorisierte Berater und Mitarbeiter von Swiss Consult Hub",
+        "Professionelle Partner: Anwälte, Buchhalter, Ärzte, Finanzberater (nur zur Erbringung der angeforderten Dienstleistung)",
+        "Dienstleister:"
+      ],
+      "serviceProviders": [
+        "Hosting: [Name des Hosting-Anbieters]",
+        "Dateispeicherung: Cloudinary (für Anhänge und Dokumente)",
+        "E-Mail: [Name des E-Mail-Anbieters]",
+        "Datenbank: MySQL (dedizierter Server)"
+      ],
+      "authorities": "Zuständige Behörden: Nur wenn gesetzlich vorgeschrieben (Steuer-, Justizbehörden)",
+      "note": "Hinweis:",
+      "noteText": "Alle Empfänger sind vertraglich verpflichtet, personenbezogene Daten in Übereinstimmung mit den Datenschutzbestimmungen zu verarbeiten."
+    },
+
+    "section6": {
+      "title": "6. Internationale Datenübermittlungen",
+      "intro": "Ihre Daten werden hauptsächlich in der Schweiz gespeichert. In einigen Fällen können sie an Dienstleister in Drittländern übermittelt werden (z.B. Cloudinary für Dateispeicherung). In solchen Fällen stellen wir sicher, dass angemessene Schutzmaßnahmen getroffen werden, wie:",
+      "items": [
+        "EU-Standardvertragsklauseln",
+        "Angemessenheitsbeschlüsse",
+        "Privacy Shield-Zertifizierungen (soweit anwendbar)"
+      ]
+    },
+
+    "section7": {
+      "title": "7. Ihre Rechte",
+      "intro": "Gemäß DSG und DSGVO haben Sie folgende Rechte:",
+      "subsection1": {
+        "title": "7.1 Auskunftsrecht",
+        "text": "Sie können eine Kopie aller personenbezogenen Daten anfordern, die wir über Sie gespeichert haben."
+      },
+      "subsection2": {
+        "title": "7.2 Recht auf Berichtigung",
+        "text": "Sie können die Korrektur unrichtiger oder unvollständiger Daten verlangen."
+      },
+      "subsection3": {
+        "title": "7.3 Recht auf Löschung",
+        "text": "Sie können die Löschung Ihrer Daten verlangen, vorbehaltlich gesetzlicher Aufbewahrungspflichten."
+      },
+      "subsection4": {
+        "title": "7.4 Recht auf Datenübertragbarkeit",
+        "text": "Sie können den Export Ihrer Daten in einem elektronischen Standardformat anfordern."
+      },
+      "subsection5": {
+        "title": "7.5 Widerspruchsrecht",
+        "text": "Sie können der Verarbeitung Ihrer Daten zu Marketingzwecken widersprechen."
+      },
+      "subsection6": {
+        "title": "7.6 Recht auf Einschränkung",
+        "text": "Sie können unter bestimmten Umständen die Einschränkung der Verarbeitung verlangen."
+      },
+      "subsection7": {
+        "title": "7.7 Wie Sie Ihre Rechte ausüben",
+        "intro": "Um Ihre Rechte auszuüben, können Sie:",
+        "items": [
+          "Das Online-Formular ausfüllen",
+          "Eine E-Mail senden an: dpo@swissconsulthub.ch",
+          "Uns telefonisch kontaktieren: +41 412 420 442"
+        ],
+        "note": "Hinweis:",
+        "noteText": "Wir werden Ihre Anfrage innerhalb von 30 Tagen beantworten."
+      }
+    },
+
+    "section8": {
+      "title": "8. Cookies und Tracking-Technologien",
+      "intro": "Wir verwenden Cookies und ähnliche Technologien, um Ihre Erfahrung auf unserer Website zu verbessern. Für detaillierte Informationen konsultieren Sie bitte unsere Cookie-Richtlinie.",
+      "cookieTypes": "Arten von Cookies:",
+      "items": [
+        "Essentielle Cookies: Notwendig für den Betrieb der Website (immer aktiv)",
+        "Analyse-Cookies: Zur Analyse der Website-Nutzung (erfordern Einwilligung)",
+        "Marketing-Cookies: Für zielgerichtete Werbung (erfordern Einwilligung)"
+      ],
+      "management": "Sie können Ihre Cookie-Einstellungen in den Cookie-Einstellungen verwalten."
+    },
+
+    "section9": {
+      "title": "9. Datensicherheit",
+      "intro": "Wir ergreifen angemessene technische und organisatorische Maßnahmen zum Schutz Ihrer persönlichen Daten:",
+      "subsection1": {
+        "title": "9.1 Technische Maßnahmen",
+        "items": [
+          "Verschlüsselung: HTTPS für alle Kommunikationen, bcrypt für Passwörter",
+          "Firewall: Server- und Datenbankschutz",
+          "Backup: Regelmäßige und sichere Backups",
+          "Updates: Stets aktuelle Software"
+        ]
+      },
+      "subsection2": {
+        "title": "9.2 Organisatorische Maßnahmen",
+        "items": [
+          "Eingeschränkter Zugriff: Nur autorisiertes Personal kann auf Daten zugreifen",
+          "Schulung: Regelmäßige Schulungen des Personals zum Datenschutz",
+          "Protokollierung: Nachverfolgung des Zugriffs auf sensible Daten",
+          "Verfahren: Dokumentierte Verfahren zur Datenverwaltung"
+        ]
+      },
+      "subsection3": {
+        "title": "9.3 Benachrichtigung bei Datenschutzverletzungen",
+        "text": "Im Falle einer Datenschutzverletzung, die ein hohes Risiko für Ihre Rechte und Freiheiten darstellt, werden wir Sie umgehend benachrichtigen und den Eidgenössischen Datenschutz- und Öffentlichkeitsbeauftragten (EDÖB) informieren."
+      }
+    },
+
+    "section10": {
+      "title": "10. Aufbewahrungsdauer",
+      "intro": "Wir bewahren Ihre persönlichen Daten nur so lange auf, wie es erforderlich ist:",
+      "items": [
+        "Beratungsdaten: 10 Jahre (rechtliche und steuerliche Verpflichtungen)",
+        "Medizinische Daten: 10 Jahre (rechtliche Verpflichtungen)",
+        "Marketingdaten: Bis zum Widerruf der Einwilligung",
+        "Cookies: Gemäß der in der Cookie-Richtlinie angegebenen Dauer",
+        "Sicherheitsprotokolle: 12 Monate"
+      ],
+      "conclusion": "Nach Ablauf der Aufbewahrungsfrist werden die Daten sicher gelöscht, sofern keine längeren gesetzlichen Aufbewahrungspflichten bestehen."
+    },
+
+    "section11": {
+      "title": "11. Minderjährige",
+      "text": "Unsere Dienstleistungen richten sich nicht an Personen unter 18 Jahren. Wir erfassen wissentlich keine personenbezogenen Daten von Minderjährigen ohne Zustimmung der Eltern oder Erziehungsberechtigten."
+    },
+
+    "section12": {
+      "title": "12. Änderungen der Datenschutzerklärung",
+      "text1": "Wir können diese Datenschutzerklärung regelmäßig aktualisieren, um regulatorische Änderungen oder Änderungen unserer Dienstleistungen widerzuspiegeln. Das Datum der letzten Aktualisierung ist oben auf der Seite angegeben. Wir laden Sie ein, diese Seite regelmäßig zu konsultieren.",
+      "text2": "Bei wesentlichen Änderungen werden wir Sie per E-Mail oder durch eine Benachrichtigung auf der Website informieren."
+    },
+
+    "section13": {
+      "title": "13. Kontakt",
+      "intro": "Bei Fragen zu dieser Datenschutzerklärung oder zur Verarbeitung Ihrer Daten:",
+      "contactBox": {
+        "title": "Datenschutzbeauftragter",
+        "email": "E-Mail:",
+        "emailValue": "dpo@swissconsulthub.ch",
+        "phone": "Telefon:",
+        "phoneValue": "+41 412 420 442",
+        "address": "Adresse:",
+        "addressValue": "Spinnereistrasse 5, 6220 Emmenbrücke, Luzern, Schweiz"
+      }
+    },
+
+    "section14": {
+      "title": "14. Beschwerden",
+      "intro": "Wenn Sie der Ansicht sind, dass die Verarbeitung Ihrer Daten gegen Datenschutzbestimmungen verstößt, können Sie eine Beschwerde einreichen oder sich an die zuständige Behörde wenden:",
+      "authority": {
+        "title": "Eidgenössischer Datenschutz- und Öffentlichkeitsbeauftragter (EDÖB)",
+        "address": "Adresse:",
+        "addressValue": "Bundesgasse 3, 3003 Bern, Schweiz",
+        "email": "E-Mail:",
+        "emailValue": "contact@edoeb.admin.ch",
+        "phone": "Telefon:",
+        "phoneValue": "+41 31 325 95 95",
+        "website": "Website:",
+        "websiteValue": "www.edoeb.admin.ch"
+      }
+    },
+
+    "footer": {
+      "compliance": "Diese Datenschutzerklärung entspricht dem Schweizer Bundesgesetz über den Datenschutz (DSG) und der Datenschutz-Grundverordnung (DSGVO) der Europäischen Union.",
+      "backLink": "← Zurück zur Startseite"
+    }
+  },
+  "termsConditions": {
+    "title": "Allgemeine Geschäftsbedingungen",
+    "lastUpdated": "Zuletzt aktualisiert: 7. November 2025",
+    "acceptance": "Annahme der Bedingungen",
+    "serviceDescription": "Dienstleistungsbeschreibung",
+    "userResponsibilities": "Benutzerverantwortung",
+    "intellectualProperty": "Geistiges Eigentum",
+    "limitation": "Haftungsbeschränkung",
+    "governing": "Anwendbares Recht"
+  },
+  "cookiePolicy": {
+    "title": "Cookie-Richtlinie",
+    "lastUpdate": "Zuletzt aktualisiert: 7. November 2025",
+
+    "section1": {
+      "title": "1. Was sind Cookies",
+      "paragraph1": "Cookies sind kleine Textdateien, die auf Ihrem Gerät (Computer, Tablet, Smartphone) gespeichert werden, wenn Sie eine Website besuchen. Cookies ermöglichen es der Website, Ihr Gerät zu erkennen und einige Informationen über Ihre Präferenzen oder vergangenen Aktionen zu speichern.",
+      "paragraph2": "Diese Cookie-Richtlinie erklärt, wie Swiss Consult Hub Cookies und ähnliche Technologien auf der Website www.swissconsulthub.ch verwendet und wie Sie Ihre Präferenzen verwalten können."
+    },
+
+    "section2": {
+      "title": "2. Arten von Cookies",
+      "intro": "Cookies können nach verschiedenen Merkmalen klassifiziert werden:",
+      "subsection1": {
+        "title": "2.1 Nach Dauer",
+        "items": [
+          "Sitzungs-Cookies: Werden gelöscht, wenn Sie den Browser schließen",
+          "Persistente Cookies: Verbleiben für einen definierten Zeitraum auf dem Gerät"
+        ]
+      },
+      "subsection2": {
+        "title": "2.2 Nach Eigentümer",
+        "items": [
+          "First-Party-Cookies: Gesetzt von Swiss Consult Hub",
+          "Third-Party-Cookies: Gesetzt von anderen Websites (z.B. Google Analytics)"
+        ]
+      },
+      "subsection3": {
+        "title": "2.3 Nach Zweck",
+        "items": [
+          "Essenzielle Cookies: Notwendig für die Funktionalität der Website",
+          "Leistungs-Cookies: Sammeln Informationen über die Website-Nutzung",
+          "Funktionalitäts-Cookies: Speichern Ihre Präferenzen",
+          "Targeting-Cookies: Verwendet für zielgerichtete Werbung"
+        ]
+      }
+    },
+
+    "section3": {
+      "title": "3. Essenzielle Cookies (Immer Aktiv)",
+      "intro": "Diese Cookies sind für das Funktionieren der Website unbedingt erforderlich und können nicht deaktiviert werden. Sie benötigen keine Einwilligung.",
+      "tableTitle": "Verwendete Cookies:",
+      "tableHeaders": {
+        "name": "Name",
+        "purpose": "Zweck",
+        "duration": "Dauer"
+      },
+      "cookies": [
+        {
+          "name": "sch_auth_token",
+          "purpose": "JWT-Authentifizierungstoken für Admin-Zugang",
+          "duration": "7 Tage"
+        },
+        {
+          "name": "sch_session",
+          "purpose": "Benutzersitzungsverwaltung",
+          "duration": "Sitzung"
+        },
+        {
+          "name": "sch_preferences",
+          "purpose": "Sprach- und Theme-Präferenzen",
+          "duration": "1 Jahr"
+        },
+        {
+          "name": "sch_cookie_consent",
+          "purpose": "Speichert Ihre Cookie-Einstellungen",
+          "duration": "1 Jahr"
+        }
+      ],
+      "note": "Hinweis:",
+      "noteText": "Diese Cookies verfolgen Ihre Aktivitäten nicht auf anderen Websites und werden ausschließlich verwendet, um die ordnungsgemäße Funktion unserer Website zu gewährleisten."
+    },
+
+    "section4": {
+      "title": "4. Analyse-Cookies (Erfordern Einwilligung)",
+      "intro": "Diese Cookies helfen uns zu verstehen, wie Besucher die Website nutzen, indem sie Informationen anonym sammeln. Wir verwenden diese Informationen, um die Website und das Benutzererlebnis zu verbessern.",
+      "subsection1": {
+        "title": "4.1 Google Analytics",
+        "description": "Wir verwenden Google Analytics, um die Website-Nutzung zu analysieren. Google Analytics sammelt Informationen wie besuchte Seiten, auf der Website verbrachte Zeit und Besucherherkunft.",
+        "tableTitle": "Google Analytics Cookies:",
+        "cookies": [
+          {
+            "name": "_ga",
+            "purpose": "Unterscheidet Benutzer",
+            "duration": "2 Jahre"
+          },
+          {
+            "name": "_gid",
+            "purpose": "Unterscheidet Benutzer",
+            "duration": "24 Stunden"
+          },
+          {
+            "name": "_gat",
+            "purpose": "Begrenzt die Anfragehäufigkeit",
+            "duration": "1 Minute"
+          }
+        ],
+        "privacyLink": "Für weitere Informationen über Google Analytics und Datenschutz besuchen Sie:",
+        "privacyLinkText": " Google Datenschutzerklärung"
+      },
+      "subsection2": {
+        "title": "4.2 IP-Anonymisierung",
+        "description": "Wir haben die IP-Adressen-Anonymisierung bei Google Analytics aktiviert, sodass Ihre vollständige IP-Adresse niemals gespeichert wird."
+      }
+    },
+
+    "section5": {
+      "title": "5. Marketing-Cookies (Erfordern Einwilligung)",
+      "intro": "Diese Cookies werden verwendet, um Ihnen relevante Werbung für Sie und Ihre Interessen anzuzeigen. Sie können auch verwendet werden, um die Anzahl der Anzeigenaufrufe zu begrenzen und die Wirksamkeit von Werbekampagnen zu messen.",
+      "note": "Hinweis:",
+      "noteText": "Wir verwenden derzeit keine Marketing-Cookies. Sollten wir uns in Zukunft entscheiden, sie zu verwenden, werden wir diese Richtlinie aktualisieren und Ihre ausdrückliche Einwilligung einholen."
+    },
+
+    "section6": {
+      "title": "6. Drittanbieter-Cookies",
+      "intro": "Einige Cookies werden von Drittanbieterdiensten gesetzt, die auf unseren Seiten erscheinen. Swiss Consult Hub kontrolliert die Einstellung dieser Cookies nicht.",
+      "servicesTitle": "6.1 Verwendete Drittanbieterdienste:",
+      "services": [
+        {
+          "name": "Google Analytics",
+          "purpose": "Für Traffic-Analyse",
+          "privacyLink": "Datenschutzerklärung"
+        },
+        {
+          "name": "Cloudinary",
+          "purpose": "Für Bild- und Datei-Hosting",
+          "privacyLink": "Datenschutzerklärung"
+        }
+      ],
+      "recommendation": "Wir empfehlen, die Datenschutzerklärungen dieser Dienste zu konsultieren, um zu verstehen, wie sie Ihre Daten verwenden."
+    },
+
+    "section7": {
+      "title": "7. Andere Tracking-Technologien",
+      "intro": "Zusätzlich zu Cookies verwenden wir andere Technologien, um Informationen zu sammeln:",
+      "subsection1": {
+        "title": "7.1 Web Beacons (Pixel)",
+        "description": "Kleine grafische Bilder, die verwendet werden, um Seitenaufrufe und E-Mail-Öffnungen zu verfolgen."
+      },
+      "subsection2": {
+        "title": "7.2 Local Storage",
+        "description": "HTML5-Technologie, die es ermöglicht, Daten lokal im Browser zu speichern. Wir verwenden Local Storage für:",
+        "items": [
+          "Benutzerpräferenzen (Theme, Sprache)",
+          "Authentifizierungstoken",
+          "Temporäre Sitzungsdaten"
+        ]
+      },
+      "subsection3": {
+        "title": "7.3 Session Storage",
+        "description": "Ähnlich wie Local Storage, aber die Daten werden gelöscht, wenn Sie den Browser schließen. Wird für temporäre Browsing-Daten verwendet."
+      }
+    },
+
+    "section8": {
+      "title": "8. Verwaltung von Cookies",
+      "intro": "Sie haben mehrere Optionen, um Cookies zu verwalten und zu kontrollieren:",
+      "subsection1": {
+        "title": "8.1 Website-Cookie-Einstellungen",
+        "description": "Sie können Ihre Cookie-Präferenzen jederzeit ändern, indem Sie die Seite besuchen",
+        "linkText": " Cookie-Einstellungen"
+      },
+      "subsection2": {
+        "title": "8.2 Browser-Einstellungen",
+        "description": "Die meisten Browser ermöglichen es Ihnen, Cookies über die Einstellungen zu kontrollieren. So geht's in den gängigsten Browsern:",
+        "browsers": [
+          {
+            "name": "Google Chrome",
+            "instructions": "Einstellungen → Datenschutz und Sicherheit → Cookies und andere Website-Daten"
+          },
+          {
+            "name": "Mozilla Firefox",
+            "instructions": "Optionen → Datenschutz & Sicherheit → Cookies und Website-Daten"
+          },
+          {
+            "name": "Safari",
+            "instructions": "Einstellungen → Datenschutz → Website-Daten verwalten"
+          },
+          {
+            "name": "Microsoft Edge",
+            "instructions": "Einstellungen → Datenschutz, Suche und Dienste → Cookies und Websiteberechtigungen"
+          }
+        ]
+      },
+      "subsection3": {
+        "title": "8.3 Tools von Drittanbietern",
+        "description": "Sie können auch Tools von Drittanbietern verwenden, um Cookies zu verwalten:",
+        "tools": [
+          {
+            "name": "Google Analytics Opt-out",
+            "url": "https://tools.google.com/dlpage/gaoptout"
+          },
+          {
+            "name": "Your Online Choices",
+            "url": "https://www.youronlinechoices.com"
+          }
+        ]
+      },
+      "subsection4": {
+        "title": "8.4 Privater Modus",
+        "description": "Die meisten Browser bieten einen privaten/Inkognito-Browsermodus, der Cookies automatisch löscht, wenn Sie das Browserfenster schließen."
+      }
+    },
+
+    "section9": {
+      "title": "9. Auswirkungen der Cookie-Deaktivierung",
+      "intro": "Die Deaktivierung von Cookies kann Ihre Erfahrung auf unserer Website beeinträchtigen:",
+      "subsection1": {
+        "title": "9.1 Essenzielle Cookies",
+        "description": "Wenn Sie essenzielle Cookies deaktivieren, funktionieren einige Website-Funktionen möglicherweise nicht ordnungsgemäß:",
+        "effects": [
+          "Sie können nicht auf den Admin-Bereich zugreifen",
+          "Ihre Präferenzen werden nicht gespeichert",
+          "Einige Funktionen können eingeschränkt sein"
+        ]
+      },
+      "subsection2": {
+        "title": "9.2 Analyse-Cookies",
+        "description": "Wenn Sie Analyse-Cookies deaktivieren:",
+        "effects": [
+          "Wir können die Website nicht basierend auf Ihren Präferenzen verbessern",
+          "Wir werden nicht wissen, welche Inhalte am nützlichsten sind"
+        ]
+      },
+      "subsection3": {
+        "title": "9.3 Marketing-Cookies",
+        "description": "Wenn Sie Marketing-Cookies deaktivieren:",
+        "effects": [
+          "Sie sehen weiterhin Werbung, aber weniger relevant für Sie",
+          "Sie sehen möglicherweise dieselbe Werbung mehrmals"
+        ]
+      }
+    },
+
+    "section10": {
+      "title": "10. Cookies und Mobile Geräte",
+      "intro": "Cookies funktionieren auf Mobilgeräten auf die gleiche Weise. Sie können Cookies auch auf Mobilgeräten verwalten:",
+      "ios": {
+        "title": "iOS (iPhone/iPad)",
+        "instructions": "Einstellungen → Safari → Datenschutz und Sicherheit"
+      },
+      "android": {
+        "title": "Android",
+        "instructions": "Einstellungen → Datenschutz → Browserdaten löschen"
+      }
+    },
+
+    "section11": {
+      "title": "11. Aktualisierungen der Cookie-Richtlinie",
+      "paragraph1": "Wir können diese Cookie-Richtlinie regelmäßig aktualisieren, um Änderungen in den verwendeten Technologien oder in den Vorschriften widerzuspiegeln. Das Datum der letzten Aktualisierung ist oben auf der Seite angegeben.",
+      "paragraph2": "Wir empfehlen Ihnen, diese Seite regelmäßig zu konsultieren, um über die Verwendung von Cookies informiert zu bleiben."
+    },
+
+    "section12": {
+      "title": "12. Nützliche Links",
+      "links": [
+        {
+          "text": "Datenschutzerklärung",
+          "url": "/#/privacy-policy"
+        },
+        {
+          "text": "Allgemeine Geschäftsbedingungen",
+          "url": "/#/terms-and-conditions"
+        },
+        {
+          "text": "Cookie-Einstellungen",
+          "url": "/#/cookie-settings"
+        },
+        {
+          "text": "EDÖB - Schweizer Datenschutz",
+          "url": "https://www.edoeb.admin.ch",
+          "external": true
+        }
+      ]
+    },
+
+    "section13": {
+      "title": "13. Kontakt",
+      "intro": "Bei Fragen zu dieser Cookie-Richtlinie oder zur Verwendung von Cookies:",
+      "contactBox": {
+        "companyName": "Swiss Consult Hub",
+        "dpoTitle": "Datenschutzbeauftragter:",
+        "email": "E-Mail:",
+        "emailValue": "dpo@swissconsulthub.ch",
+        "phone": "Telefon:",
+        "phoneValue": "+41 412 420 442",
+        "address": "Adresse:",
+        "addressValue": "Spinnereistrasse 5, 6220 Emmenbrücke, Luzern, Schweiz"
+      }
+    },
+
+    "footer": {
+      "compliance": "Diese Cookie-Richtlinie entspricht dem Schweizer Bundesgesetz über den Datenschutz (DSG) und der ePrivacy-Richtlinie der Europäischen Union.",
+      "backLink": "← Zurück zur Startseite"
+    }
+  },
+  "dataSubjectRights": {
+    "title": "Rechte der betroffenen Person",
+    "lastUpdated": "Zuletzt aktualisiert: 7. November 2025",
+    "introduction": "Gemäß den Datenschutzbestimmungen haben Sie die folgenden Rechte:",
+    "rightOfAccess": "Auskunftsrecht",
+    "rightOfRectification": "Recht auf Berichtigung",
+    "rightOfErasure": "Recht auf Vergessenwerden",
+    "rightToRestrict": "Recht auf Einschränkung der Verarbeitung",
+    "rightToPortability": "Recht auf Datenportabilität",
+    "rightToObject": "Widerspruchsrecht",
+    "howToExercise": "Wie Sie Ihre Rechte Ausüben"
+  },
+  "dataRights": {
+    "header": {
+      "title": "Üben Sie Ihre Rechte Aus",
+      "subtitle": "Verwalten Sie Ihre personenbezogenen Daten in Übereinstimmung mit DSG und DSGVO"
+    },
+    "intro": {
+      "title": "Ihre Datenschutzrechte",
+      "description": "Gemäß dem Schweizer Bundesgesetz über den Datenschutz (DSG) und der Datenschutz-Grundverordnung (DSGVO) haben Sie das Recht zu kontrollieren, wie Ihre personenbezogenen Daten verarbeitet werden.",
+      "infoBox": {
+        "title": "📌 Wichtige Informationen",
+        "responseTime": "Antwortzeit:",
+        "responseTimeValue": "Wir werden Ihre Anfrage innerhalb von 30 Tagen beantworten",
+        "free": "Kostenlos:",
+        "freeValue": "Die Ausübung Ihrer Rechte ist völlig kostenlos",
+        "verification": "Identitätsprüfung:",
+        "verificationValue": "Wir können Dokumente zur Überprüfung Ihrer Identität anfordern"
+      }
+    },
+    "rights": {
+      "title": "Wählen Sie das Auszuübende Recht",
+      "access": {
+        "title": "Auskunftsrecht",
+        "description": "Fordern Sie eine Kopie aller personenbezogenen Daten an, die wir über Sie gespeichert haben, in elektronischem Format.",
+        "icon": "📥"
+      },
+      "rectification": {
+        "title": "Recht auf Berichtigung",
+        "description": "Korrigieren Sie unrichtige oder unvollständige Daten in unserem System.",
+        "icon": "✏️"
+      },
+      "erasure": {
+        "title": "Recht auf Löschung",
+        "description": "Fordern Sie die vollständige Löschung Ihrer personenbezogenen Daten an (vorbehaltlich gesetzlicher Verpflichtungen).",
+        "icon": "🗑️"
+      },
+      "portability": {
+        "title": "Recht auf Datenübertragbarkeit",
+        "description": "Exportieren Sie Ihre Daten in einem Standardformat, um sie an einen anderen Dienst zu übertragen.",
+        "icon": "📤"
+      },
+      "objection": {
+        "title": "Widerspruchsrecht",
+        "description": "Lehnen Sie die Verarbeitung Ihrer Daten zu Marketing- oder Profilierungszwecken ab.",
+        "icon": "🚫"
+      },
+      "limitation": {
+        "title": "Recht auf Einschränkung",
+        "description": "Fordern Sie die vorübergehende Einschränkung der Verarbeitung Ihrer Daten an.",
+        "icon": "⏸️"
+      }
+    },
+    "form": {
+      "title": "Füllen Sie das Antragsformular Aus",
+      "selectLabel": "Wählen Sie das Auszuübende Recht",
+      "labels": {
+        "fullName": "Vollständiger Name",
+        "email": "E-Mail",
+        "phone": "Telefon (optional)",
+        "description": "Beschreibung der Anfrage"
+      },
+      "placeholders": {
+        "fullName": "Max Mustermann",
+        "email": "max.mustermann@email.com",
+        "phone": "+41 XX XXX XX XX",
+        "description": "Geben Sie Details zu Ihrer Anfrage an..."
+      },
+      "hint": "Geben Sie an, welche Daten Sie ändern, löschen oder exportieren möchten.",
+      "notice": {
+        "title": "Identitätsprüfung:",
+        "text": "Zum Schutz Ihrer Daten können wir eine Kopie Ihres Ausweisdokuments anfordern, um zu überprüfen, dass Sie der rechtmäßige Eigentümer der Daten sind."
+      },
+      "submit": "Anfrage Absenden",
+      "submitting": "Wird gesendet...",
+      "privacyText": "Durch das Absenden dieser Anfrage akzeptieren Sie unsere",
+      "privacyLink": "Datenschutzerklärung"
+    },
+    "success": {
+      "title": "Anfrage Erfolgreich Gesendet!",
+      "message": "Wir haben Ihre Anfrage erhalten und bearbeiten sie. Sie erhalten innerhalb von 30 Tagen eine Antwort per E-Mail.",
+      "confirmationEmail": "Wir haben Ihnen eine Bestätigungs-E-Mail gesendet an"
+    },
+    "contact": {
+      "title": "Andere Kontaktmöglichkeiten",
+      "intro": "Sie können Ihre Rechte auch durch direkte Kontaktaufnahme ausüben:",
+      "dpoTitle": "Datenschutzbeauftragter",
+      "email": "E-Mail:",
+      "phone": "Telefon:",
+      "address": "Adresse:"
+    },
+    "faq": {
+      "title": "Häufig Gestellte Fragen",
+      "q1": {
+        "question": "Wie lange dauert es, eine Antwort zu erhalten?",
+        "answer": "Wir beantworten alle Anfragen innerhalb von 30 Tagen nach Erhalt."
+      },
+      "q2": {
+        "question": "Ist es kostenlos, meine Rechte auszuüben?",
+        "answer": "Ja, die Ausübung Ihrer Rechte ist völlig kostenlos, außer bei offensichtlich unbegründeten oder exzessiven Anfragen."
+      },
+      "q3": {
+        "question": "Was passiert, wenn Sie sich meiner Identität nicht sicher sind?",
+        "answer": "Zum Schutz Ihrer Daten können wir zusätzliche Informationen anfordern, um Ihre Identität zu überprüfen, bevor wir fortfahren."
+      },
+      "q4": {
+        "question": "Kann ich eine Beschwerde einreichen, wenn ich nicht zufrieden bin?",
+        "answer": "Ja, Sie haben das Recht, eine Beschwerde beim Eidgenössischen Datenschutz- und Öffentlichkeitsbeauftragten (EDÖB) oder Ihrer nationalen Datenschutzbehörde einzureichen."
+      }
+    },
+    "authority": {
+      "title": "Aufsichtsbehörde",
+      "intro": "Wenn Sie der Ansicht sind, dass Ihre Rechte nicht respektiert wurden, können Sie eine Beschwerde bei der zuständigen Behörde einreichen:",
+      "name": "Eidgenössischer Datenschutz- und Öffentlichkeitsbeauftragter (EDÖB)",
+      "address": "Adresse:",
+      "addressValue": "Bundesgasse 3, 3003 Bern, Schweiz",
+      "email": "E-Mail:",
+      "phone": "Telefon:",
+      "website": "Website:"
+    },
+    "footer": {
+      "backLink": "← Zurück zur Startseite"
+    }
+  },
+  "terms": {
+    "title": "Allgemeine Geschäftsbedingungen",
+    "lastUpdate": "Letzte Aktualisierung: 7. November 2025",
+    "note": "Hinweis: Diese Allgemeinen Geschäftsbedingungen regeln die Nutzung der von Swiss Consult Hub angebotenen Dienstleistungen. Durch die Nutzung unserer Dienstleistungen erklären Sie sich mit diesen Bedingungen einverstanden."
+  }
+}

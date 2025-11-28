@@ -1,0 +1,197 @@
+/* ============================================
+   SMART FILE UPLOAD COMPONENT
+   ============================================ */
+
+.smart-file-upload {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  margin-bottom: var(--space-5);
+}
+
+.smart-file-label {
+  font-size: var(--text-body-sm);
+  font-weight: 600;
+  color: var(--primary-navy);
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.file-input-hidden {
+  display: none;
+}
+
+/* Upload area */
+.upload-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-3);
+  padding: var(--space-8);
+  background: var(--neutral-50);
+  border: 2px dashed var(--neutral-300);
+  border-radius: var(--radius-lg);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  text-align: center;
+}
+
+.upload-area:hover {
+  background: var(--neutral-100);
+  border-color: var(--service-creditizia);
+}
+
+.upload-area.dragging {
+  background: linear-gradient(135deg, var(--service-creditizia-light), rgba(79, 70, 229, 0.08));
+  border-color: var(--service-creditizia);
+  border-style: solid;
+  transform: scale(1.02);
+}
+
+.upload-icon {
+  color: var(--neutral-500);
+  transition: all var(--transition-fast);
+}
+
+.upload-area:hover .upload-icon,
+.upload-area.dragging .upload-icon {
+  color: var(--service-creditizia);
+  transform: scale(1.1);
+}
+
+.upload-text {
+  font-size: var(--text-body);
+  color: var(--neutral-700);
+  margin: 0;
+}
+
+.upload-link {
+  color: var(--service-creditizia);
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.upload-hint {
+  font-size: var(--text-body-xs);
+  color: var(--neutral-500);
+  margin: 0;
+}
+
+/* File preview */
+.file-preview {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-4);
+  background: var(--white);
+  border: 2px solid var(--success-green);
+  border-radius: var(--radius-md);
+  transition: all var(--transition-fast);
+}
+
+.smart-file-upload.error .file-preview {
+  border-color: var(--error-red);
+}
+
+.file-info {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  flex: 1;
+}
+
+.file-icon {
+  color: var(--service-creditizia);
+  flex-shrink: 0;
+}
+
+.file-details {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  min-width: 0;
+}
+
+.file-name {
+  font-size: var(--text-body-sm);
+  font-weight: 600;
+  color: var(--primary-navy);
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.file-size {
+  font-size: var(--text-body-xs);
+  color: var(--neutral-600);
+  margin: 0;
+}
+
+.file-remove {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background: var(--neutral-100);
+  color: var(--neutral-600);
+  border: none;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  flex-shrink: 0;
+}
+
+.file-remove:hover {
+  background: var(--error-red);
+  color: var(--white);
+  transform: scale(1.1);
+}
+
+.file-success {
+  display: flex;
+  align-items: center;
+  color: var(--success-green);
+  flex-shrink: 0;
+}
+
+/* Messages */
+.smart-file-hint,
+.smart-file-error {
+  font-size: var(--text-body-xs);
+  line-height: 1.4;
+}
+
+.smart-file-hint {
+  color: var(--neutral-600);
+}
+
+.smart-file-error {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  color: var(--error-red);
+  font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .upload-area {
+    padding: var(--space-6);
+  }
+
+  .upload-text {
+    font-size: var(--text-body-sm);
+  }
+
+  .file-preview {
+    flex-wrap: wrap;
+  }
+
+  .file-name {
+    max-width: 200px;
+  }
+}

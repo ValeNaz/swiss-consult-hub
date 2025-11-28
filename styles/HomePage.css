@@ -1,0 +1,314 @@
+/* ====================================
+   HomePage - Why Us Section Styles
+   ==================================== */
+
+.why-us-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.why-us-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(10, 37, 64, 0.02) 0%, var(--neutral-50) 100%);
+  z-index: -1;
+  border-radius: var(--radius-xl);
+}
+
+.why-us-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-16);
+  align-items: flex-start;
+}
+
+.why-us-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+  padding-right: var(--space-6);
+}
+
+.why-us-list {
+  margin-top: var(--space-6);
+  margin-bottom: var(--space-8);
+}
+
+/* ====================================
+   Values Container & Cards
+   ==================================== */
+
+.values-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.value-card-modern {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: var(--space-5);
+  align-items: flex-start;
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+  border: 1px solid var(--neutral-200);
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-base);
+  position: relative;
+  overflow: hidden;
+}
+
+.value-card-modern::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: var(--neutral-200);
+  transition: all var(--transition-base);
+}
+
+.value-card-modern:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--primary-navy);
+}
+
+.value-card-modern.value-1:hover::before {
+  background: var(--service-assicurativa);
+}
+
+.value-card-modern.value-2:hover::before {
+  background: var(--accent-red);
+}
+
+.value-card-modern.value-3:hover::before {
+  background: var(--service-immobiliare);
+}
+
+.value-number {
+  font-family: var(--font-heading);
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--neutral-200);
+  transition: all var(--transition-base);
+  user-select: none;
+}
+
+.value-card-modern:hover .value-number {
+  color: var(--neutral-300);
+  transform: scale(1.1);
+}
+
+.value-card-modern.value-1:hover .value-number {
+  color: rgba(37, 99, 235, 0.15);
+}
+
+.value-card-modern.value-2:hover .value-number {
+  color: rgba(220, 20, 60, 0.15);
+}
+
+.value-card-modern.value-3:hover .value-number {
+  color: rgba(5, 150, 105, 0.15);
+}
+
+.value-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  padding-top: var(--space-2);
+}
+
+.value-content h3 {
+  font-family: var(--font-heading);
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--primary-navy);
+  margin: 0;
+  transition: color var(--transition-fast);
+}
+
+.value-card-modern:hover .value-content h3 {
+  color: var(--accent-red);
+}
+
+.value-card-modern.value-1:hover .value-content h3 {
+  color: var(--service-assicurativa);
+}
+
+.value-card-modern.value-2:hover .value-content h3 {
+  color: var(--accent-red);
+}
+
+.value-card-modern.value-3:hover .value-content h3 {
+  color: var(--service-immobiliare);
+}
+
+.value-content p {
+  font-size: var(--text-body);
+  color: var(--neutral-700);
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* ====================================
+   Tablet Responsive (768px - 1023px)
+   ==================================== */
+
+@media (max-width: 1023px) and (min-width: 768px) {
+  .why-us-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-12);
+  }
+
+  .why-us-content {
+    padding-right: 0;
+  }
+
+  .why-us-section::before {
+    display: none;
+  }
+
+  .values-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-4);
+  }
+
+  .value-card-modern {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    gap: var(--space-3);
+    padding: var(--space-5);
+  }
+
+  .value-number {
+    font-size: 48px;
+  }
+
+  .value-content {
+    padding-top: 0;
+  }
+
+  .value-content h3 {
+    font-size: 18px;
+  }
+
+  .value-content p {
+    font-size: 14px;
+  }
+}
+
+/* ====================================
+   Mobile Responsive (< 768px)
+   ==================================== */
+
+@media (max-width: 767px) {
+  .why-us-section {
+    padding: var(--mobile-section-padding) 0;
+  }
+
+  .why-us-section::before {
+    display: none;
+  }
+
+  .why-us-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-10);
+  }
+
+  .why-us-content {
+    padding-right: 0;
+  }
+
+  .why-us-content .section-title {
+    font-size: var(--text-h2-mobile);
+  }
+
+  .why-us-content .section-subtitle {
+    font-size: var(--text-body-mobile);
+  }
+
+  .why-us-list {
+    margin-top: var(--space-4);
+    margin-bottom: var(--space-6);
+  }
+
+  .values-container {
+    gap: var(--space-4);
+  }
+
+  .value-card-modern {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    gap: var(--space-3);
+    padding: var(--mobile-card-padding);
+  }
+
+  .value-number {
+    font-size: 40px;
+    text-align: left;
+  }
+
+  .value-content {
+    padding-top: 0;
+  }
+
+  .value-content h3 {
+    font-size: 18px;
+  }
+
+  .value-content p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .cta-group {
+    flex-direction: column;
+    gap: var(--space-3);
+  }
+
+  .cta-group .btn {
+    width: 100%;
+  }
+}
+
+/* ====================================
+   Animation Enhancement
+   ==================================== */
+
+@media (prefers-reduced-motion: no-preference) {
+  .value-card-modern {
+    animation: fadeInUp 0.6s ease-out backwards;
+  }
+
+  .value-card-modern.value-1 {
+    animation-delay: 0.1s;
+  }
+
+  .value-card-modern.value-2 {
+    animation-delay: 0.2s;
+  }
+
+  .value-card-modern.value-3 {
+    animation-delay: 0.3s;
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}

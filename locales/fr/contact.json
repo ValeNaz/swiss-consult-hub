@@ -1,0 +1,129 @@
+{
+  "hero": {
+    "eyebrow": "Contactez-nous",
+    "title": "Nous sommes là pour vous aider",
+    "subtitle": "Contactez-nous pour une consultation personnalisée. Notre équipe est disponible pour répondre à toutes vos questions et vous guider vers la meilleure solution pour vos besoins."
+  },
+  "quickContact": {
+    "email": "Email",
+    "phone": "Téléphone",
+    "locations": "Emplacements",
+    "hours": "Horaires",
+    "offices": {
+      "emmenbrucke": {
+        "name": "Emmenbrücke (Siège)",
+        "address": "Spinnereistrasse 5, 6220"
+      },
+      "zurich": {
+        "name": "Zurich",
+        "address": "Thurgauerstrasse 117, 8152 Opfikon"
+      },
+      "lugano": {
+        "name": "Lugano",
+        "address": "Via delle Scuole 3B, 6900 Paradiso"
+      },
+      "lucerne": {
+        "name": "Lucerne",
+        "address": "Sagirain 4, 6233 Büron"
+      }
+    },
+    "schedule": {
+      "weekdays": "Lundi - Vendredi",
+      "weekdaysHours": "08:30 - 18:00",
+      "saturday": "Samedi",
+      "saturdayHours": "Sur rendez-vous"
+    }
+  },
+  "subjects": {
+    "selectPlaceholder": "Sélectionnez un sujet",
+    "credit": "Conseil en crédit",
+    "insurance": "Conseil en assurance",
+    "realEstate": "Conseil immobilier",
+    "employment": "Conseil en emploi",
+    "legal": "Conseil juridique",
+    "medical": "Conseil médical",
+    "tax": "Conseil fiscal",
+    "other": "Autre"
+  },
+  "contactForm": {
+    "title": "Envoyez-nous un message",
+    "subtitle": "Remplissez le formulaire et nous vous répondrons dans les 24 heures ouvrables",
+    "labels": {
+      "fullName": "Nom complet*",
+      "email": "Email*",
+      "phone": "Téléphone*",
+      "company": "Entreprise (optionnel)",
+      "subject": "Sujet*",
+      "message": "Message*"
+    },
+    "placeholders": {
+      "fullName": "Jean Dupont",
+      "email": "jean@example.com",
+      "phone": "+41 41 242 0442",
+      "company": "Votre entreprise",
+      "message": "Décrivez comment nous pouvons vous aider..."
+    },
+    "buttons": {
+      "submit": "Envoyer le message",
+      "submitting": "Envoi en cours..."
+    },
+    "success": {
+      "title": "Message envoyé avec succès !",
+      "message": "Merci de nous avoir contactés. Notre équipe vous répondra dans les 24 heures ouvrables."
+    }
+  },
+  "infoCards": {
+    "call": {
+      "title": "Appelez directement",
+      "description": "Vous préférez parler à quelqu'un ? Appelez notre équipe pendant les heures de bureau."
+    },
+    "email": {
+      "title": "Envoyez un email",
+      "description": "Contactez-nous par email pour une communication plus détaillée."
+    },
+    "visit": {
+      "title": "Visitez nos bureaux",
+      "description": "Venez nous rendre visite dans l'un de nos bureaux en Suisse.",
+      "offices": {
+        "emmenbrucke": "Emmenbrücke",
+        "emmenbruckeAddress": "Spinnereistrasse 5",
+        "zurich": "Zurich",
+        "zurichAddress": "Thurgauerstrasse 117"
+      }
+    },
+    "hours": {
+      "title": "Heures d'ouverture",
+      "weekdays": "Lundi - Vendredi",
+      "weekdaysHours": "08:30 - 18:00",
+      "saturday": "Samedi",
+      "saturdayHours": "Sur rendez-vous"
+    }
+  },
+  "cta": {
+    "title": "Vous ne trouvez pas ce que vous cherchez ?",
+    "description": "Notre équipe d'experts est prête à vous guider vers la solution qui correspond le mieux à vos besoins.",
+    "button": "Retour à l'accueil"
+  },
+  "form": {
+    "title": "Demande de contact",
+    "subtitle": "Avez-vous des questions ou souhaitez-vous prendre rendez-vous avec nos consultants commerciaux ? Remplissez le formulaire et nous vous recontacterons dans les plus brefs délais.",
+    "firstName": "Prénom",
+    "lastName": "Nom",
+    "email": "Email",
+    "phone": "Numéro de téléphone",
+    "notes": "Notes ou demandes particulières",
+    "placeholders": {
+      "firstName": "Jean",
+      "lastName": "Dupont",
+      "email": "jean.dupont@example.com",
+      "phone": "+41 78 123 45 67",
+      "notes": "Décrivez vos besoins ou précisez si vous préférez être contacté à un moment particulier..."
+    },
+    "submit": "Envoyer la demande",
+    "submitting": "Envoi en cours...",
+    "success": "Demande envoyée avec succès ! Nous vous contacterons dans les 24 heures pour fixer un rendez-vous.",
+    "error": "Une erreur s'est produite. Veuillez réessayer plus tard.",
+    "privacy": "En soumettant ce formulaire, vous acceptez le traitement de vos données personnelles selon notre",
+    "privacyLink": "politique de confidentialité"
+  }
+}

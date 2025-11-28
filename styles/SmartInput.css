@@ -1,0 +1,204 @@
+/* ============================================
+   SMART INPUT COMPONENT
+   ============================================ */
+
+.smart-input {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  margin-bottom: var(--space-5);
+  transition: all var(--transition-fast);
+}
+
+.smart-input.focused {
+  transform: scale(1.005);
+}
+
+.smart-input-label {
+  font-size: var(--text-body-sm);
+  font-weight: 600;
+  color: var(--primary-navy);
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.required-indicator {
+  color: var(--error-red);
+  font-size: var(--text-body);
+  margin-left: 2px;
+}
+
+.tooltip-trigger {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  background: var(--neutral-200);
+  color: var(--neutral-600);
+  border-radius: 50%;
+  cursor: help;
+  transition: all var(--transition-fast);
+  flex-shrink: 0;
+}
+
+.tooltip-trigger:hover {
+  background: var(--service-creditizia);
+  color: var(--white);
+  transform: scale(1.1);
+}
+
+.tooltip-content {
+  position: absolute;
+  bottom: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--primary-navy);
+  color: var(--white);
+  padding: var(--space-3) var(--space-4);
+  border-radius: var(--radius-md);
+  font-size: var(--text-body-sm);
+  line-height: 1.5;
+  white-space: normal;
+  max-width: 280px;
+  box-shadow: var(--shadow-lg);
+  z-index: 1000;
+  pointer-events: none;
+}
+
+.tooltip-content::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 6px solid transparent;
+  border-top-color: var(--primary-navy);
+}
+
+/* Input wrapper */
+.smart-input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input-icon {
+  position: absolute;
+  left: var(--space-3);
+  color: var(--neutral-500);
+  display: flex;
+  align-items: center;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.smart-input-field {
+  width: 100%;
+  padding: var(--space-3) var(--space-4);
+  font-size: var(--text-body);
+  color: var(--primary-navy);
+  background: var(--white);
+  border: 2px solid var(--neutral-300);
+  border-radius: var(--radius-md);
+  transition: all var(--transition-fast);
+  outline: none;
+}
+
+.smart-input-field.with-icon {
+  padding-left: calc(var(--space-10));
+}
+
+.smart-input-field.with-currency {
+  padding-right: calc(var(--space-10));
+}
+
+.smart-input-field:focus {
+  border-color: var(--service-creditizia);
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
+}
+
+.smart-input-field::placeholder {
+  color: var(--neutral-400);
+}
+
+.input-currency {
+  position: absolute;
+  right: var(--space-4);
+  font-size: var(--text-body);
+  font-weight: 600;
+  color: var(--neutral-500);
+  pointer-events: none;
+}
+
+.input-validation-icon {
+  position: absolute;
+  right: var(--space-3);
+  display: flex;
+  align-items: center;
+}
+
+.input-validation-icon.success {
+  color: var(--success-green);
+}
+
+.input-validation-icon.error {
+  color: var(--error-red);
+}
+
+/* States */
+.smart-input.error .smart-input-field {
+  border-color: var(--error-red);
+  background: rgba(220, 38, 38, 0.03);
+}
+
+.smart-input.error .smart-input-field:focus {
+  box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.1);
+}
+
+.smart-input.valid .smart-input-field {
+  border-color: var(--success-green);
+}
+
+/* Messages */
+.smart-input-hint,
+.smart-input-success,
+.smart-input-warning,
+.smart-input-error {
+  font-size: var(--text-body-xs);
+  margin-top: var(--space-1);
+  line-height: 1.4;
+}
+
+.smart-input-hint {
+  color: var(--neutral-600);
+}
+
+.smart-input-success {
+  color: var(--success-green);
+  font-weight: 500;
+}
+
+.smart-input-warning {
+  color: #f59e0b;
+  font-weight: 500;
+}
+
+.smart-input-error {
+  color: var(--error-red);
+  font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .tooltip-content {
+    max-width: 220px;
+    font-size: var(--text-body-xs);
+  }
+
+  .smart-input-field {
+    font-size: var(--text-body-sm);
+  }
+}

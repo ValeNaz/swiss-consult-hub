@@ -1,0 +1,627 @@
+{
+  "common": {
+    "firstName": "Prénom",
+    "lastName": "Nom",
+    "email": "Email",
+    "phone": "Numéro de téléphone",
+    "notes": "Notes ou demandes particulières",
+    "description": "Description",
+    "message": "Message",
+    "submit": "Envoyer la demande",
+    "submitting": "Envoi en cours...",
+    "successMessage": "Demande envoyée avec succès ! Nous vous contacterons dans les 24 heures pour fixer un rendez-vous.",
+    "errorMessage": "Une erreur s'est produite. Veuillez réessayer plus tard.",
+    "privacyText": "En soumettant ce formulaire, vous acceptez le traitement de vos données personnelles selon notre",
+    "privacyLink": "politique de confidentialité",
+    "placeholders": {
+      "firstName": "Jean",
+      "lastName": "Dupont",
+      "email": "jean.dupont@example.com",
+      "phone": "+41 78 123 45 67",
+      "notes": "Décrivez vos besoins ou précisez si vous préférez être contacté à un moment particulier...",
+      "message": "Décrivez vos besoins..."
+    }
+  },
+  "contact": {
+    "title": "Demande de contact",
+    "subtitle": "Vous avez des questions ou souhaitez prendre rendez-vous avec nos consultants d'affaires ? Remplissez le formulaire et nous vous recontacterons dans les plus brefs délais."
+  },
+  "insurance": {
+    "title": "Demande de conseil en assurance",
+    "subtitle": "Remplissez le formulaire pour recevoir un conseil personnalisé",
+    "insuranceType": "Type d'assurance",
+    "currentInsurance": "Avez-vous déjà une assurance ?",
+    "yes": "Oui",
+    "no": "Non",
+    "currentProvider": "Fournisseur actuel",
+    "specificNeeds": "Besoins spécifiques",
+    "types": {
+      "health": "Assurance maladie",
+      "life": "Assurance vie",
+      "property": "Assurance immobilière",
+      "liability": "Assurance responsabilité civile",
+      "vehicle": "Assurance véhicule",
+      "other": "Autre"
+    },
+    "placeholders": {
+      "currentProvider": "Ex. Helvetia, Zurich, AXA...",
+      "specificNeeds": "Décrivez vos besoins en matière d'assurance..."
+    }
+  },
+  "realEstate": {
+    "title": "Demande de service immobilier",
+    "subtitle": "Remplissez le formulaire pour recevoir une assistance personnalisée",
+    "serviceType": "Type de service",
+    "propertyType": "Type de bien",
+    "location": "Zone préférée",
+    "budget": "Budget (CHF)",
+    "types": {
+      "buy": "Achat",
+      "rent": "Location",
+      "sell": "Vente",
+      "invest": "Investissement",
+      "management": "Gestion immobilière"
+    },
+    "propertyTypes": {
+      "apartment": "Appartement",
+      "house": "Maison",
+      "commercial": "Bien commercial",
+      "land": "Terrain",
+      "other": "Autre"
+    },
+    "placeholders": {
+      "location": "Ex. Zurich, Lugano, Genève...",
+      "budget": "Ex. 500000"
+    }
+  },
+  "job": {
+    "title": "Demande de conseil en emploi",
+    "subtitle": "Remplissez le formulaire pour recevoir un soutien dans votre recherche d'emploi",
+    "currentPosition": "Poste actuel",
+    "desiredPosition": "Poste souhaité",
+    "experience": "Années d'expérience",
+    "industry": "Secteur",
+    "availability": "Disponibilité",
+    "cvUpload": "Téléchargez votre CV (facultatif)",
+    "cv": "Curriculum Vitae",
+    "coverLetter": "Lettre de motivation",
+    "idDocument": "Carte d'identité",
+    "residencePermit": "Permis de séjour",
+    "chooseFile": "Choisir un fichier",
+    "optional": "(facultatif)",
+    "noFileSelected": "Aucun fichier sélectionné",
+    "fileHint": "Format : PDF (max 10MB)",
+    "availabilityOptions": {
+      "immediate": "Immédiate",
+      "within_month": "Dans un mois",
+      "within_3months": "Dans 3 mois",
+      "flexible": "Flexible"
+    },
+    "placeholders": {
+      "currentPosition": "Ex. Chef de projet",
+      "desiredPosition": "Ex. Chef de projet senior",
+      "experience": "Ex. 5",
+      "industry": "Ex. IT, Finance, Santé...",
+      "notes": "Indiquez le poste souhaité, la disponibilité, les compétences..."
+    }
+  },
+  "legal": {
+    "title": "Demande de conseil juridique",
+    "subtitle": "Remplissez le formulaire pour recevoir une assistance juridique",
+    "legalArea": "Domaine juridique",
+    "urgency": "Urgence",
+    "caseDescription": "Description du cas",
+    "areas": {
+      "select": "Sélectionner le domaine",
+      "contracts": "Droit des contrats",
+      "disputes": "Litiges et contentieux",
+      "family": "Droit de la famille",
+      "corporate": "Droit des sociétés",
+      "real_estate": "Droit immobilier",
+      "labor": "Droit du travail",
+      "other": "Autre"
+    },
+    "urgencyOptions": {
+      "low": "Faible",
+      "medium": "Moyenne",
+      "high": "Élevée",
+      "urgent": "Urgente"
+    },
+    "placeholders": {
+      "caseDescription": "Décrivez brièvement votre cas juridique..."
+    }
+  },
+  "medical": {
+    "title": "Demande de conseil médical",
+    "subtitle": "Remplissez le formulaire pour recevoir une assistance dans la recherche de spécialistes",
+    "specialistType": "Type de spécialiste",
+    "medicalArea": "Domaine médical",
+    "medicalBranch": "Branche médicale",
+    "insuranceType": "Type d'assurance",
+    "insuranceCompany": "Compagnie d'assurance",
+    "preferredLocation": "Zone préférée",
+    "insuranceProvider": "Caisse maladie",
+    "specialistTypes": {
+      "general": "Médecin généraliste",
+      "dentist": "Dentiste",
+      "ophthalmologist": "Ophtalmologue",
+      "physiotherapist": "Physiothérapeute",
+      "specialist": "Spécialiste",
+      "clinic": "Clinique/Hôpital"
+    },
+    "branches": {
+      "select": "Sélectionner la branche médicale",
+      "orthopedics": "Orthopédie",
+      "dentistry": "Dentisterie",
+      "urology": "Urologie",
+      "generalMedicine": "Médecine Générale"
+    },
+    "insuranceTypes": {
+      "select": "Sélectionner le type",
+      "base": "Base",
+      "supplementary": "Complémentaire"
+    },
+    "insuranceCompanies": {
+      "select": "Sélectionner la compagnie",
+      "css": "CSS Assurance",
+      "swica": "Swica",
+      "helsana": "Helsana",
+      "sanitas": "Sanitas",
+      "concordia": "Concordia",
+      "visana": "Visana",
+      "groupeMutuel": "Groupe Mutuel",
+      "assura": "Assura",
+      "other": "Autre"
+    },
+    "placeholders": {
+      "medicalArea": "Ex. Cardiologie, Dermatologie...",
+      "preferredLocation": "Ex. Zurich, Berne...",
+      "insuranceProvider": "Ex. Helsana, CSS, Swica...",
+      "notes": "Décrivez les symptômes ou la raison de la visite..."
+    }
+  },
+  "credit": {
+    "title": "Demande de conseil en crédit",
+    "subtitle": "Remplissez le formulaire pour recevoir un conseil financier",
+    "creditType": "Type de crédit",
+    "amount": "Montant demandé (CHF)",
+    "purpose": "Objectif",
+    "monthlyIncome": "Revenu mensuel (CHF)",
+    "types": {
+      "personal": "Prêt personnel",
+      "mortgage": "Hypothèque",
+      "vehicle": "Leasing véhicule",
+      "business": "Prêt commercial",
+      "other": "Autre"
+    },
+    "placeholders": {
+      "amount": "Ex. 50000",
+      "purpose": "Ex. Achat voiture, rénovation...",
+      "monthlyIncome": "Ex. 6000"
+    }
+  },
+  "tax": {
+    "title": "Déclaration d'impôts",
+    "description": "Confiez votre déclaration d'impôts à nos experts fiscaux. Remplissez le formulaire avec vos données et téléchargez les documents nécessaires.",
+    "subtitle": "Remplissez le formulaire pour recevoir un soutien dans la gestion fiscale",
+    "serviceType": "Type de service",
+    "taxYear": "Année fiscale",
+    "entityType": "Type d'entité",
+    "firstName": "Prénom",
+    "lastName": "Nom",
+    "dateOfBirth": "Date de naissance",
+    "placeOfBirth": "Lieu de naissance",
+    "nationality": "Nationalité",
+    "address": "Adresse",
+    "city": "Ville",
+    "postalCode": "Code postal",
+    "canton": "Canton",
+    "taxId": "Numéro AVS",
+    "maritalStatus": "État civil",
+    "employmentStatus": "Statut professionnel",
+    "annualIncome": "Revenu annuel (CHF)",
+    "sections": {
+      "personal": "Données Personnelles",
+      "contact": "Coordonnées",
+      "fiscal": "Données Fiscales",
+      "documents": "Documents"
+    },
+    "services": {
+      "declaration": "Déclaration d'impôts",
+      "planning": "Planification fiscale",
+      "review": "Révision de déclaration",
+      "business": "Fiscalité d'entreprise",
+      "other": "Autre"
+    },
+    "entityTypes": {
+      "individual": "Particulier",
+      "selfEmployed": "Indépendant",
+      "company": "Entreprise"
+    },
+    "cantons": {
+      "select": "Sélectionner le canton",
+      "TI": "Tessin",
+      "ZH": "Zurich",
+      "BE": "Berne",
+      "GE": "Genève",
+      "VD": "Vaud",
+      "VS": "Valais",
+      "GR": "Grisons",
+      "AG": "Argovie",
+      "SG": "Saint-Gall",
+      "LU": "Lucerne",
+      "BS": "Bâle-Ville",
+      "BL": "Bâle-Campagne",
+      "SO": "Soleure",
+      "FR": "Fribourg",
+      "NE": "Neuchâtel",
+      "JU": "Jura",
+      "SZ": "Schwyz",
+      "ZG": "Zoug",
+      "SH": "Schaffhouse",
+      "AR": "Appenzell Rhodes-Extérieures",
+      "AI": "Appenzell Rhodes-Intérieures",
+      "TG": "Thurgovie",
+      "UR": "Uri",
+      "OW": "Obwald",
+      "NW": "Nidwald",
+      "GL": "Glaris"
+    },
+    "maritalStatuses": {
+      "select": "Sélectionner",
+      "single": "Célibataire",
+      "married": "Marié(e)",
+      "divorced": "Divorcé(e)",
+      "widowed": "Veuf/Veuve",
+      "registeredPartnership": "Partenariat enregistré"
+    },
+    "employmentStatuses": {
+      "select": "Sélectionner",
+      "employed": "Salarié(e)",
+      "selfEmployed": "Indépendant(e)",
+      "unemployed": "Au chômage",
+      "retired": "Retraité(e)",
+      "student": "Étudiant(e)"
+    },
+    "documents": {
+      "label": "Documents",
+      "description": "Joindre certificats, extraits de compte...",
+      "chooseFiles": "Choisir des fichiers",
+      "filesSelected": "{{count}} fichiers",
+      "noFiles": "Aucun fichier",
+      "hint": "PDF (max 10MB)",
+      "removeFile": "Supprimer"
+    },
+    "placeholders": {
+      "taxYear": "Ex. 2024",
+      "firstName": "Jean",
+      "lastName": "Dupont",
+      "placeOfBirth": "Genève",
+      "nationality": "Suisse",
+      "address": "Rue exemple 123",
+      "city": "Genève",
+      "postalCode": "1200",
+      "taxId": "756.xxxx.xxxx.xx",
+      "annualIncome": "80000"
+    }
+  },
+  "documentReminder": {
+    "title": "Documents Requis",
+    "subtitle": "Assurez-vous d'avoir ces documents prêts",
+    "compactHint": "Gardez-les à portée de main : vous pourrez les télécharger à l'étape finale du formulaire.",
+    "completed": "Vous avez complété la simulation !",
+    "completedDesc": "Pour compléter votre demande de prêt, assurez-vous d'avoir ces documents à portée de main :",
+    "immediateSupport": "Support Immédiat",
+    "documents": {
+      "identity": "Document d'Identité",
+      "identityDesc": "Carte d'identité ou passeport valide",
+      "taxCode": "Code Fiscal",
+      "taxCodeDesc": "Document fiscal suisse ou permis de séjour",
+      "income": "Documents de Revenu",
+      "incomeDesc": "3 derniers bulletins de salaire ou déclaration d'impôts",
+      "banking": "Coordonnées Bancaires",
+      "bankingDesc": "IBAN et nom du titulaire du compte"
+    },
+    "attachments": {
+      "title": "Documents à Joindre au Formulaire",
+      "items": [
+        "EXTRAIT DE POURSUITES (résidence actuelle)",
+        "EXTRAIT DE POURSUITES (résidence précédente)",
+        "DOCUMENT PERSONNEL",
+        "PERMIS DE SÉJOUR",
+        "TROIS DERNIERS BULLETINS DE SALAIRE",
+        "CONTRAT DE TRAVAIL",
+        "CONTRAT DE LOCATION",
+        "POLICE D'ASSURANCE MALADIE",
+        "AUTHENTIFICATION DU PERMIS DE SÉJOUR",
+        "CONTRAT DE CRÉDIT (optionnel)"
+      ]
+    },
+    "tip": "Conseil : Avoir tous les documents prêts réduit le temps de traitement et augmente les chances d'approbation rapide."
+  },
+  "loanRequest": {
+    "title": "Demande de Prêt",
+    "step": "Étape",
+    "of": "/",
+    "simulatorLoaded": "Données de simulation chargées",
+    "loanAmount": "Montant demandé",
+    "idDocument": "Pièce d'identité",
+    "chooseFile": "Choisir un fichier",
+    "noFileSelected": "Aucun fichier sélectionné",
+    "fileHint": "Format accepté : PDF uniquement (max 10 Mo)",
+    "fileErrors": {
+      "tooLarge": "Le fichier dépasse la taille maximale de {{max}} Mo. Téléchargez un PDF plus léger.",
+      "invalidType": "Format non pris en charge. Seuls les fichiers PDF sont autorisés.",
+      "pending": "Corrigez les erreurs liées aux fichiers avant de continuer."
+    },
+    "duration": "Durée",
+    "months": "mois",
+    "estimatedPayment": "Mensualité estimée",
+    "errorTitle": "Veuillez remplir les champs obligatoires suivants :",
+    "validation": {
+      "salutationRequired": "La civilité est obligatoire",
+      "firstNameRequired": "Le prénom est obligatoire",
+      "firstNameInvalid": "Le prénom contient des caractères non valides ou est trop court",
+      "lastNameRequired": "Le nom est obligatoire",
+      "lastNameInvalid": "Le nom contient des caractères non valides ou est trop court",
+      "dobRequired": "La date de naissance est obligatoire",
+      "dobInvalid": "Vous devez avoir entre 18 et 100 ans",
+      "civilStatusRequired": "L'état civil est obligatoire",
+      "nationalityRequired": "La nationalité est obligatoire",
+      "areaCodeRequired": "L'indicatif est obligatoire",
+      "areaCodeInvalid": "L'indicatif doit être un code international valide (ex. +41)",
+      "phoneRequired": "Le numéro de téléphone est obligatoire",
+      "phoneInvalid": "Numéro de téléphone non valide (7-15 chiffres requis)",
+      "phoneTypeRequired": "Le type de téléphone est obligatoire",
+      "emailRequired": "L'adresse email est obligatoire",
+      "emailInvalid": "Veuillez saisir une adresse email valide",
+      "privacyRequired": "Vous devez accepter la politique de confidentialité",
+      "countryRequired": "Le pays est obligatoire",
+      "postalCodeRequired": "Le code postal est obligatoire",
+      "postalCodeInvalidCH": "Le code postal suisse doit comporter 4 chiffres",
+      "postalCodeInvalid": "Format de code postal non valide",
+      "cityRequired": "La ville est obligatoire",
+      "cityTooShort": "Le nom de la ville est trop court",
+      "streetRequired": "La rue est obligatoire",
+      "streetTooShort": "Le nom de la rue est trop court",
+      "houseNumberRequired": "Le numéro de maison est obligatoire",
+      "residenceMonthsRequired": "Les mois de résidence sont obligatoires",
+      "residenceMonthsInvalid": "Les mois de résidence doivent être entre 0 et 11",
+      "residenceYearsRequired": "Les années de résidence sont obligatoires",
+      "residenceYearsInvalid": "Les années de résidence doivent être un nombre valide",
+      "ownsHomeRequired": "Veuillez indiquer si vous possédez votre propre logement",
+      "additionalPhoneAreaCodeRequired": "Téléphone supplémentaire {{index}} : l'indicatif est obligatoire",
+      "additionalPhoneAreaCodeInvalid": "Téléphone supplémentaire {{index}} : format d'indicatif non valide",
+      "additionalPhoneNumberRequired": "Téléphone supplémentaire {{index}} : le numéro est obligatoire",
+      "additionalPhoneNumberInvalid": "Téléphone supplémentaire {{index}} : numéro non valide",
+      "additionalPhoneTypeRequired": "Téléphone supplémentaire {{index}} : le type est obligatoire",
+      "professionalSituationRequired": "La situation professionnelle est obligatoire",
+      "companyRequired": "Le nom de l'entreprise est obligatoire",
+      "companyTooShort": "Le nom de l'entreprise est trop court",
+      "employerStreetRequired": "La rue de l'employeur est obligatoire",
+      "employerStreetTooShort": "Le nom de la rue de l'employeur est trop court",
+      "employerHouseNumberRequired": "Le numéro de maison de l'employeur est obligatoire",
+      "employerPostalCodeRequired": "Le code postal de l'employeur est obligatoire",
+      "employerPostalCodeInvalid": "Code postal de l'employeur non valide (doit comporter 4 chiffres pour la Suisse)",
+      "employerCityRequired": "La ville de l'employeur est obligatoire",
+      "employerCityTooShort": "Le nom de la ville de l'employeur est trop court",
+      "employmentRelationshipRequired": "Le type de contrat est obligatoire",
+      "employmentMonthsRequired": "Les mois d'emploi sont obligatoires",
+      "employmentMonthsInvalid": "Les mois d'emploi doivent être entre 0 et 11",
+      "employmentYearsRequired": "Les années d'emploi sont obligatoires",
+      "employmentYearsInvalid": "Les années d'emploi doivent être un nombre valide",
+      "commutingMethodRequired": "Le moyen de transport est obligatoire",
+      "carNecessaryRequired": "Veuillez indiquer si la voiture est nécessaire",
+      "netMonthlyIncomeRequired": "Le revenu mensuel net est obligatoire",
+      "netMonthlyIncomeInvalid": "Le revenu mensuel net doit être un nombre positif valide",
+      "netMonthlyIncomeTooLow": "Le revenu mensuel net semble trop bas (minimum CHF 1000)",
+      "netMonthlyIncomeTooHigh": "Le revenu mensuel net semble irréaliste",
+      "has13thSalaryRequired": "Veuillez indiquer si vous recevez un 13e mois",
+      "hasBonusRequired": "Veuillez indiquer si vous recevez des primes ou gratifications",
+      "hasSecondaryEmploymentRequired": "Veuillez indiquer si vous avez un emploi secondaire",
+      "hasAdditionalIncomeRequired": "Veuillez indiquer si vous avez des revenus supplémentaires",
+      "beneficialOwnershipRequired": "La propriété effective est obligatoire",
+      "housingSituationRequired": "La situation de logement est obligatoire",
+      "housingCostsRequired": "Les frais de logement sont obligatoires",
+      "housingCostsInvalid": "Les frais de logement doivent être un nombre positif valide",
+      "housingCostsTooLow": "Les frais de logement semblent trop bas (minimum CHF 100)",
+      "housingCostsTooHigh": "Les frais de logement semblent irréalistes",
+      "hasChildrenRequired": "Veuillez indiquer si des enfants vivent dans le ménage",
+      "paysAlimonyRequired": "Veuillez indiquer si vous payez une pension alimentaire",
+      "heavyLaborRequired": "Veuillez indiquer si vous effectuez un travail pénible/par équipes",
+      "hasObligationsRequired": "Veuillez indiquer si vous avez des obligations financières",
+      "monthlyInstalmentsRequired": "Les mensualités sont obligatoires lorsque vous avez des obligations financières",
+      "monthlyInstalmentsInvalid": "Les mensualités doivent être un nombre positif valide",
+      "monthlyInstalmentsTooHigh": "Le montant des mensualités semble irréaliste",
+      "debtEnforcementsRequired": "Veuillez indiquer les poursuites pour dettes",
+      "creditProtectionInsuranceRequired": "Veuillez indiquer votre préférence pour l'assurance protection crédit"
+    },
+    "messages": {
+      "success": "Demande envoyée avec succès ! Nous vous contacterons prochainement.",
+      "error": "Erreur lors de l'envoi de la demande",
+      "errorGeneric": "Erreur lors de l'envoi de la demande. Veuillez réessayer."
+    },
+    "buttons": {
+      "next": "Suivant",
+      "previous": "Précédent",
+      "submit": "Envoyer la Demande"
+    },
+    "steps": {
+      "personalDetails": "Données Personnelles",
+      "occupationIncome": "Profession et Revenus",
+      "livingExpenses": "Logement et Dépenses",
+      "additionalQuestions": "Questions Supplémentaires et Informations sur le Crédit",
+      "creditProtection": "Assurance Protection Crédit",
+      "documents": "Liste des documents à télécharger"
+    },
+    "sections": {
+      "personalData": "Données personnelles",
+      "contacts": "Coordonnées",
+      "residenceAddress": "Adresse de résidence",
+      "professionalSituation": "Situation professionnelle",
+      "employerData": "Données de l'employeur",
+      "income": "Revenus",
+      "loanRepayment": "Remboursement du prêt"
+    },
+    "fields": {
+      "salutation": "Civilité",
+      "firstName": "Prénom",
+      "lastName": "Nom",
+      "dateOfBirth": "Date de naissance",
+      "civilStatus": "État civil",
+      "nationality": "Nationalité",
+      "areaCode": "Indicatif",
+      "telephoneNumber": "Numéro de téléphone",
+      "telephoneType": "Type de téléphone",
+      "additionalPhones": "Numéros supplémentaires",
+      "addPhone": "+ Ajouter un autre numéro de téléphone",
+      "removePhone": "Retirer le numéro",
+      "emailAddress": "Adresse email",
+      "privacyStatement": "J'ai lu la déclaration de confidentialité dans son intégralité et je l'accepte.",
+      "country": "Pays",
+      "postalCode": "Code postal",
+      "city": "Ville",
+      "street": "Rue",
+      "houseNumber": "N°",
+      "residenceDuration": "Depuis combien de temps vivez-vous à votre adresse actuelle ?",
+      "residenceMonths": "Mois",
+      "residenceYears": "Années",
+      "ownsHome": "Propriété résidentielle – Possédez-vous votre propre logement ?",
+      "professionalSituation": "Situation professionnelle",
+      "company": "Entreprise",
+      "employmentRelationship": "Type de contrat",
+      "employmentDuration": "Depuis combien de temps êtes-vous employé par votre employeur actuel ?",
+      "employmentMonths": "Mois d'emploi",
+      "employmentYears": "Années d'emploi",
+      "commutingMethod": "Comment vous rendez-vous au travail ?",
+      "carNecessary": "La voiture est-elle nécessaire en raison du manque de moyens de transport alternatifs ou pour des raisons de santé ?",
+      "netMonthlyIncome": "Revenu mensuel net (CHF)",
+      "has13thSalary": "Recevez-vous un 13e mois ?",
+      "hasBonus": "Recevez-vous des primes ou des gratifications ?",
+      "hasSecondaryEmployment": "Avez-vous un emploi secondaire/d'autres employeurs ?",
+      "hasAdditionalIncome": "Recevez-vous des revenus supplémentaires (pension alimentaire, prestations partielles, revenus locatifs, etc.) ?",
+      "beneficialOwnership": "Propriété effective – Veuillez indiquer qui possède les actifs que vous utilisez pour payer les mensualités du prêt :",
+      "housingSituation": "Situation de logement",
+      "housingCosts": "Frais de logement/loyer (par mois, charges comprises) (CHF)",
+      "hasChildren": "Des enfants vivent-ils dans le même ménage ?",
+      "paysAlimony": "Payez-vous une pension alimentaire ?",
+      "heavyLabor": "Effectuez-vous un travail pénible, un travail par équipes ou un travail de nuit ?",
+      "hasObligations": "Avez-vous des obligations financières envers votre employeur ou envers une personne privée ?",
+      "monthlyInstalments": "Mensualités (CHF)",
+      "debtEnforcements": "Poursuites pour dettes au cours des trois dernières années",
+      "creditProtectionInsurance": "Assurance protection crédit – acceptation",
+      "creditProtectionDescription": "Je souhaite souscrire une garantie de crédit pour le prêt et j'ai lu, compris et accepte les conditions légales énoncées ci-dessus.",
+      "comments": "Commentaires/questions sur la demande de financement"
+    },
+    "options": {
+      "salutations": {
+        "mr": "M.",
+        "ms": "Mme"
+      },
+      "civilStatus": {
+        "single": "Célibataire",
+        "married": "Marié(e) / partenariat enregistré",
+        "widowed": "Veuf/Veuve",
+        "divorced": "Divorcé(e)",
+        "separated": "Séparé(e) légalement"
+      },
+      "countries": {
+        "switzerland": "Suisse",
+        "italy": "Italie",
+        "germany": "Allemagne",
+        "france": "France",
+        "austria": "Autriche",
+        "other": "Autre"
+      },
+      "phoneTypes": {
+        "mobile": "Mobile",
+        "private": "Privé",
+        "business": "Professionnel"
+      },
+      "yesNo": {
+        "yes": "Oui",
+        "no": "Non"
+      },
+      "professionalSituations": {
+        "employed": "Salarié(e)",
+        "selfEmployed": "Indépendant(e)",
+        "pensionerOld": "Retraité(e) avec AVS",
+        "pensionerDisability": "Retraité(e) avec assurance invalidité",
+        "housewife": "Femme/Homme au foyer"
+      },
+      "employmentRelationships": {
+        "permanent": "Permanent, pas sous préavis de résiliation",
+        "temporary": "Temporaire",
+        "fixedTerm": "Contrat à durée déterminée"
+      },
+      "commutingMethods": {
+        "car": "Voiture",
+        "public": "Transports publics",
+        "motorcycle": "Moto",
+        "bicycle": "Vélo",
+        "onFoot": "À pied"
+      },
+      "beneficialOwnership": {
+        "mine": "Les actifs m'appartiennent",
+        "other": "Les actifs appartiennent à une autre personne"
+      },
+      "housingSituations": {
+        "partner": "Avec partenaire",
+        "alone": "Seul(e)",
+        "shared": "En colocation",
+        "withParents": "Avec les parents",
+        "singleParent": "Parent célibataire"
+      },
+      "debtEnforcements": {
+        "zero": "0",
+        "one": "1",
+        "two": "2",
+        "three": "3",
+        "more": "Plus de 3"
+      }
+    },
+    "placeholders": {
+      "firstName": "Jean",
+      "lastName": "Dupont",
+      "areaCode": "+41",
+      "telephoneNumber": "78 123 45 67",
+      "emailAddress": "jean.dupont@example.com",
+      "postalCodeCH": "8000",
+      "postalCodeGeneric": "Code postal",
+      "city": "Zurich",
+      "street": "Bahnhofstrasse",
+      "houseNumber": "10",
+      "netMonthlyIncome": "5000",
+      "housingCosts": "1500",
+      "monthlyInstalments": "500",
+      "comments": "Saisissez vos commentaires ou questions..."
+    },
+    "subsections": {
+      "mainIncome": "Votre revenu principal",
+      "secondaryEmployment": "Emploi secondaire/autre employeur",
+      "additionalIncome": "Revenus supplémentaires"
+    },
+    "documents": {
+      "betreibungsauszugCurrent": "EXTRAIT DE POURSUITES (résidence actuelle)",
+      "betreibungsauszugPrevious": "EXTRAIT DE POURSUITES (résidence précédente si moins de trois ans)",
+      "documentoPersonale": "DOCUMENT PERSONNEL – Carte d'identité ou Passeport",
+      "permessoSoggiorno": "PERMIS DE SÉJOUR",
+      "bustePaga": "TROIS DERNIERS BULLETINS DE SALAIRE",
+      "contrattoLavoro": "CONTRAT DE TRAVAIL",
+      "contrattoAffitto": "CONTRAT DE LOCATION",
+      "polizzaAssicurazione": "POLICE D'ASSURANCE MALADIE",
+      "autenticaPermesso": "AUTHENTIFICATION DU PERMIS DE SÉJOUR (au bureau de poste)",
+      "contrattoCredito": "Contrat de crédit ou de leasing en cours (champ optionnel)",
+      "fileNote": "Taille maximale 10 Mo",
+      "betreibungsauszugCurrentRequired": "EXTRAIT DE POURSUITES (résidence actuelle) est obligatoire",
+      "betreibungsauszugPreviousRequired": "EXTRAIT DE POURSUITES (résidence précédente) est obligatoire",
+      "documentoPersonaleRequired": "DOCUMENT PERSONNEL est obligatoire",
+      "permessoSoggiornoRequired": "PERMIS DE SÉJOUR est obligatoire",
+      "bustePagaRequired": "TROIS DERNIERS BULLETINS DE SALAIRE sont obligatoires",
+      "contrattoLavoroRequired": "CONTRAT DE TRAVAIL est obligatoire",
+      "contrattoAffittoRequired": "CONTRAT DE LOCATION est obligatoire",
+      "polizzaAssicurazioneRequired": "POLICE D'ASSURANCE MALADIE est obligatoire",
+      "autenticaPermessoRequired": "AUTHENTIFICATION DU PERMIS DE SÉJOUR est obligatoire"
+    }
+  }
+}

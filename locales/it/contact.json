@@ -1,0 +1,129 @@
+{
+  "hero": {
+    "eyebrow": "Contattaci",
+    "title": "Siamo qui per aiutarti",
+    "subtitle": "Contattaci per ricevere una consulenza personalizzata. Il nostro team è disponibile per rispondere a tutte le tue domande e guidarti verso la soluzione migliore per le tue esigenze."
+  },
+  "quickContact": {
+    "email": "Email",
+    "phone": "Telefono",
+    "locations": "Sedi",
+    "hours": "Orari",
+    "offices": {
+      "emmenbrucke": {
+        "name": "Emmenbrücke (Sede legale)",
+        "address": "Spinnereistrasse 5, 6220"
+      },
+      "zurich": {
+        "name": "Zurigo",
+        "address": "Thurgauerstrasse 117, 8152 Opfikon"
+      },
+      "lugano": {
+        "name": "Lugano",
+        "address": "Via delle Scuole 3B, 6900 Paradiso"
+      },
+      "lucerne": {
+        "name": "Lucerna",
+        "address": "Sagirain 4, 6233 Büron"
+      }
+    },
+    "schedule": {
+      "weekdays": "Lunedì - Venerdì",
+      "weekdaysHours": "08:30 - 18:00",
+      "saturday": "Sabato",
+      "saturdayHours": "Su appuntamento"
+    }
+  },
+  "subjects": {
+    "selectPlaceholder": "Seleziona un argomento",
+    "credit": "Consulenza creditizia",
+    "insurance": "Consulenza assicurativa",
+    "realEstate": "Consulenza immobiliare",
+    "employment": "Consulenza lavorativa",
+    "legal": "Consulenza legale",
+    "medical": "Consulenza medica",
+    "tax": "Consulenza fiscale",
+    "other": "Altro"
+  },
+  "contactForm": {
+    "title": "Inviaci un messaggio",
+    "subtitle": "Compila il form e ti risponderemo entro 24 ore lavorative",
+    "labels": {
+      "fullName": "Nome e cognome*",
+      "email": "Email*",
+      "phone": "Telefono*",
+      "company": "Azienda (opzionale)",
+      "subject": "Argomento*",
+      "message": "Messaggio*"
+    },
+    "placeholders": {
+      "fullName": "Mario Rossi",
+      "email": "mario@example.com",
+      "phone": "+41 41 242 0442",
+      "company": "La tua azienda",
+      "message": "Descrivi come possiamo aiutarti..."
+    },
+    "buttons": {
+      "submit": "Invia messaggio",
+      "submitting": "Invio in corso..."
+    },
+    "success": {
+      "title": "Messaggio inviato con successo!",
+      "message": "Grazie per averci contattato. Il nostro team ti risponderà entro 24 ore lavorative."
+    }
+  },
+  "infoCards": {
+    "call": {
+      "title": "Chiama direttamente",
+      "description": "Preferisci parlare con qualcuno? Chiama il nostro team durante gli orari di ufficio."
+    },
+    "email": {
+      "title": "Invia un'email",
+      "description": "Contattaci via email per una comunicazione più dettagliata."
+    },
+    "visit": {
+      "title": "Visita i nostri uffici",
+      "description": "Vieni a trovarci presso una delle nostre sedi in Svizzera.",
+      "offices": {
+        "emmenbrucke": "Emmenbrücke",
+        "emmenbruckeAddress": "Spinnereistrasse 5",
+        "zurich": "Zurigo",
+        "zurichAddress": "Thurgauerstrasse 117"
+      }
+    },
+    "hours": {
+      "title": "Orari di apertura",
+      "weekdays": "Lunedì - Venerdì",
+      "weekdaysHours": "08:30 - 18:00",
+      "saturday": "Sabato",
+      "saturdayHours": "Su appuntamento"
+    }
+  },
+  "cta": {
+    "title": "Non trovi quello che cerchi?",
+    "description": "Il nostro team di esperti è pronto a guidarti verso la soluzione più adatta alle tue esigenze.",
+    "button": "Torna alla home"
+  },
+  "form": {
+    "title": "Richiesta di contatto",
+    "subtitle": "Hai domande o desideri fissare un appuntamento con i nostri consulenti commerciali? Compila il modulo e ti ricontatteremo al più presto.",
+    "firstName": "Nome",
+    "lastName": "Cognome",
+    "email": "Email",
+    "phone": "Numero di telefono",
+    "notes": "Note o richieste particolari",
+    "placeholders": {
+      "firstName": "Mario",
+      "lastName": "Rossi",
+      "email": "mario.rossi@example.com",
+      "phone": "+41 78 123 45 67",
+      "notes": "Descrivi le tue esigenze o specifica se preferisci essere contattato in un orario particolare..."
+    },
+    "submit": "Invia richiesta",
+    "submitting": "Invio in corso...",
+    "success": "Richiesta inviata con successo! Ti contatteremo entro 24 ore per fissare un appuntamento.",
+    "error": "Si è verificato un errore. Riprova più tardi.",
+    "privacy": "Inviando questo modulo, accetti il trattamento dei tuoi dati personali secondo la nostra",
+    "privacyLink": "informativa sulla privacy"
+  }
+}

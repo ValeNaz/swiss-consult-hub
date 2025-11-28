@@ -1,0 +1,264 @@
+{
+  "page": {
+    "title": "Nos services",
+    "subtitle": "Avec une approche intégrée et coordonnée, Swiss Consult Hub accompagne les particuliers et les entreprises dans la gestion de dossiers complexes, assurant gouvernance et résultats tangibles dans chaque domaine.",
+    "allServices": "Tous les services",
+    "filter": {
+      "all": "Tous les services ({{count}})",
+      "privati": "Particuliers",
+      "pmi": "PME",
+      "aziende": "Entreprises"
+    },
+    "noResults": "Aucun service trouvé pour ce filtre.",
+    "showAll": "Afficher tous les services",
+    "support": {
+      "title": "Besoin d'aide ?",
+      "email": "Écrivez-nous à",
+      "phone": "Ou appelez-nous au"
+    },
+    "mobileMenu": "Tous les services",
+    "navigation": "Navigation des services",
+    "moreInfo": "En savoir plus"
+  },
+  "targetAudience": {
+    "privati": "Particuliers",
+    "pmi": "PME",
+    "aziende": "Entreprises"
+  },
+  "detail": {
+    "notFound": "Service non trouvé",
+    "notFoundDesc": "La page que vous recherchez n'est pas disponible.",
+    "backToServices": "Retour aux services",
+    "immediateSupport": "Support immédiat",
+    "overview": "Aperçu",
+    "contactForDetails": "Contactez-nous pour recevoir un plan personnalisé et connaître en détail les activités de notre équipe.",
+    "howWeWork": {
+      "title": "Comment nous travaillons",
+      "points": [
+        "Analyse initiale sans engagement pour définir les priorités et les résultats attendus.",
+        "Équipe dédiée avec chef de projet responsable des activités et des suivis.",
+        "Rapports d'avancement et recommandations opérationnelles partagés avec le client."
+      ]
+    },
+    "usefulDocuments": {
+      "title": "Documents utiles",
+      "checklist": "Checklist d'onboarding et modèles de collecte de données disponibles : écrivez-nous pour les recevoir.",
+      "call": "Nous pouvons organiser un appel de présentation dans les 48 heures ouvrables."
+    },
+    "creditCalculator": {
+      "eyebrow": "Calculateur de crédit",
+      "title": "Simulez votre prêt",
+      "subtitle": "Utilisez notre calculateur pour voir instantanément les mensualités en fonction de vos besoins et de votre situation"
+    },
+    "calculator": {
+      "intro": "Utilisez ce calculateur de prêt pour comparer différents montants et durées. Vous pouvez simuler la présence d'une garantie de crédit et la propriété d'un logement.",
+      "labels": {
+        "desiredCredit": "Crédit souhaité",
+        "duration": "Durée du prêt",
+        "wantGuarantee": "Souhaitez-vous une garantie de crédit ?",
+        "ownProperty": "Êtes-vous propriétaire de votre logement ?",
+        "monthlyPayment": "Mensualité estimée",
+        "requiredDocuments": "Documents nécessaires"
+      },
+      "tooltips": {
+        "amount": "Montant du prêt que vous souhaitez demander, de CHF 5'000 à CHF 250'000",
+        "duration": "Période de remboursement du prêt, de 6 à 84 mois",
+        "guarantee": "La garantie de crédit protège le prêt en cas de difficultés de remboursement",
+        "property": "Être propriétaire d'un logement peut améliorer les conditions du prêt"
+      },
+      "hints": {
+        "amountRange": "Min CHF 5'000 - Max CHF 250'000",
+        "durationRange": "Min 6 mois - Max 84 mois",
+        "betterRates": "Avec la propriété immobilière, vous obtenez des taux plus avantageux"
+      },
+      "values": {
+        "yes": "Oui",
+        "no": "Non",
+        "chf": "CHF {{value}}",
+        "months": "{{count}} mois",
+        "to": "à"
+      },
+      "results": {
+        "interestRateFrom": "Taux d'intérêt annuel effectif de {{rate}} %",
+        "guaranteeFee": "Quote-part garantie de crédit : {{fee}}",
+        "totalCost": "Coût total du prêt",
+        "totalRepayment": "Montant total à rembourser",
+        "ctaButton": "Demander ce prêt →",
+        "autoSaveInfo": "Vos données de simulation seront automatiquement sauvegardées",
+        "disclaimer": "Les taux indiqués sont purement indicatifs et soumis à l'approbation du crédit"
+      },
+      "documents": {
+        "title": "Documents requis pour la demande",
+        "subtitle": "Préparez ces documents pour compléter votre demande de prêt",
+        "list": [
+          "Extrait des poursuites (résidence actuelle)",
+          "Extrait des poursuites (résidence précédente)",
+          "Carte d'identité ou passeport",
+          "Permis de séjour valide",
+          "Trois derniers bulletins de salaire",
+          "Contrat de travail",
+          "Contrat de location ou acte de propriété",
+          "Police d'assurance maladie",
+          "Authentique du permis de séjour"
+        ],
+        "optional": "Contrat de crédit existant (le cas échéant)"
+      },
+      "stepsFlow": {
+        "documents": {
+          "title": "Documents requis",
+          "description": "Consultez dès maintenant la checklist exacte des pièces que vous téléchargerez à la fin du formulaire."
+        },
+        "simulation": {
+          "title": "Configurer la simulation",
+          "description": "Définissez montant, durée et préférences pour obtenir une mensualité réaliste."
+        },
+        "summary": {
+          "title": "Récapitulatif et prochaines étapes",
+          "description": "Vérifiez la mensualité estimée et préparez-vous à finaliser la demande avec les documents prêts."
+        }
+      },
+      "navigation": {
+        "reviewDocuments": "J'ai vérifié les documents",
+        "viewSummary": "Voir le récapitulatif"
+      }
+    },
+    "taxDeclaration": {
+      "eyebrow": "Déclaration fiscale",
+      "title": "Gestion de la déclaration de revenus",
+      "subtitle": "Confiez votre déclaration de revenus à nos experts fiscaux. Remplissez le formulaire avec vos données et téléchargez les documents nécessaires."
+    },
+    "contactRequest": {
+      "eyebrow": "Contactez-nous",
+      "title": "Besoin d'une consultation ?",
+      "subtitle": "Remplissez le formulaire pour être recontacté par nos conseillers commerciaux"
+    },
+    "insuranceConsulting": {
+      "eyebrow": "Demander une consultation",
+      "title": "Parlons de vos besoins en assurance",
+      "subtitle": "Remplissez le formulaire pour recevoir des conseils personnalisés et découvrir les solutions d'assurance les mieux adaptées à vous."
+    },
+    "realEstate": {
+      "eyebrow": "Demander une consultation",
+      "title": "Parlons de votre projet immobilier",
+      "subtitle": "Remplissez le formulaire pour être recontacté par notre équipe d'experts immobiliers."
+    },
+    "jobConsulting": {
+      "eyebrow": "Soumettre une candidature",
+      "title": "Soutien dans la recherche d'emploi",
+      "subtitle": "Remplissez le formulaire et téléchargez vos documents. Nous vous aiderons à trouver les meilleures opportunités professionnelles en Suisse."
+    },
+    "legalConsulting": {
+      "eyebrow": "Demander une consultation",
+      "title": "Assistance juridique professionnelle",
+      "subtitle": "Décrivez votre cas et nous vous mettrons en contact avec nos avocats experts."
+    },
+    "medicalConsulting": {
+      "eyebrow": "Réserver une visite",
+      "title": "Demander une consultation médicale",
+      "subtitle": "Remplissez le formulaire en indiquant la branche médicale et votre assurance. Nous vous recontacterons pour fixer un rendez-vous."
+    },
+    "readyToStart": {
+      "eyebrow": "Prêt à commencer",
+      "title": "Demandez votre consultation dédiée",
+      "subtitle": "Envoyez-nous une demande : nous vous répondrons avec une proposition personnalisée et un calendrier d'activités.",
+      "primaryCta": "Parler avec un consultant",
+      "secondaryCta": "Retour à tous les services"
+    }
+  },
+  "services": {
+    "assicurativa": {
+      "title": "Conseil en Assurance",
+      "subtitle": "Un avenir serein et sûr grâce à une gestion sur mesure",
+      "description": "Avec Swiss Consult Hub, nous offrons un conseil en assurance par notre partenaire géant de l'assurance conçu pour garantir la stabilité et la sécurité économique aux particuliers et aux entreprises.",
+      "sectionTitle": "Nos services incluent:",
+      "points": [
+        "Toutes les branches d'assurance, de l'assurance maladie et prévoyance pour les particuliers à toutes les assurances pour les entreprises."
+      ],
+      "ctaPrimary": "Demander des informations",
+      "ctaSecondary": "Tous les services",
+      "idealFor": "Particuliers et entreprises cherchant une protection complète et continue"
+    },
+    "immobiliare": {
+      "title": "Intermédiation et Gestion Immobilière",
+      "subtitle": "Trouvez votre espace idéal, en Suisse et à l'étranger",
+      "description": "Notre équipe d'experts vous accompagne pas à pas dans la recherche de la solution résidentielle ou d'investissement parfaite, en Suisse comme à l'étranger.",
+      "sectionTitle": "Ce que nous offrons:",
+      "points": [
+        "Recherche immobilière personnalisée: Qu'il s'agisse d'une maison, d'un appartement ou d'une chambre, nous nous occupons de trouver les meilleures options pour vous.",
+        "Soutien pour les locations et achats: Nous gérons toutes les phases de la transaction, de l'identification de la propriété à la signature du contrat.",
+        "Investissements immobiliers internationaux: Nous offrons des conseils pour investir dans des marchés stratégiques comme la Suisse, l'Italie et d'autres pays à haut rendement.",
+        "Gestion des propriétés: Nous prenons soin de vos propriétés à 360 degrés, vous garantissant 100% des services."
+      ],
+      "ctaPrimary": "Demander des informations",
+      "ctaSecondary": "Découvrir le service",
+      "idealFor": "Ceux qui cherchent des propriétés ou veulent investir dans l'immobilier"
+    },
+    "lavorativa": {
+      "title": "Conseil en Emploi et Professionnel",
+      "subtitle": "De la recherche à l'entretien: l'emploi que vous méritez est à portée de main.",
+      "description": "Notre conseil en emploi est conçu pour ceux qui souhaitent améliorer leur position professionnelle ou trouver de nouvelles opportunités en Suisse et à l'étranger.\nNous nous concentrons sur chaque phase du processus de recherche et de candidature pour vous garantir des résultats concrets.",
+      "sectionTitle": "Ce que nous faisons pour vous:",
+      "points": [
+        "Identification des meilleures opportunités d'emploi: Nous évaluons votre profil et identifions les entreprises et les postes les mieux adaptés à vos compétences.",
+        "Création de CV professionnels et de lettres de présentation: Nous vous aidons à vous démarquer sur le marché du travail suisse avec des documents efficaces, clairs et personnalisés.",
+        "Préparation aux entretiens: Nous offrons des sessions de coaching pour améliorer vos compétences en communication et affronter les entretiens en confiance.",
+        "Notre objectif est de vous accompagner vers le succès, rendant le marché du travail accessible et transparent pour vous."
+      ],
+      "ctaPrimary": "Postuler",
+      "ctaSecondary": "Tous les services",
+      "idealFor": "Professionnels cherchant de nouvelles opportunités de carrière en Suisse"
+    },
+    "legale": {
+      "title": "Conseil Juridique",
+      "subtitle": "Conseil juridique fiable pour les situations complexes",
+      "description": "Faire face à des questions juridiques peut être complexe, mais avec Swiss Consult Hub et nos partenaires experts, vous pouvez compter sur un soutien professionnel adapté à chaque situation.",
+      "sectionTitle": "Nos services incluent:",
+      "points": [
+        "Conseil sur mesure: Nous analysons votre situation et vous proposons des solutions juridiques personnalisées pour protéger vos droits.",
+        "Contrats et résolution des différends: Nous vous soutenons dans la rédaction et la négociation de contrats, ainsi que dans la gestion des éventuels litiges juridiques.",
+        "Assistance juridique continue: Nous offrons des plans de protection juridique qui garantissent un accès rapide et simplifié à notre équipe d'experts."
+      ],
+      "ctaPrimary": "Demander des informations",
+      "idealFor": "Situations juridiques complexes nécessitant un soutien professionnel"
+    },
+    "commerciale": {
+      "title": "Conseil Commercial",
+      "subtitle": "Soutien complet pour les particuliers et les entreprises",
+      "description": "Notre conseil commercial est conçu pour ceux qui souhaitent lancer une nouvelle activité ou optimiser la gestion d'une activité existante.\nNous offrons une assistance complète pour chaque phase du cycle entrepreneurial.",
+      "sectionTitle": "Ce que nous offrons:",
+      "points": [
+        "Ouverture d'activité: De la planification initiale à la constitution légale, nous vous guidons pour lancer votre entreprise sans problème.",
+        "Fiscalité et gestion: Assistance aux particuliers pour les déclarations et vérifications des revenus, avec gestion complète pour les entreprises.",
+        "Conseil stratégique: Nous vous aidons à améliorer la productivité et à identifier de nouvelles opportunités de croissance."
+      ],
+      "ctaPrimary": "Demander des informations",
+      "idealFor": "Entrepreneurs et entreprises en phase de démarrage ou de croissance"
+    },
+    "medica": {
+      "title": "Conseil Médical",
+      "subtitle": "Accès Privilégié aux Soins de Santé Suisses d'Excellence",
+      "description": "",
+      "sectionTitle": "Nos services incluent:",
+      "points": [
+        "Recherche et Sélection de Spécialistes: Nous vous aidons à identifier les meilleurs médecins généralistes, spécialistes (ex. dentistes, ophtalmologues, kinésithérapeutes, etc.) et cliniques privées ou hôpitaux, selon vos besoins spécifiques et votre localisation.",
+        "Soutien Administratif: Nous vous guidons dans la compréhension des procédures de santé suisses, la gestion de la documentation et la coordination avec votre caisse maladie."
+      ],
+      "ctaPrimary": "Demander des informations",
+      "idealFor": "Particuliers ayant besoin d'accès à des soins médicaux spécialisés"
+    },
+    "creditizia": {
+      "title": "Conseil Crédit",
+      "subtitle": "Les bonnes solutions financières pour vous",
+      "description": "Naviguer dans le monde des crédits et du leasing peut être complexe, mais avec Swiss Consult Hub, tout devient simple et transparent.",
+      "sectionTitle": "Nos services:",
+      "points": [
+        "Crédits personnalisés: Nous vous aidons à choisir des financements sur mesure, grâce à notre expertise de conseil.",
+        "Leasing compétitif: Nous vous guidons dans le choix du meilleur leasing pour les véhicules, avec des solutions adaptées à vos besoins.",
+        "Conseil personnalisé: Nous analysons vos besoins et trouvons avec vous la meilleure solution pour atteindre vos objectifs, comme l'achat d'une propriété à l'étranger."
+      ],
+      "ctaPrimary": "Demander maintenant",
+      "ctaSecondary": "Tous les services",
+      "idealFor": "Ceux qui cherchent des financements, du leasing ou des solutions de crédit personnalisées"
+    }
+  }
+}

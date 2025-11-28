@@ -1,0 +1,129 @@
+{
+  "hero": {
+    "eyebrow": "Kontaktieren Sie uns",
+    "title": "Wir sind für Sie da",
+    "subtitle": "Kontaktieren Sie uns für eine persönliche Beratung. Unser Team steht Ihnen zur Verfügung, um alle Ihre Fragen zu beantworten und Sie zur besten Lösung für Ihre Bedürfnisse zu führen."
+  },
+  "quickContact": {
+    "email": "E-Mail",
+    "phone": "Telefon",
+    "locations": "Standorte",
+    "hours": "Öffnungszeiten",
+    "offices": {
+      "emmenbrucke": {
+        "name": "Emmenbrücke (Hauptsitz)",
+        "address": "Spinnereistrasse 5, 6220"
+      },
+      "zurich": {
+        "name": "Zürich",
+        "address": "Thurgauerstrasse 117, 8152 Opfikon"
+      },
+      "lugano": {
+        "name": "Lugano",
+        "address": "Via delle Scuole 3B, 6900 Paradiso"
+      },
+      "lucerne": {
+        "name": "Luzern",
+        "address": "Sagirain 4, 6233 Büron"
+      }
+    },
+    "schedule": {
+      "weekdays": "Montag - Freitag",
+      "weekdaysHours": "08:30 - 18:00",
+      "saturday": "Samstag",
+      "saturdayHours": "Nach Vereinbarung"
+    }
+  },
+  "subjects": {
+    "selectPlaceholder": "Wählen Sie ein Thema",
+    "credit": "Kreditberatung",
+    "insurance": "Versicherungsberatung",
+    "realEstate": "Immobilienberatung",
+    "employment": "Arbeitsberatung",
+    "legal": "Rechtsberatung",
+    "medical": "Medizinische Beratung",
+    "tax": "Steuerberatung",
+    "other": "Andere"
+  },
+  "contactForm": {
+    "title": "Senden Sie uns eine Nachricht",
+    "subtitle": "Füllen Sie das Formular aus und wir antworten innerhalb von 24 Geschäftsstunden",
+    "labels": {
+      "fullName": "Vollständiger Name*",
+      "email": "E-Mail*",
+      "phone": "Telefon*",
+      "company": "Unternehmen (optional)",
+      "subject": "Betreff*",
+      "message": "Nachricht*"
+    },
+    "placeholders": {
+      "fullName": "Max Mustermann",
+      "email": "max@example.com",
+      "phone": "+41 41 242 0442",
+      "company": "Ihr Unternehmen",
+      "message": "Beschreiben Sie, wie wir Ihnen helfen können..."
+    },
+    "buttons": {
+      "submit": "Nachricht senden",
+      "submitting": "Wird gesendet..."
+    },
+    "success": {
+      "title": "Nachricht erfolgreich gesendet!",
+      "message": "Vielen Dank, dass Sie uns kontaktiert haben. Unser Team wird innerhalb von 24 Geschäftsstunden antworten."
+    }
+  },
+  "infoCards": {
+    "call": {
+      "title": "Direkt anrufen",
+      "description": "Möchten Sie lieber mit jemandem sprechen? Rufen Sie unser Team während der Bürozeiten an."
+    },
+    "email": {
+      "title": "E-Mail senden",
+      "description": "Kontaktieren Sie uns per E-Mail für eine detailliertere Kommunikation."
+    },
+    "visit": {
+      "title": "Besuchen Sie unsere Büros",
+      "description": "Besuchen Sie uns in einem unserer Standorte in der Schweiz.",
+      "offices": {
+        "emmenbrucke": "Emmenbrücke",
+        "emmenbruckeAddress": "Spinnereistrasse 5",
+        "zurich": "Zürich",
+        "zurichAddress": "Thurgauerstrasse 117"
+      }
+    },
+    "hours": {
+      "title": "Öffnungszeiten",
+      "weekdays": "Montag - Freitag",
+      "weekdaysHours": "08:30 - 18:00",
+      "saturday": "Samstag",
+      "saturdayHours": "Nach Vereinbarung"
+    }
+  },
+  "cta": {
+    "title": "Finden Sie nicht, was Sie suchen?",
+    "description": "Unser Expertenteam ist bereit, Sie zur Lösung zu führen, die am besten zu Ihren Bedürfnissen passt.",
+    "button": "Zurück zur Startseite"
+  },
+  "form": {
+    "title": "Kontaktanfrage",
+    "subtitle": "Haben Sie Fragen oder möchten Sie einen Termin mit unseren Unternehmensberatern vereinbaren? Füllen Sie das Formular aus und wir werden uns so schnell wie möglich bei Ihnen melden.",
+    "firstName": "Vorname",
+    "lastName": "Nachname",
+    "email": "E-Mail",
+    "phone": "Telefonnummer",
+    "notes": "Notizen oder besondere Wünsche",
+    "placeholders": {
+      "firstName": "Max",
+      "lastName": "Mustermann",
+      "email": "max.mustermann@example.com",
+      "phone": "+41 78 123 45 67",
+      "notes": "Beschreiben Sie Ihre Bedürfnisse oder geben Sie an, ob Sie zu einer bestimmten Zeit kontaktiert werden möchten..."
+    },
+    "submit": "Anfrage senden",
+    "submitting": "Wird gesendet...",
+    "success": "Anfrage erfolgreich gesendet! Wir werden uns innerhalb von 24 Stunden bei Ihnen melden, um einen Termin zu vereinbaren.",
+    "error": "Ein Fehler ist aufgetreten. Bitte versuchen Sie es später erneut.",
+    "privacy": "Durch das Absenden dieses Formulars stimmen Sie der Verarbeitung Ihrer persönlichen Daten gemäß unserer",
+    "privacyLink": "Datenschutzerklärung"
+  }
+}

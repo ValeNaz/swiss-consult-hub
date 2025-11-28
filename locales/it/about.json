@@ -1,0 +1,58 @@
+{
+  "hero": {
+    "title": "Swiss Consult Hub",
+    "subtitle": "Un hub di consulenti multidisciplinari che condivide lo stesso approccio: precisione svizzera, visione internazionale, attenzione alle persone."
+  },
+  "mission": {
+    "eyebrow": "La nostra missione",
+    "title": "Accompagnare privati e imprese nelle decisioni strategiche",
+    "subtitle": "Creiamo percorsi su misura basati su analisi puntuali, responsabilità condivisa e risultati misurabili. Il nostro metodo integra consulenze specialistiche con un project manager dedicato che coordina tutte le fasi.",
+    "points": [
+      "Analisi iniziale gratuita per individuare obiettivi e priorità.",
+      "Task force interdisciplinare costruita sul profilo del cliente.",
+      "Monitoraggio costante con report periodici e step evolutivi."
+    ],
+    "ctaServices": "Scopri i servizi",
+    "ctaMeeting": "Prenota un incontro"
+  },
+  "pillars": {
+    "pillar1Title": "Governance trasparente",
+    "pillar1Description": "Ogni progetto è coordinato da un consulente senior che condivide roadmap, milestone e stato attività con il cliente.",
+    "pillar2Title": "Metodo interdisciplinare",
+    "pillar2Description": "Team specializzati collaborano su assicurazioni, immobiliare, lavoro, legale, commerciale e medico per offrire soluzioni integrate.",
+    "pillar3Title": "Relazione di fiducia",
+    "pillar3Description": "Investiamo tempo nell'ascolto per costruire relazioni durature, basate su professionalità e responsabilità reciproca."
+  },
+  "history": {
+    "eyebrow": "La nostra storia",
+    "title": "Un percorso in crescita costante",
+    "subtitle": "Dalle prime consulenze assicurative all'attuale rete multidisciplinare: continuiamo a investire in persone e competenze per anticipare i bisogni dei clienti.",
+    "timeline": {
+      "2018": "Nasce Swiss Consult Hub a Lucerna con un team dedicato alla consulenza assicurativa e creditizia.",
+      "2020": "Apertura degli uffici di Zurigo e Lugano per presidiare i principali poli economici della Svizzera.",
+      "2023": "Introduzione dei servizi medical concierge e ampliamento della rete di partner internazionali."
+    }
+  },
+  "offices": {
+    "title": "I nostri uffici",
+    "lucerne": "Lucerna · Emmenbrücke (HQ)",
+    "zurich": "Zurigo · Opfikon",
+    "lugano": "Lugano · Paradiso",
+    "network": "Network internazionale in Italia e Francia"
+  },
+  "team": {
+    "title": "Un team internazionale di specialisti",
+    "description": "Professionisti con background assicurativo, legale, commerciale, HR e medicale lavorano fianco a fianco con un'unica regia operativa. Parliamo italiano, inglese, francese e tedesco per supportare clienti e partner internazionali.",
+    "points": [
+      "Workshop periodici per aggiornare competenze normative e di mercato.",
+      "Formazione continua su soft skill e gestione del cliente.",
+      "Partnership con studi legali, fiscalisti e cliniche private in Svizzera e all'estero."
+    ]
+  },
+  "finalCta": {
+    "title": "Siamo pronti a crescere insieme",
+    "subtitle": "Dalla pianificazione alla gestione quotidiana, Swiss Consult Hub crea valore misurabile per il vostro business. Scoprite come possiamo supportarvi.",
+    "ctaConsultation": "Prenota una consulenza",
+    "ctaServices": "Esplora i servizi"
+  }
+}

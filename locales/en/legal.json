@@ -1,0 +1,715 @@
+{
+  "privacyPolicy": {
+    "title": "Privacy Policy",
+    "lastUpdate": "Last updated: November 7, 2025",
+
+    "section1": {
+      "title": "1. Introduction",
+      "intro": "Swiss Consult Hub (hereinafter \"we\", \"our\" or \"Swiss Consult Hub\") is committed to protecting the privacy and personal data of its clients and website visitors. This Privacy Policy describes how we collect, use, store and protect your personal data in accordance with the Swiss Federal Data Protection Act (FDPA) and the European Union's General Data Protection Regulation (GDPR), where applicable.",
+      "companyInfo": {
+        "title": "Company Information",
+        "legalName": "Legal Name:",
+        "legalNameValue": "Swiss Consult Hub GmbH",
+        "legalAddress": "Registered Office:",
+        "legalAddressValue": "Spinnereistrasse 5, 6220 Emmenbrücke, Lucerne, Switzerland",
+        "email": "Email:",
+        "emailValue": "info@swissconsulthub.ch",
+        "phone": "Phone:",
+        "phoneValue": "+41 412 420 442",
+        "dpo": "Data Protection Officer:",
+        "dpoValue": "dpo@swissconsulthub.ch"
+      }
+    },
+
+    "section2": {
+      "title": "2. Personal Data Collected",
+      "intro": "We collect various categories of personal data to provide our consulting services:",
+      "subsection1": {
+        "title": "2.1 Identifying Data",
+        "items": [
+          "First and last name",
+          "Email address",
+          "Phone number",
+          "Postal address (street, city, postal code, canton)",
+          "Date of birth (for medical and insurance consulting)"
+        ]
+      },
+      "subsection2": {
+        "title": "2.2 Professional Data",
+        "items": [
+          "Company name",
+          "Job position",
+          "Industry sector",
+          "Professional experience (for employment consulting)"
+        ]
+      },
+      "subsection3": {
+        "title": "2.3 Sensitive Data (collected only with explicit consent)",
+        "items": [
+          "Credit Consulting: Financial amounts, credit history, assets",
+          "Insurance Consulting: Health status, lifestyle habits",
+          "Medical Consulting: Medical data, pathologies, therapies (highest confidentiality)",
+          "Tax Consulting: Tax code, income, tax returns",
+          "Legal Consulting: Sensitive legal information"
+        ]
+      },
+      "subsection4": {
+        "title": "2.4 Technical Data",
+        "items": [
+          "IP address",
+          "Browser type and version",
+          "Operating system",
+          "Device used",
+          "Pages visited and time spent",
+          "Cookies and tracking technologies (see Cookie Policy)"
+        ]
+      },
+      "subsection5": {
+        "title": "2.5 Attached Documents",
+        "items": [
+          "Personal documents (ID card, residence permit)",
+          "Pay slips and employment contracts",
+          "Bank statements and financial documents",
+          "Medical reports (treated with highest confidentiality)",
+          "Tax and legal documents"
+        ]
+      }
+    },
+
+    "section3": {
+      "title": "3. Processing Purposes",
+      "intro": "Your personal data is processed for the following purposes:",
+      "items": [
+        "Provide consulting services: Credit, insurance, real estate, employment, legal, medical and tax consulting",
+        "Follow-up communications: Updates on request status, appointments, documentation",
+        "Service improvement: Analysis and improvement of service quality",
+        "Legal and tax compliance: Compliance with Swiss and European regulations",
+        "Fraud prevention: Identity verification and fraud prevention activities",
+        "Marketing (consent only): Newsletters, personalized offers, promotional communications"
+      ]
+    },
+
+    "section4": {
+      "title": "4. Legal Basis for Processing",
+      "intro": "The processing of your personal data is based on the following legal bases:",
+      "items": [
+        "Contract: To provide the requested consulting services",
+        "Consent: For marketing communications and processing of sensitive data",
+        "Legal obligation: For compliance with tax, legal and industry regulations",
+        "Legitimate interest: For service improvement and fraud prevention"
+      ]
+    },
+
+    "section5": {
+      "title": "5. Data Recipients",
+      "intro": "Your personal data may be shared with:",
+      "items": [
+        "Internal team: Authorized Swiss Consult Hub consultants and operators",
+        "Professional partners: Lawyers, accountants, doctors, financial advisors (only to provide the requested service)",
+        "Service providers:"
+      ],
+      "serviceProviders": [
+        "Hosting: [Hosting provider name]",
+        "File storage: Cloudinary (for attachments and documents)",
+        "Email: [Email provider name]",
+        "Database: MySQL (dedicated server)"
+      ],
+      "authorities": "Competent authorities: Only if required by law (tax, judicial authorities)",
+      "note": "Note:",
+      "noteText": "All recipients are contractually obliged to process personal data in compliance with data protection regulations."
+    },
+
+    "section6": {
+      "title": "6. International Data Transfers",
+      "intro": "Your data is primarily stored in Switzerland. In some cases, it may be transferred to service providers located in third countries (e.g. Cloudinary for file storage). In such cases, we ensure that appropriate protective measures are adopted, such as:",
+      "items": [
+        "EU standard contractual clauses",
+        "Adequacy decisions",
+        "Privacy Shield certifications (where applicable)"
+      ]
+    },
+
+    "section7": {
+      "title": "7. Your Rights",
+      "intro": "In accordance with the FDPA and GDPR, you have the following rights:",
+      "subsection1": {
+        "title": "7.1 Right of Access",
+        "text": "You can request a copy of all personal data we hold about you."
+      },
+      "subsection2": {
+        "title": "7.2 Right to Rectification",
+        "text": "You can request the correction of inaccurate or incomplete data."
+      },
+      "subsection3": {
+        "title": "7.3 Right to Erasure",
+        "text": "You can request the deletion of your data, subject to legal retention obligations."
+      },
+      "subsection4": {
+        "title": "7.4 Right to Data Portability",
+        "text": "You can request the export of your data in a standard electronic format."
+      },
+      "subsection5": {
+        "title": "7.5 Right to Object",
+        "text": "You can object to the processing of your data for marketing purposes."
+      },
+      "subsection6": {
+        "title": "7.6 Right to Restriction",
+        "text": "You can request the restriction of processing in certain circumstances."
+      },
+      "subsection7": {
+        "title": "7.7 How to Exercise Your Rights",
+        "intro": "To exercise your rights, you can:",
+        "items": [
+          "Complete the online form",
+          "Send an email to: dpo@swissconsulthub.ch",
+          "Contact us by phone: +41 412 420 442"
+        ],
+        "note": "Note:",
+        "noteText": "We will respond to your request within 30 days."
+      }
+    },
+
+    "section8": {
+      "title": "8. Cookies and Tracking Technologies",
+      "intro": "We use cookies and similar technologies to improve your experience on our site. For detailed information, please consult our Cookie Policy.",
+      "cookieTypes": "Types of Cookies:",
+      "items": [
+        "Essential Cookies: Necessary for site operation (always active)",
+        "Analytics Cookies: To analyze site usage (require consent)",
+        "Marketing Cookies: For targeted advertising (require consent)"
+      ],
+      "management": "You can manage your cookie preferences in the cookie settings."
+    },
+
+    "section9": {
+      "title": "9. Data Security",
+      "intro": "We adopt appropriate technical and organizational measures to protect your personal data:",
+      "subsection1": {
+        "title": "9.1 Technical Measures",
+        "items": [
+          "Encryption: HTTPS for all communications, bcrypt for passwords",
+          "Firewall: Server and database protection",
+          "Backup: Regular and secure backups",
+          "Updates: Always up-to-date software"
+        ]
+      },
+      "subsection2": {
+        "title": "9.2 Organizational Measures",
+        "items": [
+          "Limited access: Only authorized personnel can access data",
+          "Training: Regular staff training on data protection",
+          "Logging: Tracking access to sensitive data",
+          "Procedures: Documented procedures for data management"
+        ]
+      },
+      "subsection3": {
+        "title": "9.3 Breach Notification",
+        "text": "In the event of a data breach that poses a high risk to your rights and freedoms, we will notify you promptly and inform the Federal Data Protection and Information Commissioner (FDPIC)."
+      }
+    },
+
+    "section10": {
+      "title": "10. Retention Period",
+      "intro": "We retain your personal data only for as long as necessary:",
+      "items": [
+        "Consulting data: 10 years (legal and tax obligations)",
+        "Medical data: 10 years (legal obligations)",
+        "Marketing data: Until consent is withdrawn",
+        "Cookies: According to duration specified in Cookie Policy",
+        "Security logs: 12 months"
+      ],
+      "conclusion": "At the end of the retention period, data is securely deleted, except for longer legal retention obligations."
+    },
+
+    "section11": {
+      "title": "11. Minors",
+      "text": "Our services are not intended for individuals under 18 years of age. We do not knowingly collect personal data from minors without parental or legal guardian consent."
+    },
+
+    "section12": {
+      "title": "12. Privacy Policy Changes",
+      "text1": "We may periodically update this Privacy Policy to reflect regulatory changes or changes to our services. The date of the last update is indicated at the top of the page. We invite you to consult this page regularly.",
+      "text2": "In case of substantial changes, we will inform you via email or through a notification on the site."
+    },
+
+    "section13": {
+      "title": "13. Contact",
+      "intro": "For any questions about this Privacy Policy or the processing of your data:",
+      "contactBox": {
+        "title": "Data Protection Officer",
+        "email": "Email:",
+        "emailValue": "dpo@swissconsulthub.ch",
+        "phone": "Phone:",
+        "phoneValue": "+41 412 420 442",
+        "address": "Address:",
+        "addressValue": "Spinnereistrasse 5, 6220 Emmenbrücke, Lucerne, Switzerland"
+      }
+    },
+
+    "section14": {
+      "title": "14. Complaints",
+      "intro": "If you believe that the processing of your data violates data protection regulations, you can file a complaint or contact the competent authority:",
+      "authority": {
+        "title": "Federal Data Protection and Information Commissioner (FDPIC)",
+        "address": "Address:",
+        "addressValue": "Bundesgasse 3, 3003 Bern, Switzerland",
+        "email": "Email:",
+        "emailValue": "contact@edoeb.admin.ch",
+        "phone": "Phone:",
+        "phoneValue": "+41 31 325 95 95",
+        "website": "Website:",
+        "websiteValue": "www.edoeb.admin.ch"
+      }
+    },
+
+    "footer": {
+      "compliance": "This Privacy Policy complies with the Swiss Federal Data Protection Act (FDPA) and the European Union's General Data Protection Regulation (GDPR).",
+      "backLink": "← Back to Home"
+    }
+  },
+  "termsConditions": {
+    "title": "Terms and Conditions",
+    "lastUpdated": "Last updated: November 7, 2025",
+    "acceptance": "Acceptance of Terms",
+    "serviceDescription": "Service Description",
+    "userResponsibilities": "User Responsibilities",
+    "intellectualProperty": "Intellectual Property",
+    "limitation": "Limitation of Liability",
+    "governing": "Governing Law"
+  },
+  "cookiePolicy": {
+    "title": "Cookie Policy",
+    "lastUpdate": "Last updated: November 7, 2025",
+
+    "section1": {
+      "title": "1. What Are Cookies",
+      "paragraph1": "Cookies are small text files that are stored on your device (computer, tablet, smartphone) when you visit a website. Cookies allow the site to recognize your device and store some information about your preferences or past actions.",
+      "paragraph2": "This Cookie Policy explains how Swiss Consult Hub uses cookies and similar technologies on the website www.swissconsulthub.ch and how you can manage your preferences."
+    },
+
+    "section2": {
+      "title": "2. Types of Cookies",
+      "intro": "Cookies can be classified based on different characteristics:",
+      "subsection1": {
+        "title": "2.1 By Duration",
+        "items": [
+          "Session Cookies: Deleted when you close the browser",
+          "Persistent Cookies: Remain on the device for a defined period of time"
+        ]
+      },
+      "subsection2": {
+        "title": "2.2 By Owner",
+        "items": [
+          "First-Party Cookies: Set by Swiss Consult Hub",
+          "Third-Party Cookies: Set by other sites (e.g., Google Analytics)"
+        ]
+      },
+      "subsection3": {
+        "title": "2.3 By Purpose",
+        "items": [
+          "Essential Cookies: Necessary for site functionality",
+          "Performance Cookies: Collect information about site usage",
+          "Functionality Cookies: Store your preferences",
+          "Targeting Cookies: Used for targeted advertising"
+        ]
+      }
+    },
+
+    "section3": {
+      "title": "3. Essential Cookies (Always Active)",
+      "intro": "These cookies are strictly necessary for the functioning of the site and cannot be disabled. They do not require your consent.",
+      "tableTitle": "Cookies Used:",
+      "tableHeaders": {
+        "name": "Name",
+        "purpose": "Purpose",
+        "duration": "Duration"
+      },
+      "cookies": [
+        {
+          "name": "sch_auth_token",
+          "purpose": "JWT authentication token for admin access",
+          "duration": "7 days"
+        },
+        {
+          "name": "sch_session",
+          "purpose": "User session management",
+          "duration": "Session"
+        },
+        {
+          "name": "sch_preferences",
+          "purpose": "Language and theme preferences",
+          "duration": "1 year"
+        },
+        {
+          "name": "sch_cookie_consent",
+          "purpose": "Stores your cookie choices",
+          "duration": "1 year"
+        }
+      ],
+      "note": "Note:",
+      "noteText": "These cookies do not track your activities on other sites and are used exclusively to ensure the proper functioning of our site."
+    },
+
+    "section4": {
+      "title": "4. Analytics Cookies (Require Consent)",
+      "intro": "These cookies help us understand how visitors use the site, collecting information anonymously. We use this information to improve the site and user experience.",
+      "subsection1": {
+        "title": "4.1 Google Analytics",
+        "description": "We use Google Analytics to analyze site usage. Google Analytics collects information such as pages visited, time spent on the site, and visitor origin.",
+        "tableTitle": "Google Analytics Cookies:",
+        "cookies": [
+          {
+            "name": "_ga",
+            "purpose": "Distinguishes users",
+            "duration": "2 years"
+          },
+          {
+            "name": "_gid",
+            "purpose": "Distinguishes users",
+            "duration": "24 hours"
+          },
+          {
+            "name": "_gat",
+            "purpose": "Limits request frequency",
+            "duration": "1 minute"
+          }
+        ],
+        "privacyLink": "For more information about Google Analytics and privacy, visit:",
+        "privacyLinkText": " Google Privacy Policy"
+      },
+      "subsection2": {
+        "title": "4.2 IP Anonymization",
+        "description": "We have enabled IP address anonymization on Google Analytics, so your full IP address is never stored."
+      }
+    },
+
+    "section5": {
+      "title": "5. Marketing Cookies (Require Consent)",
+      "intro": "These cookies are used to show advertising relevant to you and your interests. They can also be used to limit the number of times you see an advertisement and to measure the effectiveness of advertising campaigns.",
+      "note": "Note:",
+      "noteText": "We do not currently use marketing cookies. If we decide to use them in the future, we will update this policy and request your explicit consent."
+    },
+
+    "section6": {
+      "title": "6. Third-Party Cookies",
+      "intro": "Some cookies are set by third-party services that appear on our pages. Swiss Consult Hub does not control the setting of these cookies.",
+      "servicesTitle": "6.1 Third-Party Services Used:",
+      "services": [
+        {
+          "name": "Google Analytics",
+          "purpose": "For traffic analysis",
+          "privacyLink": "Privacy Policy"
+        },
+        {
+          "name": "Cloudinary",
+          "purpose": "For image and file hosting",
+          "privacyLink": "Privacy Policy"
+        }
+      ],
+      "recommendation": "We recommend consulting the privacy policies of these services to understand how they use your data."
+    },
+
+    "section7": {
+      "title": "7. Other Tracking Technologies",
+      "intro": "In addition to cookies, we use other technologies to collect information:",
+      "subsection1": {
+        "title": "7.1 Web Beacons (Pixels)",
+        "description": "Small graphic images used to track page views and email opens."
+      },
+      "subsection2": {
+        "title": "7.2 Local Storage",
+        "description": "HTML5 technology that allows data to be stored locally in the browser. We use local storage for:",
+        "items": [
+          "User preferences (theme, language)",
+          "Authentication tokens",
+          "Temporary session data"
+        ]
+      },
+      "subsection3": {
+        "title": "7.3 Session Storage",
+        "description": "Similar to local storage, but data is deleted when you close the browser. Used for temporary browsing data."
+      }
+    },
+
+    "section8": {
+      "title": "8. How to Manage Cookies",
+      "intro": "You have several options to manage and control cookies:",
+      "subsection1": {
+        "title": "8.1 Site Cookie Settings",
+        "description": "You can change your cookie preferences at any time by visiting the",
+        "linkText": " Cookie Settings"
+      },
+      "subsection2": {
+        "title": "8.2 Browser Settings",
+        "description": "Most browsers allow you to control cookies through settings. Here's how to do it in the most common browsers:",
+        "browsers": [
+          {
+            "name": "Google Chrome",
+            "instructions": "Settings → Privacy and security → Cookies and other site data"
+          },
+          {
+            "name": "Mozilla Firefox",
+            "instructions": "Options → Privacy & Security → Cookies and Site Data"
+          },
+          {
+            "name": "Safari",
+            "instructions": "Preferences → Privacy → Manage Website Data"
+          },
+          {
+            "name": "Microsoft Edge",
+            "instructions": "Settings → Privacy, search, and services → Cookies and site permissions"
+          }
+        ]
+      },
+      "subsection3": {
+        "title": "8.3 Third-Party Tools",
+        "description": "You can also use third-party tools to manage cookies:",
+        "tools": [
+          {
+            "name": "Google Analytics Opt-out",
+            "url": "https://tools.google.com/dlpage/gaoptout"
+          },
+          {
+            "name": "Your Online Choices",
+            "url": "https://www.youronlinechoices.com"
+          }
+        ]
+      },
+      "subsection4": {
+        "title": "8.4 Private Mode",
+        "description": "Most browsers offer a private/incognito browsing mode that automatically deletes cookies when you close the browser window."
+      }
+    },
+
+    "section9": {
+      "title": "9. Effects of Disabling Cookies",
+      "intro": "Disabling cookies may affect your experience on our site:",
+      "subsection1": {
+        "title": "9.1 Essential Cookies",
+        "description": "If you disable essential cookies, some site features may not work properly:",
+        "effects": [
+          "You will not be able to access the admin area",
+          "Your preferences will not be saved",
+          "Some features may be limited"
+        ]
+      },
+      "subsection2": {
+        "title": "9.2 Analytics Cookies",
+        "description": "If you disable analytics cookies:",
+        "effects": [
+          "We will not be able to improve the site based on your preferences",
+          "We will not know which content is most useful"
+        ]
+      },
+      "subsection3": {
+        "title": "9.3 Marketing Cookies",
+        "description": "If you disable marketing cookies:",
+        "effects": [
+          "You will still see advertising, but less relevant to you",
+          "You may see the same advertisement multiple times"
+        ]
+      }
+    },
+
+    "section10": {
+      "title": "10. Cookies and Mobile Devices",
+      "intro": "Cookies work the same way on mobile devices. You can also manage cookies on mobile devices:",
+      "ios": {
+        "title": "iOS (iPhone/iPad)",
+        "instructions": "Settings → Safari → Privacy and Security"
+      },
+      "android": {
+        "title": "Android",
+        "instructions": "Settings → Privacy → Clear browsing data"
+      }
+    },
+
+    "section11": {
+      "title": "11. Cookie Policy Updates",
+      "paragraph1": "We may update this Cookie Policy periodically to reflect changes in the technologies used or in regulations. The date of the last update is indicated at the top of the page.",
+      "paragraph2": "We recommend that you regularly consult this page to stay informed about how we use cookies."
+    },
+
+    "section12": {
+      "title": "12. Useful Links",
+      "links": [
+        {
+          "text": "Privacy Policy",
+          "url": "/#/privacy-policy"
+        },
+        {
+          "text": "Terms and Conditions",
+          "url": "/#/terms-and-conditions"
+        },
+        {
+          "text": "Cookie Settings",
+          "url": "/#/cookie-settings"
+        },
+        {
+          "text": "FDPIC - Swiss Data Protection",
+          "url": "https://www.edoeb.admin.ch",
+          "external": true
+        }
+      ]
+    },
+
+    "section13": {
+      "title": "13. Contact",
+      "intro": "For questions about this Cookie Policy or the use of cookies:",
+      "contactBox": {
+        "companyName": "Swiss Consult Hub",
+        "dpoTitle": "Data Protection Officer:",
+        "email": "Email:",
+        "emailValue": "dpo@swissconsulthub.ch",
+        "phone": "Phone:",
+        "phoneValue": "+41 412 420 442",
+        "address": "Address:",
+        "addressValue": "Spinnereistrasse 5, 6220 Emmenbrücke, Lucerne, Switzerland"
+      }
+    },
+
+    "footer": {
+      "compliance": "This Cookie Policy complies with the Swiss Federal Data Protection Act (FDPA) and the European Union ePrivacy Directive.",
+      "backLink": "← Back to Home"
+    }
+  },
+  "dataSubjectRights": {
+    "title": "Data Subject Rights",
+    "lastUpdated": "Last updated: November 7, 2025",
+    "introduction": "In accordance with data protection regulations, you have the following rights:",
+    "rightOfAccess": "Right of Access",
+    "rightOfRectification": "Right of Rectification",
+    "rightOfErasure": "Right to be Forgotten",
+    "rightToRestrict": "Right to Restrict Processing",
+    "rightToPortability": "Right to Data Portability",
+    "rightToObject": "Right to Object",
+    "howToExercise": "How to Exercise Your Rights"
+  },
+  "dataRights": {
+    "header": {
+      "title": "Exercise Your Rights",
+      "subtitle": "Manage your personal data in compliance with FDPA and GDPR"
+    },
+    "intro": {
+      "title": "Your Data Protection Rights",
+      "description": "In accordance with the Swiss Federal Data Protection Act (FDPA) and the General Data Protection Regulation (GDPR), you have the right to control how your personal data is processed.",
+      "infoBox": {
+        "title": "📌 Important Information",
+        "responseTime": "Response Time:",
+        "responseTimeValue": "We will respond to your request within 30 days",
+        "free": "Free:",
+        "freeValue": "Exercising your rights is completely free",
+        "verification": "Identity Verification:",
+        "verificationValue": "We may request documents to verify your identity"
+      }
+    },
+    "rights": {
+      "title": "Choose the Right to Exercise",
+      "access": {
+        "title": "Right of Access",
+        "description": "Request a copy of all personal data we hold about you in electronic format.",
+        "icon": "📥"
+      },
+      "rectification": {
+        "title": "Right to Rectification",
+        "description": "Correct inaccurate or incomplete data present in our system.",
+        "icon": "✏️"
+      },
+      "erasure": {
+        "title": "Right to Erasure",
+        "description": "Request the complete deletion of your personal data (subject to legal obligations).",
+        "icon": "🗑️"
+      },
+      "portability": {
+        "title": "Right to Data Portability",
+        "description": "Export your data in a standard format to transfer it to another service.",
+        "icon": "📤"
+      },
+      "objection": {
+        "title": "Right to Object",
+        "description": "Refuse the processing of your data for marketing or profiling purposes.",
+        "icon": "🚫"
+      },
+      "limitation": {
+        "title": "Right to Restriction",
+        "description": "Request the temporary restriction of the processing of your data.",
+        "icon": "⏸️"
+      }
+    },
+    "form": {
+      "title": "Complete the Request Form",
+      "selectLabel": "Select the Right to Exercise",
+      "labels": {
+        "fullName": "Full Name",
+        "email": "Email",
+        "phone": "Phone (optional)",
+        "description": "Request Description"
+      },
+      "placeholders": {
+        "fullName": "John Smith",
+        "email": "john.smith@email.com",
+        "phone": "+41 XX XXX XX XX",
+        "description": "Provide details about your request..."
+      },
+      "hint": "Specify which data you want to modify, delete, or export.",
+      "notice": {
+        "title": "Identity Verification:",
+        "text": "To protect your data, we may request a copy of your identity document to verify that you are the legitimate owner of the data."
+      },
+      "submit": "Submit Request",
+      "submitting": "Submitting...",
+      "privacyText": "By submitting this request, you accept our",
+      "privacyLink": "Privacy Policy"
+    },
+    "success": {
+      "title": "Request Submitted Successfully!",
+      "message": "We have received your request and are processing it. You will receive a response via email within 30 days.",
+      "confirmationEmail": "We have sent you a confirmation email at"
+    },
+    "contact": {
+      "title": "Other Contact Methods",
+      "intro": "You can also exercise your rights by contacting us directly:",
+      "dpoTitle": "Data Protection Officer",
+      "email": "Email:",
+      "phone": "Phone:",
+      "address": "Address:"
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "q1": {
+        "question": "How long does it take to receive a response?",
+        "answer": "We respond to all requests within 30 days of receipt."
+      },
+      "q2": {
+        "question": "Is it free to exercise my rights?",
+        "answer": "Yes, exercising your rights is completely free, except for manifestly unfounded or excessive requests."
+      },
+      "q3": {
+        "question": "What happens if you are unsure of my identity?",
+        "answer": "To protect your data, we may request additional information to verify your identity before proceeding."
+      },
+      "q4": {
+        "question": "Can I file a complaint if I am not satisfied?",
+        "answer": "Yes, you have the right to file a complaint with the Federal Data Protection and Information Commissioner (FDPIC) or your national data protection authority."
+      }
+    },
+    "authority": {
+      "title": "Supervisory Authority",
+      "intro": "If you believe your rights have not been respected, you can file a complaint with the competent authority:",
+      "name": "Federal Data Protection and Information Commissioner (FDPIC)",
+      "address": "Address:",
+      "addressValue": "Bundesgasse 3, 3003 Bern, Switzerland",
+      "email": "Email:",
+      "phone": "Phone:",
+      "website": "Website:"
+    },
+    "footer": {
+      "backLink": "← Back to Home"
+    }
+  },
+  "terms": {
+    "title": "Terms and Conditions",
+    "lastUpdate": "Last updated: November 7, 2025",
+    "note": "Note: These Terms and Conditions govern the use of services offered by Swiss Consult Hub. By using our services, you agree to be bound by these terms."
+  }
+}

@@ -1,0 +1,225 @@
+{
+  "dashboard": {
+    "title": "Dashboard",
+    "subtitle": "Übersicht der Aktivitäten und Leistung",
+    "lastUpdate": "Gerade aktualisiert",
+    "loading": "Dashboard wird geladen...",
+    "error": "Fehler beim Laden der Daten",
+    "period": {
+      "week": "Letzte Woche",
+      "month": "Letzter Monat",
+      "year": "Letztes Jahr"
+    },
+    "stats": {
+      "totalRequests": "Anfragen Gesamt",
+      "allRequests": "Alle Anfragen",
+      "newRequests": "Neue Anfragen",
+      "toManage": "Zu bearbeiten",
+      "inProgress": "In Bearbeitung",
+      "inProgressDesc": "Wird bearbeitet",
+      "completed": "Abgeschlossen",
+      "rate": "Rate: {{rate}}%",
+      "pending": "{{count}} ausstehend"
+    },
+    "cards": {
+      "requestsByService": "Anfragen nach Service",
+      "servicesCount": "{{count}} Dienstleistungen",
+      "noRequests": "Momentan keine Anfragen",
+      "requestsTrend": "Anfragen-Trend",
+      "last30Days": "Letzte 30 Tage",
+      "keyMetrics": "Wichtige Kennzahlen",
+      "totalClients": "Kunden Gesamt",
+      "activeClients": "{{count}} aktiv",
+      "activeRequests": "Aktive Anfragen",
+      "closedRequests": "Geschlossene Anfragen",
+      "successRate": "Erfolgsquote",
+      "conversionRate": "Umwandlungsrate",
+      "recentRequests": "Neueste Anfragen",
+      "viewAll": "Alle anzeigen →",
+      "noRecentRequests": "Keine neueren Anfragen",
+      "requestStatus": "Anfragenstatus",
+      "realTime": "Echtzeit"
+    },
+    "chart": {
+      "new": "Neu",
+      "inProgress": "In Bearbeitung",
+      "completed": "Abgeschlossen"
+    },
+    "statusBoxes": {
+      "new": "Neu",
+      "toManage": "Zu bearbeiten",
+      "inProgress": "In Bearbeitung",
+      "active": "Aktiv",
+      "completed": "Abgeschlossen",
+      "rateLabel": "{{rate}}% Rate"
+    }
+  },
+  "requests": {
+    "title": "Anfragenverwaltung",
+    "subtitle": "Überwachen und verwalten Sie alle Beratungsanfragen",
+    "searchPlaceholder": "Suche nach Name, E-Mail, Service...",
+    "filters": {
+      "all": "Alle ({{count}})",
+      "new": "Neu ({{count}})",
+      "inProgress": "In Bearbeitung ({{count}})",
+      "completed": "Abgeschlossen ({{count}})"
+    },
+    "bulkActions": {
+      "title": "Massenaktionen",
+      "selectAll": "Alle auswählen",
+      "deselectAll": "Alle abwählen",
+      "selected": "{{count}} ausgewählt",
+      "markAsNew": "Als Neu markieren",
+      "markAsInProgress": "Als In Bearbeitung markieren",
+      "markAsCompleted": "Als Abgeschlossen markieren",
+      "archive": "Archivieren",
+      "delete": "Löschen",
+      "confirmDelete": "Sind Sie sicher, dass Sie {{count}} Anfragen löschen möchten?",
+      "confirmArchive": "Sind Sie sicher, dass Sie {{count}} Anfragen archivieren möchten?"
+    },
+    "table": {
+      "client": "Kunde",
+      "service": "Service",
+      "status": "Status",
+      "date": "Datum",
+      "actions": "Aktionen",
+      "noDescription": "Keine Beschreibung"
+    },
+    "status": {
+      "nuova": "Neu",
+      "in_lavorazione": "In Bearbeitung",
+      "completata": "Abgeschlossen",
+      "archiviata": "Archiviert"
+    },
+    "actions": {
+      "view": "Ansehen",
+      "edit": "Bearbeiten",
+      "delete": "Löschen",
+      "archive": "Archivieren"
+    },
+    "empty": "Keine Anfragen gefunden",
+    "noRequests": "Es gibt momentan keine Anfragen"
+  },
+  "requestDetail": {
+    "title": "Anfragedetails",
+    "backToList": "← Zurück zu Anfragen",
+    "clientInfo": "Kundeninformationen",
+    "requestInfo": "Anfragedetails",
+    "status": "Status",
+    "serviceType": "Serviceart",
+    "createdAt": "Erstellungsdatum",
+    "updatedAt": "Letzte Aktualisierung",
+    "description": "Beschreibung",
+    "notes": "Notizen",
+    "noNotes": "Keine Notizen",
+    "attachments": "Anhänge",
+    "noAttachments": "Keine Anhänge",
+    "actions": "Aktionen",
+    "updateStatus": "Status aktualisieren",
+    "addNote": "Notiz hinzufügen",
+    "uploadFile": "Datei hochladen",
+    "deleteRequest": "Anfrage löschen",
+    "confirmDelete": "Sind Sie sicher, dass Sie diese Anfrage löschen möchten?",
+    "saveChanges": "Änderungen speichern",
+    "cancel": "Abbrechen"
+  },
+  "clients": {
+    "title": "Kundenverwaltung",
+    "subtitle": "Alle Kunden anzeigen und verwalten",
+    "searchPlaceholder": "Suche nach Name, E-Mail, Telefon...",
+    "filters": {
+      "all": "Alle ({{count}})",
+      "active": "Aktiv ({{count}})",
+      "inactive": "Inaktiv ({{count}})"
+    },
+    "table": {
+      "name": "Name",
+      "email": "E-Mail",
+      "phone": "Telefon",
+      "requests": "Anfragen",
+      "lastContact": "Letzter Kontakt",
+      "actions": "Aktionen"
+    },
+    "actions": {
+      "viewProfile": "Profil anzeigen",
+      "edit": "Bearbeiten",
+      "delete": "Löschen"
+    },
+    "empty": "Keine Kunden gefunden",
+    "noClients": "Es gibt momentan keine Kunden"
+  },
+  "reports": {
+    "title": "Berichte und Statistiken",
+    "subtitle": "Leistungsanalyse und Kennzahlen",
+    "generateReport": "Bericht erstellen",
+    "exportData": "Daten exportieren",
+    "dateRange": "Zeitraum",
+    "from": "Von",
+    "to": "Bis"
+  },
+  "settings": {
+    "title": "Einstellungen",
+    "subtitle": "Admin-Panel-Einstellungen konfigurieren",
+    "general": "Allgemein",
+    "notifications": "Benachrichtigungen",
+    "security": "Sicherheit",
+    "appearance": "Aussehen",
+    "saveSettings": "Einstellungen speichern"
+  },
+  "users": {
+    "title": "Benutzerverwaltung",
+    "subtitle": "Admin-Benutzer verwalten",
+    "addUser": "Benutzer hinzufügen",
+    "table": {
+      "name": "Name",
+      "email": "E-Mail",
+      "role": "Rolle",
+      "status": "Status",
+      "actions": "Aktionen"
+    },
+    "roles": {
+      "admin": "Administrator",
+      "manager": "Manager",
+      "operator": "Operator"
+    },
+    "status": {
+      "active": "Aktiv",
+      "inactive": "Inaktiv"
+    }
+  },
+  "navigation": {
+    "dashboard": "Dashboard",
+    "requests": "Anfragen",
+    "clients": "Kunden",
+    "users": "Benutzer",
+    "reports": "Berichte",
+    "settings": "Einstellungen",
+    "logout": "Abmelden"
+  },
+  "notifications": {
+    "newRequest": "Neue Anfrage erhalten",
+    "requestUpdated": "Anfrage aktualisiert",
+    "requestCompleted": "Anfrage abgeschlossen",
+    "markAllRead": "Alle als gelesen markieren",
+    "noNotifications": "Keine Benachrichtigungen"
+  },
+  "layout": {
+    "adminPanel": "Admin-Panel",
+    "defaultAdmin": "Admin",
+    "administrator": "Administrator"
+  },
+  "login": {
+    "title": "Anmeldung zum Admin-Panel",
+    "subtitle": "Geben Sie Ihre Zugangsdaten ein",
+    "email": "E-Mail",
+    "password": "Passwort",
+    "loginButton": "Anmelden",
+    "loggingIn": "Wird angemeldet...",
+    "forgotPassword": "Passwort vergessen?",
+    "errors": {
+      "invalidCredentials": "Ungültige E-Mail oder Passwort",
+      "serverError": "Serverfehler. Bitte versuchen Sie es später erneut.",
+      "requiredFields": "Bitte füllen Sie alle Felder aus"
+    }
+  }
+}

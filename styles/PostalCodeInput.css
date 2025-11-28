@@ -1,0 +1,117 @@
+/* Postal Code Input Component */
+.postal-code-input-group {
+    margin-bottom: 20px;
+}
+
+.input-with-validation {
+    position: relative;
+    display: flex;
+    align-items: center;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    transition: border-color 0.2s;
+    background: #ffffff;
+}
+
+.input-with-validation:focus-within {
+    border-color: var(--primary-red, #d32f2f);
+}
+
+.input-with-validation.has-error {
+    border-color: #d32f2f;
+}
+
+.input-with-validation.is-valid {
+    border-color: #28a745;
+}
+
+.input-with-validation.is-invalid {
+    border-color: #ffc107;
+}
+
+.input-with-validation input {
+    flex: 1;
+    padding: 12px 16px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    font-family: inherit;
+    background: transparent;
+}
+
+.input-with-validation .validation-icon {
+    padding: 0 16px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.input-with-validation .validation-icon.valid {
+    color: #28a745;
+}
+
+.input-with-validation .validation-icon.invalid {
+    color: #ffc107;
+}
+
+/* City Suggestion */
+.city-suggestion {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 16px;
+    margin-top: 12px;
+    background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+    border: 1px solid #90caf9;
+    border-radius: 8px;
+    animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.suggestion-icon {
+    font-size: 20px;
+}
+
+.suggestion-text {
+    flex: 1;
+    font-size: 13px;
+    color: #1565c0;
+    line-height: 1.4;
+}
+
+.suggestion-text strong {
+    font-weight: 700;
+    color: #0d47a1;
+}
+
+.suggestion-button {
+    padding: 8px 16px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #ffffff;
+    background: #1976d2;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s;
+    white-space: nowrap;
+}
+
+.suggestion-button:hover {
+    background: #1565c0;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(25, 118, 210, 0.3);
+}
+
+.suggestion-button:active {
+    transform: translateY(0);
+}

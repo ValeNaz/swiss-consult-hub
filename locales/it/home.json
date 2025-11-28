@@ -1,0 +1,58 @@
+{
+  "hero": {
+    "title": "Il vostro partner di fiducia per una consulenza completa e integrata",
+    "anchor1": "Soluzioni personalizzate",
+    "anchor2": "Team multidisciplinare",
+    "anchor3": "Professionalità e trasparenza",
+    "ctaPrimary": "Richiedi una consulenza gratuita",
+    "ctaSecondary": "Esplora i servizi",
+    "stats": {
+      "clients": "Clienti serviti",
+      "areas": "Aree di consulenza",
+      "offices": "Sedi in Svizzera"
+    }
+  },
+  "process": {
+    "eyebrow": "Come funziona",
+    "title": "Tre semplici passi verso la soluzione ideale",
+    "subtitle": "Un processo chiaro e trasparente per accompagnarti dalla prima analisi fino ai risultati concreti",
+    "step1Title": "Scopri",
+    "step1Description": "Esplora i nostri servizi e identifica quello più adatto alle tue esigenze",
+    "step2Title": "Contattaci",
+    "step2Description": "Richiedi una consulenza gratuita con i nostri esperti",
+    "step3Title": "Ottieni risultati",
+    "step3Description": "Ricevi supporto dedicato fino al raggiungimento dei tuoi obiettivi"
+  },
+  "servicesSection": {
+    "eyebrow": "Servizi integrati",
+    "title": "Scopri di cosa ci occupiamo",
+    "subtitle": "Offriamo un ecosistema di soluzioni in cui ogni consulenza è coordinata da un referente dedicato. Scegliete l'area di interesse e costruite con noi un percorso personalizzato."
+  },
+  "whyUs": {
+    "eyebrow": "Perché Swiss Consult Hub",
+    "title": "Nasciamo per semplificare le decisioni strategiche di privati e aziende",
+    "subtitle": "Lavoriamo al vostro fianco dalla prima analisi fino all'operatività quotidiana, con un modello di governance che garantisce coordinamento e accountability su ogni progetto.",
+    "point1": "Un unico punto di contatto per gestire consulenze complesse",
+    "point2": "Supporto disponibile in italiano, inglese, francese e tedesco",
+    "point3": "Monitoraggio costante dello stato delle pratiche e follow-up proattivi",
+    "value1Title": "Precisione svizzera",
+    "value1Description": "Processi strutturati e controllo qualità continuo garantiscono risposte rapide e affidabili a ogni richiesta.",
+    "value2Title": "Approccio integrato",
+    "value2Description": "Coordiniamo consulenti specializzati in ambito assicurativo, immobiliare, lavorativo, legale e sanitario.",
+    "value3Title": "Network internazionale",
+    "value3Description": "Partner selezionati in Svizzera e in Europa ci permettono di accompagnarvi anche in percorsi cross-border.",
+    "ctaTeam": "Scopri il team",
+    "ctaServices": "Esplora i servizi"
+  },
+  "finalCta": {
+    "title": "Trasformiamo insieme le vostre idee in risultati concreti",
+    "subtitle": "Dal primo orientamento alla gestione continuativa, vi accompagniamo con un approccio su misura e misurabile.",
+    "cta": "Richiedi una consulenza dedicata"
+  },
+  "trustStats": {
+    "clients": "Clienti serviti",
+    "areas": "Aree di consulenza",
+    "offices": "Sedi in Svizzera",
+    "partners": "Partner certificati"
+  }
+}

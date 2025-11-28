@@ -1,0 +1,461 @@
+/* ============================================
+   Loan Request Modal V2 - Minimal & Centered
+   ============================================ */
+
+.modal-overlay-v2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10000;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.modal-content-v2 {
+    background: #ffffff;
+    border-radius: 16px;
+    width: 100%;
+    max-width: 700px;
+    max-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    box-shadow: 0 24px 48px rgba(0, 0, 0, 0.25);
+}
+
+.modal-close-v2 {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 36px;
+    height: 36px;
+    background: transparent;
+    border: none;
+    font-size: 32px;
+    line-height: 1;
+    color: #666;
+    cursor: pointer;
+    transition: color 0.2s;
+    z-index: 10;
+}
+
+.modal-close-v2:hover {
+    color: #d32f2f;
+}
+
+/* Header */
+.modal-header-v2 {
+    padding: 32px 32px 24px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.modal-header-v2 h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin: 0 0 20px 0;
+}
+
+/* Progress Bar */
+.modal-progress-v2 {
+    margin-top: 16px;
+}
+
+.progress-bar-v2 {
+    width: 100%;
+    height: 6px;
+    background: #e0e0e0;
+    border-radius: 3px;
+    overflow: hidden;
+    margin-bottom: 8px;
+}
+
+.progress-fill-v2 {
+    height: 100%;
+    background: linear-gradient(90deg, var(--primary-red, #d32f2f) 0%, #1e3a8a 100%);
+    transition: width 0.3s ease;
+}
+
+.progress-text-v2 {
+    font-size: 13px;
+    font-weight: 600;
+    color: #666;
+    text-align: center;
+}
+
+/* Body */
+.modal-body-v2 {
+    padding: 32px;
+    overflow-y: auto;
+    flex: 1;
+}
+
+/* Simulator Summary */
+.simulator-summary-v2 {
+    background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+    padding: 20px;
+    border-radius: 12px;
+    color: #ffffff;
+    margin-bottom: 24px;
+}
+
+.summary-title {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.summary-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.summary-grid > div {
+    text-align: center;
+}
+
+.summary-grid strong {
+    display: block;
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 4px;
+}
+
+.summary-grid span {
+    display: block;
+    font-size: 11px;
+    opacity: 0.85;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+}
+
+/* Error Box */
+.error-box-v2 {
+    background: #ffebee;
+    border: 1px solid #ef5350;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 24px;
+}
+
+.error-box-v2 strong {
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    color: #c62828;
+    margin-bottom: 8px;
+}
+
+.error-box-v2 ul {
+    margin: 0;
+    padding-left: 20px;
+    font-size: 13px;
+    color: #c62828;
+}
+
+.error-box-v2 li {
+    margin-bottom: 4px;
+}
+
+/* Form Steps */
+.form-step-v2 {
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.section-title-v2 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin: 24px 0 16px 0;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+.step-description {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 24px;
+    line-height: 1.5;
+}
+
+/* Field Groups */
+.field-group-v2 {
+    margin-bottom: 20px;
+}
+
+.field-group-v2 label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.field-group-v2 .required {
+    color: #d32f2f;
+}
+
+.field-group-v2 input[type="text"],
+.field-group-v2 input[type="email"],
+.field-group-v2 input[type="tel"],
+.field-group-v2 input[type="date"],
+.field-group-v2 input[type="number"],
+.field-group-v2 select,
+.field-group-v2 textarea {
+    width: 100%;
+    padding: 12px 16px;
+    font-size: 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    transition: border-color 0.2s;
+    font-family: inherit;
+}
+
+.field-group-v2 input:focus,
+.field-group-v2 select:focus,
+.field-group-v2 textarea:focus {
+    outline: none;
+    border-color: var(--primary-red, #d32f2f);
+}
+
+.field-group-v2 textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.field-group-v2 input[type="file"] {
+    font-size: 14px;
+    padding: 8px 0;
+}
+
+.field-hint {
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 12px;
+    line-height: 1.4;
+}
+
+.file-selected {
+    font-size: 13px;
+    color: #28a745;
+    margin-top: 8px;
+    font-weight: 600;
+}
+
+.field-error {
+    font-size: 12px;
+    color: #d32f2f;
+    margin-top: 6px;
+}
+
+/* Field Rows */
+.field-row-v2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.field-row-v2 .field-group-v2 {
+    margin-bottom: 0;
+}
+
+.field-row-v2 .flex-1 {
+    flex: 1;
+}
+
+.field-row-v2 .flex-3 {
+    flex: 3;
+}
+
+/* Button Group */
+.button-group-v2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 8px;
+}
+
+.button-group-v2 button {
+    padding: 12px 16px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #666;
+    background: #f5f5f5;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s;
+    text-align: center;
+}
+
+.button-group-v2 button:hover {
+    background: #ececec;
+    color: #333;
+}
+
+.button-group-v2 button.active {
+    color: #ffffff;
+    background: var(--primary-red, #d32f2f);
+    border-color: var(--primary-red, #d32f2f);
+}
+
+/* Checkbox Label */
+.checkbox-label {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    cursor: pointer;
+}
+
+.checkbox-label input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    margin-top: 2px;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.checkbox-label span {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #333;
+}
+
+/* Documents Grid */
+.documents-grid-v2 {
+    display: grid;
+    gap: 20px;
+}
+
+/* Footer */
+.modal-footer-v2 {
+    padding: 20px 32px;
+    border-top: 1px solid #e0e0e0;
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.btn-primary-v2,
+.btn-secondary-v2 {
+    flex: 1;
+    padding: 14px 24px;
+    font-size: 15px;
+    font-weight: 700;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.btn-primary-v2 {
+    background: var(--primary-red, #d32f2f);
+    color: #ffffff;
+}
+
+.btn-primary-v2:hover:not(:disabled) {
+    background: #b71c1c;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(211, 47, 47, 0.3);
+}
+
+.btn-primary-v2:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.btn-secondary-v2 {
+    background: #f5f5f5;
+    color: #333;
+}
+
+.btn-secondary-v2:hover:not(:disabled) {
+    background: #e0e0e0;
+}
+
+.btn-secondary-v2:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .modal-content-v2 {
+        max-width: 100%;
+        max-height: 100vh;
+        border-radius: 0;
+    }
+
+    .modal-header-v2 {
+        padding: 24px 20px 20px;
+    }
+
+    .modal-body-v2 {
+        padding: 20px;
+    }
+
+    .modal-footer-v2 {
+        padding: 16px 20px;
+        flex-direction: column-reverse;
+    }
+
+    .btn-primary-v2,
+    .btn-secondary-v2 {
+        width: 100%;
+    }
+
+    .field-row-v2 {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .summary-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .button-group-v2 {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .modal-header-v2 h2 {
+        font-size: 20px;
+        padding-right: 30px;
+    }
+
+    .modal-close-v2 {
+        width: 32px;
+        height: 32px;
+        font-size: 28px;
+        top: 16px;
+        right: 16px;
+    }
+
+    .button-group-v2 {
+        grid-template-columns: 1fr;
+    }
+}

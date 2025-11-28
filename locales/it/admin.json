@@ -1,0 +1,225 @@
+{
+  "dashboard": {
+    "title": "Dashboard",
+    "subtitle": "Panoramica delle attività e delle performance",
+    "lastUpdate": "Aggiornato ora",
+    "loading": "Caricamento dashboard...",
+    "error": "Errore nel caricamento dei dati",
+    "period": {
+      "week": "Ultima settimana",
+      "month": "Ultimo mese",
+      "year": "Ultimo anno"
+    },
+    "stats": {
+      "totalRequests": "Richieste Totali",
+      "allRequests": "Tutte le richieste",
+      "newRequests": "Nuove Richieste",
+      "toManage": "Da gestire",
+      "inProgress": "In Corso",
+      "inProgressDesc": "In elaborazione",
+      "completed": "Completate",
+      "rate": "Tasso: {{rate}}%",
+      "pending": "{{count}} in sospeso"
+    },
+    "cards": {
+      "requestsByService": "Richieste per Servizio",
+      "servicesCount": "{{count}} servizi",
+      "noRequests": "Nessuna richiesta al momento",
+      "requestsTrend": "Andamento Richieste",
+      "last30Days": "Ultimi 30 giorni",
+      "keyMetrics": "Metriche Chiave",
+      "totalClients": "Clienti Totali",
+      "activeClients": "{{count}} attivi",
+      "activeRequests": "Richieste attive",
+      "closedRequests": "Richieste chiuse",
+      "successRate": "Tasso di Successo",
+      "conversionRate": "Tasso di conversione",
+      "recentRequests": "Richieste Recenti",
+      "viewAll": "Vedi tutte →",
+      "noRecentRequests": "Nessuna richiesta recente",
+      "requestStatus": "Stato Richieste",
+      "realTime": "In tempo reale"
+    },
+    "chart": {
+      "new": "Nuove",
+      "inProgress": "In Corso",
+      "completed": "Completate"
+    },
+    "statusBoxes": {
+      "new": "Nuove",
+      "toManage": "Da gestire",
+      "inProgress": "In Corso",
+      "active": "Attive",
+      "completed": "Completate",
+      "rateLabel": "Tasso {{rate}}%"
+    }
+  },
+  "requests": {
+    "title": "Gestione Richieste",
+    "subtitle": "Monitora e gestisci tutte le richieste di consulenza",
+    "searchPlaceholder": "Cerca per nome, email, servizio...",
+    "filters": {
+      "all": "Tutte ({{count}})",
+      "new": "Nuove ({{count}})",
+      "inProgress": "In Corso ({{count}})",
+      "completed": "Completate ({{count}})"
+    },
+    "bulkActions": {
+      "title": "Azioni Multiple",
+      "selectAll": "Seleziona tutte",
+      "deselectAll": "Deseleziona tutte",
+      "selected": "{{count}} selezionate",
+      "markAsNew": "Segna come Nuova",
+      "markAsInProgress": "Segna come In Corso",
+      "markAsCompleted": "Segna come Completata",
+      "archive": "Archivia",
+      "delete": "Elimina",
+      "confirmDelete": "Sei sicuro di voler eliminare {{count}} richieste?",
+      "confirmArchive": "Sei sicuro di voler archiviare {{count}} richieste?"
+    },
+    "table": {
+      "client": "Cliente",
+      "service": "Servizio",
+      "status": "Stato",
+      "date": "Data",
+      "actions": "Azioni",
+      "noDescription": "Nessuna descrizione"
+    },
+    "status": {
+      "nuova": "Nuova",
+      "in_lavorazione": "In Corso",
+      "completata": "Completata",
+      "archiviata": "Archiviata"
+    },
+    "actions": {
+      "view": "Visualizza",
+      "edit": "Modifica",
+      "delete": "Elimina",
+      "archive": "Archivia"
+    },
+    "empty": "Nessuna richiesta trovata",
+    "noRequests": "Non ci sono richieste al momento"
+  },
+  "requestDetail": {
+    "title": "Dettaglio Richiesta",
+    "backToList": "← Torna alle richieste",
+    "clientInfo": "Informazioni Cliente",
+    "requestInfo": "Dettagli Richiesta",
+    "status": "Stato",
+    "serviceType": "Tipo di servizio",
+    "createdAt": "Data creazione",
+    "updatedAt": "Ultimo aggiornamento",
+    "description": "Descrizione",
+    "notes": "Note",
+    "noNotes": "Nessuna nota",
+    "attachments": "Allegati",
+    "noAttachments": "Nessun allegato",
+    "actions": "Azioni",
+    "updateStatus": "Aggiorna Stato",
+    "addNote": "Aggiungi Nota",
+    "uploadFile": "Carica File",
+    "deleteRequest": "Elimina Richiesta",
+    "confirmDelete": "Sei sicuro di voler eliminare questa richiesta?",
+    "saveChanges": "Salva Modifiche",
+    "cancel": "Annulla"
+  },
+  "clients": {
+    "title": "Gestione Clienti",
+    "subtitle": "Visualizza e gestisci tutti i clienti",
+    "searchPlaceholder": "Cerca per nome, email, telefono...",
+    "filters": {
+      "all": "Tutti ({{count}})",
+      "active": "Attivi ({{count}})",
+      "inactive": "Inattivi ({{count}})"
+    },
+    "table": {
+      "name": "Nome",
+      "email": "Email",
+      "phone": "Telefono",
+      "requests": "Richieste",
+      "lastContact": "Ultimo Contatto",
+      "actions": "Azioni"
+    },
+    "actions": {
+      "viewProfile": "Vedi Profilo",
+      "edit": "Modifica",
+      "delete": "Elimina"
+    },
+    "empty": "Nessun cliente trovato",
+    "noClients": "Non ci sono clienti al momento"
+  },
+  "reports": {
+    "title": "Report e Statistiche",
+    "subtitle": "Analisi delle performance e metriche",
+    "generateReport": "Genera Report",
+    "exportData": "Esporta Dati",
+    "dateRange": "Periodo",
+    "from": "Da",
+    "to": "A"
+  },
+  "settings": {
+    "title": "Impostazioni",
+    "subtitle": "Configura le preferenze del pannello admin",
+    "general": "Generale",
+    "notifications": "Notifiche",
+    "security": "Sicurezza",
+    "appearance": "Aspetto",
+    "saveSettings": "Salva Impostazioni"
+  },
+  "users": {
+    "title": "Gestione Utenti",
+    "subtitle": "Gestisci gli utenti amministratori",
+    "addUser": "Aggiungi Utente",
+    "table": {
+      "name": "Nome",
+      "email": "Email",
+      "role": "Ruolo",
+      "status": "Stato",
+      "actions": "Azioni"
+    },
+    "roles": {
+      "admin": "Amministratore",
+      "manager": "Manager",
+      "operator": "Operatore"
+    },
+    "status": {
+      "active": "Attivo",
+      "inactive": "Inattivo"
+    }
+  },
+  "navigation": {
+    "dashboard": "Dashboard",
+    "requests": "Richieste",
+    "clients": "Clienti",
+    "users": "Utenti",
+    "reports": "Report",
+    "settings": "Impostazioni",
+    "logout": "Esci"
+  },
+  "notifications": {
+    "newRequest": "Nuova richiesta ricevuta",
+    "requestUpdated": "Richiesta aggiornata",
+    "requestCompleted": "Richiesta completata",
+    "markAllRead": "Segna tutte come lette",
+    "noNotifications": "Nessuna notifica"
+  },
+  "layout": {
+    "adminPanel": "Pannello Admin",
+    "defaultAdmin": "Admin",
+    "administrator": "Amministratore"
+  },
+  "login": {
+    "title": "Accedi al Pannello Admin",
+    "subtitle": "Inserisci le tue credenziali per accedere",
+    "email": "Email",
+    "password": "Password",
+    "loginButton": "Accedi",
+    "loggingIn": "Accesso in corso...",
+    "forgotPassword": "Password dimenticata?",
+    "errors": {
+      "invalidCredentials": "Email o password non validi",
+      "serverError": "Errore del server. Riprova più tardi.",
+      "requiredFields": "Compila tutti i campi"
+    }
+  }
+}

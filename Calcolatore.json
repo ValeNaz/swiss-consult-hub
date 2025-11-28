@@ -1,0 +1,506 @@
+import json, textwrap, os, datetime, uuid, pathlib
+
+spec = {
+  "version": "1.0.0",
+  "id": "loan-calculator-wizard",
+  "name": "Step-by-step Loan Calculator",
+  "locale": "en-CH",
+  "currency": "CHF",
+  "numberFormatting": {
+    "thousandSeparator": "'",
+    "decimalSeparator": "."
+  },
+  "theme": {
+    "primary": "#800080",
+    "accent": "#C000C8",
+    "warning": "#FFC107",
+    "success": "#28A745",
+    "textOnPrimary": "#FFFFFF",
+    "background": "#F4F6F8",
+    "panelBackground": "#2A0030"
+  },
+  "progress": {
+    "steps": [
+      "Credit information",
+      "Personal details",
+      "Occupation and income",
+      "Living and expenses",
+      "Check and submit",
+      "Confirmation of delivery"
+    ]
+  },
+  "calculation": {
+    "interest": {
+      "effectiveAnnualRateMin": 0.069,
+      "effectiveAnnualRateMax": 0.109,
+      "termMonths": {"min": 6, "max": 84}
+    },
+    "insurance": {
+      "enabledFieldId": "credit_protection_insurance",
+      "monthlyRateFactorMin": 0.001655,
+      "monthlyRateFactorMax": 0.001845
+    },
+    "formulas": {
+      "monthlyInstallmentMin": "annuity(requested_amount, effectiveAnnualRateMin/12, term_months) + (credit_protection_insurance ? requested_amount * monthlyRateFactorMin : 0)",
+      "monthlyInstallmentMax": "annuity(requested_amount, effectiveAnnualRateMax/12, term_months) + (credit_protection_insurance ? requested_amount * monthlyRateFactorMax : 0)",
+      "annuityDefinition": "annuity(P, r, n) = (P * r) / (1 - (1 + r) ** (-n))"
+    },
+    "notes": [
+      "All displayed prices/amounts are in CHF.",
+      "Interest range depends on creditworthiness and term length.",
+      "Term range: 6 to 84 months."
+    ]
+  },
+  "wizard": {
+    "navigation": {"showStepDots": False, "showProgressBar": True},
+    "buttons": {
+      "back": "Back",
+      "next": "Continue",
+      "submit": "Continue to summary",
+      "finish": "Submit"
+    }
+  },
+  "steps": [
+    {
+      "id": "credit_information",
+      "title": "Enter your requested loan",
+      "layout": {
+        "type": "two-column",
+        "leftWidth": 60,
+        "rightWidth": 40
+      },
+      "sections": [
+        {
+          "id": "loan_inputs",
+          "title": None,
+          "fields": [
+            {
+              "id": "requested_amount",
+              "label": "Your requested loan in CHF",
+              "type": "currency",
+              "placeholder": "10'000",
+              "min": 1000,
+              "max": 100000,
+              "step": 100,
+              "slider": True
+            },
+            {
+              "id": "term_months",
+              "label": "Term in months",
+              "type": "number",
+              "placeholder": "36",
+              "min": 6,
+              "max": 84,
+              "step": 1,
+              "slider": True
+            },
+            {
+              "id": "own_home",
+              "label": "Do you own your own home?",
+              "type": "segmented",
+              "options": [{"value": True, "label": "Yes"}, {"value": False, "label": "No"}],
+              "tooltip": None,
+              "default": False
+            },
+            {
+              "id": "credit_protection_insurance",
+              "label": "Credit protection insurance",
+              "type": "segmented",
+              "options": [{"value": True, "label": "Yes"}, {"value": False, "label": "No"}],
+              "default": True
+            }
+          ]
+        },
+        {
+          "id": "quote_summary_panel",
+          "type": "calculation-panel",
+          "title": "Requested loan in  CHF",
+          "bindings": {"amountField": "requested_amount"},
+          "rows": [
+            {"type": "header", "label": "Effective annual interest", "valueLeft": "from 6.9 %", "valueRight": "up to 10.9 %"},
+            {"type": "money", "label": "Your monthly installment", "valueLeftExpr": "monthlyInstallmentMin", "valueRightExpr": "monthlyInstallmentMax", "emphasis": True},
+            {"type": "money", "label": "of which credit protection insurance", "valueLeftExpr": "credit_protection_insurance ? requested_amount * monthlyRateFactorMin : 0", "valueRightExpr": "credit_protection_insurance ? requested_amount * monthlyRateFactorMax : 0", "secondary": True}
+          ],
+          "footnotes": [
+            "What is my annual interest?",
+            "All prices in CHF. Your overall interest costs will be between CHF 1'121.55 (6.9 % effective) and CHF 1'777.25 (10.9 % effective), dependent on creditworthiness. Term: 6 to 84 months.",
+            "Legal note: Credit approval is prohibited if it leads to excessive debt (Art. 3 of the Swiss Federal Act against Unfair Competition – UWG)."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "personal_details",
+      "title": "Personal details",
+      "sections": [
+        {
+          "id": "salutation",
+          "title": None,
+          "fields": [
+            {
+              "id": "gender",
+              "type": "segmented",
+              "label": None,
+              "options": [
+                {"value": "mr", "label": "Mr."},
+                {"value": "ms", "label": "Ms."}
+              ]
+            }
+          ]
+        },
+        {
+          "id": "identity",
+          "title": "Please enter your name as it appears on your official form of ID.",
+          "fields": [
+            {"id": "first_name", "type": "text", "label": "First name", "placeholder": "Valerio", "required": True},
+            {"id": "last_name", "type": "text", "label": "Last name", "placeholder": "Atria", "required": True},
+            {"id": "date_of_birth", "type": "date", "label": "Date of birth", "placeholder": "14.06.2000", "format": "dd.MM.yyyy", "required": True}
+          ]
+        },
+        {
+          "id": "civil_status",
+          "title": "Civil status",
+          "fields": [
+            {
+              "id": "marital_status",
+              "type": "segmented",
+              "options": [
+                {"value": "single", "label": "Single"},
+                {"value": "married", "label": "Married / registered partnership"},
+                {"value": "widowed", "label": "Widowed"},
+                {"value": "divorced", "label": "Divorced"},
+                {"value": "legally_separated", "label": "Legally separated"}
+              ]
+            }
+          ]
+        },
+        {
+          "id": "nationality",
+          "title": None,
+          "fields": [
+            {"id": "nationality", "type": "select", "label": "Nationality", "options": ["Switzerland"], "default": "Switzerland"}
+          ]
+        },
+        {
+          "id": "contacts",
+          "title": "Your contact details",
+          "fields": [
+            {
+              "id": "phone",
+              "type": "phone",
+              "label": "Telephone number",
+              "areaCode": { "label": "Area code", "default": "+41" },
+              "number": { "label": "Telephone number", "placeholder": "767786048" },
+              "kind": {
+                "type": "segmented",
+                "options": [
+                  {"value": "mobile", "label": "Mobile"},
+                  {"value": "private", "label": "Private"},
+                  {"value": "business", "label": "Business"}
+                ],
+                "default": "mobile"
+              },
+              "allowAdditional": True,
+              "addButtonLabel": "Add another telephone number"
+            },
+            {"id": "email", "type": "email", "label": "Email address", "placeholder": "valatria14@gmail.com", "required": True},
+            {
+              "id": "privacy_acceptance",
+              "type": "checkbox",
+              "label": "I have read the privacy statement in full and I accept it.",
+              "required": True,
+              "linkText": "privacy statement"
+            }
+          ]
+        },
+        {
+          "id": "home_address",
+          "title": "Your home address",
+          "fields": [
+            {"id": "country", "type": "select", "label": "Country", "options": ["Switzerland"], "default": "Switzerland"},
+            {"id": "postal_code", "type": "text", "label": "Postal code", "placeholder": "6233"},
+            {"id": "city", "type": "text", "label": "City", "placeholder": "Büron"},
+            {"id": "street", "type": "text", "label": "Street", "placeholder": "Sagipark"},
+            {"id": "street_no", "type": "text", "label": "No.", "placeholder": "3"}
+          ],
+          "banner": {
+            "style": "warning",
+            "title": "Is the address correct? Please check your address details again.",
+            "primaryAction": "Proceed with my entry"
+          }
+        },
+        {
+          "id": "residential_property",
+          "title": "Residential property",
+          "fields": [
+            {
+              "id": "own_home_personal",
+              "label": "Do you own your own home?",
+              "type": "segmented",
+              "options": [{"value": True, "label": "Yes"}, {"value": False, "label": "No"}],
+              "default": False
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "occupation_income",
+      "title": "Occupation and income",
+      "sections": [
+        {
+          "id": "professional_situation",
+          "title": "Professional situation",
+          "fields": [
+            {
+              "id": "employment_status",
+              "type": "select-cards",
+              "options": [
+                {"value": "employed", "label": "Employed"},
+                {"value": "self_employed", "label": "Self-employed"},
+                {"value": "oas_pensioner", "label": "Pensioner with old-age and survivors’ insurance"},
+                {"value": "disability_pensioner", "label": "Pensioner with disability insurance"},
+                {"value": "homemaker", "label": "Housewife/househusband"}
+              ],
+              "default": "employed"
+            }
+          ]
+        },
+        {
+          "id": "employer",
+          "title": "Your employer",
+          "visibilityCondition": "employment_status == 'employed'",
+          "fields": [
+            {"id": "employer_company", "type": "text", "label": "Company", "placeholder": "A.P. Moller Finance SA"},
+            {"id": "employer_street", "type": "text", "label": "Street", "placeholder": "Via Maggio"},
+            {"id": "employer_street_no", "type": "text", "label": "No.", "placeholder": "41"},
+            {"id": "employer_postal_code", "type": "text", "label": "Postal code", "placeholder": "6233"},
+            {"id": "employer_city", "type": "text", "label": "City", "placeholder": "Büron"}
+          ]
+        },
+        {
+          "id": "employment_relationship",
+          "title": "Employment relationship",
+          "visibilityCondition": "employment_status == 'employed'",
+          "fields": [
+            {
+              "id": "contract_type",
+              "type": "segmented",
+              "options": [
+                {"value": "permanent", "label": "Permanent, not under notice of termination"},
+                {"value": "temporary", "label": "Temporary"},
+                {"value": "fixed_term", "label": "Fixed-term contract"}
+              ],
+              "default": "permanent"
+            }
+          ]
+        },
+        {
+          "id": "tenure",
+          "title": "How long have you been employed by your current employer?",
+          "visibilityCondition": "employment_status == 'employed'",
+          "fields": [
+            {"id": "tenure_month", "type": "number", "label": "Month", "placeholder": "06", "min": 1, "max": 12},
+            {"id": "tenure_year", "type": "number", "label": "Year", "placeholder": "2022", "min": 1900, "max": 2100}
+          ]
+        },
+        {
+          "id": "commute",
+          "title": "How do you get to work?",
+          "fields": [
+            {
+              "id": "commute_mode",
+              "type": "select-cards",
+              "singleSelect": True,
+              "options": [
+                {"value": "car", "label": "Car"},
+                {"value": "public", "label": "Public"},
+                {"value": "motorcycle", "label": "Motorcycle"},
+                {"value": "bicycle", "label": "Bicycle"},
+                {"value": "foot", "label": "On foot"}
+              ],
+              "default": "car"
+            },
+            {
+              "id": "car_necessity",
+              "type": "segmented",
+              "label": "Is the car needed due to a lack of alternative means of transportation or for health reasons?",
+              "options": [{"value": True, "label": "Yes"}, {"value": False, "label": "No"}],
+              "visibilityCondition": "commute_mode == 'car'"
+            }
+          ]
+        },
+        {
+          "id": "main_income",
+          "title": "Your main income",
+          "fields": [
+            {"id": "net_monthly_income", "type": "currency", "label": "Net monthly income", "placeholder": "4'800.00 CHF", "min": 0},
+            {"id": "thirteenth_salary", "type": "segmented", "label": "Do you receive a 13th month's salary?", "options": [{"value": True, "label": "Yes"}, {"value": False, "label": "No"}]},
+            {"id": "bonus", "type": "segmented", "label": "Do you receive a bonus or gratuities?", "options": [{"value": True, "label": "Yes"}, {"value": False, "label": "No"}]}
+          ]
+        },
+        {
+          "id": "secondary_employment",
+          "title": "Secondary employment/other employer",
+          "fields": [
+            {"id": "has_secondary_employment", "type": "segmented", "label": "Do you have secondary employment/other employers?", "options": [{"value": True, "label": "Yes"}, {"value": False, "label": "No"}]}
+          ]
+        },
+        {
+          "id": "additional_income",
+          "title": "Additional income",
+          "fields": [
+            {"id": "has_additional_income", "type": "segmented", "label": "Do you receive any additional income (alimony, partial benefit, rental income, etc.)?", "options": [{"value": True, "label": "Yes"}, {"value": False, "label": "No"}]}
+          ]
+        },
+        {
+          "id": "beneficial_ownership",
+          "title": "Loan repayment",
+          "fields": [
+            {
+              "id": "beneficial_owner",
+              "type": "radio",
+              "label": "Please indicate who owns the assets you use to pay the loan installments:",
+              "options": [
+                {"value": "self", "label": "The assets belong to me"},
+                {"value": "another", "label": "The assets belong to another person"}
+              ],
+              "default": "self"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "living_expenses",
+      "title": "Living and expenses",
+      "sections": [
+        {
+          "id": "housing_situation",
+          "title": "Housing situation",
+          "fields": [
+            {
+              "id": "housing",
+              "type": "select-cards",
+              "singleSelect": True,
+              "options": [
+                {"value": "partner", "label": "Partner"},
+                {"value": "alone", "label": "Living alone"},
+                {"value": "shared", "label": "Shared home"},
+                {"value": "parents", "label": "With parents"},
+                {"value": "single_parent", "label": "Single parent"}
+              ],
+              "default": "partner"
+            },
+            {"id": "housing_rent", "type": "currency", "label": "Housing/rental costs (per month, including ancillary costs)", "placeholder": "1'000.00 CHF"}
+          ]
+        },
+        {
+          "id": "children_alimony",
+          "title": None,
+          "fields": [
+            {"id": "children_in_household", "type": "segmented", "label": "Do children live in the same household?", "options": [{"value": True, "label": "Yes"}, {"value": False, "label": "No"}]},
+            {"id": "pay_alimony", "type": "segmented", "label": "Do you pay alimony?", "options": [{"value": True, "label": "Yes"}, {"value": False, "label": "No"}]}
+          ]
+        },
+        {
+          "id": "workload_risks",
+          "title": None,
+          "fields": [
+            {"id": "heavy_shift_night_work", "type": "segmented", "label": "Do you do heavy labor, shift work, or nighttime work?", "options": [{"value": True, "label": "Yes"}, {"value": False, "label": "No"}]},
+            {"id": "financial_obligations", "type": "segmented", "label": "Do you have financial obligations to your employer or to a private individual?", "options": [{"value": True, "label": "Yes"}, {"value": False, "label": "No"}]},
+            {"id": "financial_obligations_monthly", "type": "currency", "label": "Monthly installments", "placeholder": "500.00 CHF", "visibilityCondition": "financial_obligations == true"}
+          ]
+        },
+        {
+          "id": "debt_enforcements",
+          "title": None,
+          "fields": [
+            {
+              "id": "debt_enforcements_last_3y",
+              "type": "segmented",
+              "label": "Debt enforcements within the last three years",
+              "options": [
+                {"value": 0, "label": "0"},
+                {"value": 1, "label": "1"},
+                {"value": 2, "label": "2"},
+                {"value": 3, "label": "3"},
+                {"value": "more", "label": "More"}
+              ]
+            }
+          ]
+        },
+        {
+          "id": "credit_protection",
+          "title": "Credit protection insurance",
+          "contentBlocks": [
+            {"type": "paragraph", "text": "With credit protection insurance, we assume the monthly installments if you become unable to work or unemployed through no fault of your own."},
+            {"type": "paragraph", "text": "Depending on the final interest rate, the costs amount to between CHF 16.55 and CHF 18.45 in addition to the interest rate."},
+            {"type": "subtitle", "text": "Legal notice"},
+            {"type": "bulleted", "items": [
+              "I have read the Standard Terms and Conditions of Insurance and the declaration of enrolment for 'payment protection' in full, understand and accept them.",
+              "I fully comply with the Terms and Conditions of the Declaration of Enrolment for 'payment protection'.",
+              "I understand that 'payment protection' insurance is only concluded with my original signature on the declaration of enrolment and that I must still fully comply with the conditions of enrolment at that time.",
+              "Credit protection insurance is optional. Further information can be found in the STI."
+            ]}
+          ],
+          "fields": [
+            {
+              "id": "credit_guarantee_agreement",
+              "type": "segmented",
+              "label": "I would like to take out a credit guarantee for the loan and have read, understood, and agree to the legal conditions set out above.",
+              "options": [{"value": True, "label": "Yes"}, {"value": False, "label": "No"}],
+              "default": True
+            },
+            {"id": "comments", "type": "textarea", "label": "Comments/questions about the financing request", "placeholder": ""}
+          ],
+          "footerNote": "Your data will be transmitted in encrypted form."
+        }
+      ],
+      "submitButtonLabel": "Continue to summary"
+    },
+    {
+      "id": "check_and_submit",
+      "title": "Check and submit",
+      "sections": [
+        {
+          "id": "summary_review",
+          "type": "auto-summary",
+          "title": "Please review your details before submitting.",
+          "actions": [{"id": "edit", "label": "Edit any step"}]
+        }
+      ],
+      "submitButtonLabel": "Submit application"
+    },
+    {
+      "id": "confirmation",
+      "title": "Confirmation of delivery",
+      "sections": [
+        {
+          "id": "confirmation_message",
+          "type": "message",
+          "title": "Thank you!",
+          "text": "Your request has been submitted. We will contact you shortly."
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "rules": [
+      {"field": "requested_amount", "rule": "value >= 1000 && value <= 100000", "message": "Amount must be between CHF 1'000 and CHF 100'000."},
+      {"field": "term_months", "rule": "value >= 6 && value <= 84", "message": "Term must be between 6 and 84 months."},
+      {"field": "email", "rule": "email", "message": "Please enter a valid email address."},
+      {"field": "privacy_acceptance", "rule": "checked", "message": "Please accept the privacy statement to continue."}
+    ]
+  },
+  "textSnippets": {
+    "encryptionNotice": "Your data will be transmitted in encrypted form.",
+    "whatIsAnnualInterest": "The effective annual interest is the total cost of borrowing including all interest charges, expressed as a yearly rate."
+  }
+}
+
+out_path = "/mnt/data/loan_calculator_wizard.json"
+with open(out_path, "w", encoding="utf-8") as f:
+    json.dump(spec, f, ensure_ascii=False, indent=2)
+
+out_path

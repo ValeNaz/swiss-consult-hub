@@ -1,0 +1,223 @@
+/* ============================================
+   SMART SELECT COMPONENT
+   ============================================ */
+
+.smart-select {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  margin-bottom: var(--space-5);
+}
+
+.smart-select-label {
+  font-size: var(--text-body-sm);
+  font-weight: 600;
+  color: var(--primary-navy);
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+/* Dropdown variant */
+.smart-select.dropdown .select-wrapper {
+  position: relative;
+}
+
+.smart-select-field {
+  width: 100%;
+  padding: var(--space-3) var(--space-10) var(--space-3) var(--space-4);
+  font-size: var(--text-body);
+  color: var(--primary-navy);
+  background: var(--white);
+  border: 2px solid var(--neutral-300);
+  border-radius: var(--radius-md);
+  transition: all var(--transition-fast);
+  outline: none;
+  appearance: none;
+  cursor: pointer;
+}
+
+.smart-select-field:focus {
+  border-color: var(--service-creditizia);
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
+}
+
+.select-icon {
+  position: absolute;
+  right: var(--space-4);
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--neutral-500);
+  pointer-events: none;
+}
+
+/* Buttons variant */
+.select-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+}
+
+.select-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-3) var(--space-4);
+  font-size: var(--text-body-sm);
+  font-weight: 500;
+  color: var(--neutral-700);
+  background: var(--white);
+  border: 2px solid var(--neutral-300);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  outline: none;
+}
+
+.select-button:hover {
+  border-color: var(--service-creditizia);
+  box-shadow: 0 2px 8px rgba(79, 70, 229, 0.1);
+  transform: translateY(-1px);
+}
+
+.select-button.active {
+  background: linear-gradient(135deg, var(--service-creditizia-light), rgba(79, 70, 229, 0.08));
+  border-color: var(--service-creditizia);
+  color: var(--service-creditizia);
+  font-weight: 600;
+}
+
+.button-icon {
+  display: flex;
+  align-items: center;
+}
+
+.button-check {
+  margin-left: var(--space-2);
+  color: var(--service-creditizia);
+}
+
+/* Cards variant */
+.select-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--space-4);
+}
+
+.select-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  padding: var(--space-5);
+  background: var(--white);
+  border: 2px solid var(--neutral-300);
+  border-radius: var(--radius-lg);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  outline: none;
+  text-align: left;
+}
+
+.select-card:hover {
+  border-color: var(--service-creditizia);
+  box-shadow: 0 4px 12px rgba(79, 70, 229, 0.15);
+  transform: translateY(-2px);
+}
+
+.select-card.active {
+  background: linear-gradient(135deg, var(--service-creditizia-light), rgba(79, 70, 229, 0.08));
+  border-color: var(--service-creditizia);
+  box-shadow: 0 4px 16px rgba(79, 70, 229, 0.25);
+}
+
+.card-icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--neutral-100);
+  color: var(--neutral-600);
+  border-radius: var(--radius-md);
+  transition: all var(--transition-fast);
+}
+
+.select-card.active .card-icon {
+  background: var(--service-creditizia-light);
+  color: var(--service-creditizia);
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.card-label {
+  font-size: var(--text-body);
+  font-weight: 600;
+  color: var(--primary-navy);
+  transition: all var(--transition-fast);
+}
+
+.select-card.active .card-label {
+  color: var(--service-creditizia);
+}
+
+.card-description {
+  font-size: var(--text-body-xs);
+  color: var(--neutral-600);
+  line-height: 1.4;
+}
+
+.card-check {
+  position: absolute;
+  top: var(--space-3);
+  right: var(--space-3);
+  color: var(--service-creditizia);
+}
+
+/* Messages */
+.smart-select-hint,
+.smart-select-error {
+  font-size: var(--text-body-xs);
+  line-height: 1.4;
+}
+
+.smart-select-hint {
+  color: var(--neutral-600);
+}
+
+.smart-select-error {
+  color: var(--error-red);
+  font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .select-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .select-buttons {
+    flex-direction: column;
+  }
+
+  .select-button {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 640px) {
+  .select-card {
+    padding: var(--space-4);
+  }
+
+  .card-icon {
+    width: 36px;
+    height: 36px;
+  }
+}

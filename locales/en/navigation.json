@@ -1,0 +1,41 @@
+{
+  "menu": {
+    "home": "HOME",
+    "services": "SERVICES",
+    "about": "ABOUT",
+    "contact": "CONTACT"
+  },
+  "header": {
+    "topBar": "For more information send a request:",
+    "callUs": "Call Swiss Consult Hub",
+    "openMenu": "Open navigation",
+    "closeMenu": "Close navigation",
+    "selectLanguage": "Select language",
+    "openServices": "Open services list",
+    "closeServices": "Close services list",
+    "allServices": "All services",
+    "quickContacts": "Quick contacts"
+  },
+  "footer": {
+    "logoText": "Swiss Consult Hub",
+    "description": "Ecosystem of multidisciplinary services for individuals and companies, with an international team of professionals.",
+    "navigation": "Navigation",
+    "services": "Services",
+    "locations": "Offices",
+    "legalInfo": "Legal Information",
+    "privacyPolicy": "Privacy Policy",
+    "termsConditions": "Terms and Conditions",
+    "cookiePolicy": "Cookie Policy",
+    "dataSubjectRights": "Data Subject Rights",
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "cookies": "Cookies",
+    "dpoLabel": "DPO:",
+    "location": {
+      "emmenbrucke": "Emmenbrücke",
+      "emmenbruckeAddress": "Spinnereistrasse 5, 6220",
+      "zurich": "Zurich",
+      "zurichAddress": "Thurgauerstrasse 117, 8152"
+    }
+  }
+}

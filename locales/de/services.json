@@ -1,0 +1,264 @@
+{
+  "page": {
+    "title": "Unsere Dienstleistungen",
+    "subtitle": "Mit einem integrierten und koordinierten Ansatz unterstützt Swiss Consult Hub Privatpersonen und Unternehmen bei der Verwaltung komplexer Angelegenheiten und gewährleistet Governance und greifbare Ergebnisse in jedem Bereich.",
+    "allServices": "Alle Dienstleistungen",
+    "filter": {
+      "all": "Alle Dienstleistungen ({{count}})",
+      "privati": "Privatpersonen",
+      "pmi": "KMU",
+      "aziende": "Unternehmen"
+    },
+    "noResults": "Keine Dienstleistung für diesen Filter gefunden.",
+    "showAll": "Alle Dienstleistungen anzeigen",
+    "support": {
+      "title": "Benötigen Sie Unterstützung?",
+      "email": "Schreiben Sie uns an",
+      "phone": "Oder rufen Sie uns an unter"
+    },
+    "mobileMenu": "Alle Dienstleistungen",
+    "navigation": "Dienstleistungsnavigation",
+    "moreInfo": "Mehr erfahren"
+  },
+  "targetAudience": {
+    "privati": "Privatpersonen",
+    "pmi": "KMU",
+    "aziende": "Unternehmen"
+  },
+  "detail": {
+    "notFound": "Dienstleistung nicht gefunden",
+    "notFoundDesc": "Die gesuchte Seite ist nicht verfügbar.",
+    "backToServices": "Zurück zu den Dienstleistungen",
+    "immediateSupport": "Sofortige Unterstützung",
+    "overview": "Übersicht",
+    "contactForDetails": "Kontaktieren Sie uns, um einen personalisierten Plan zu erhalten und die Aktivitäten unseres Teams im Detail kennenzulernen.",
+    "howWeWork": {
+      "title": "Wie wir arbeiten",
+      "points": [
+        "Unverbindliche Erstanalyse zur Festlegung von Prioritäten und erwarteten Ergebnissen.",
+        "Dediziertes Team mit Projektmanager für Aktivitäten und Follow-ups.",
+        "Fortschrittsberichte und operative Empfehlungen, die mit dem Kunden geteilt werden."
+      ]
+    },
+    "usefulDocuments": {
+      "title": "Nützliche Dokumente",
+      "checklist": "Onboarding-Checkliste und Datenerfassungsvorlagen verfügbar: Schreiben Sie uns, um sie zu erhalten.",
+      "call": "Wir können innerhalb von 48 Arbeitsstunden ein Kennenlerngespräch organisieren."
+    },
+    "creditCalculator": {
+      "eyebrow": "Kreditrechner",
+      "title": "Simulieren Sie Ihr Darlehen",
+      "subtitle": "Verwenden Sie unseren Rechner, um die monatlichen Raten sofort basierend auf Ihren Bedürfnissen und Ihrer Situation zu sehen"
+    },
+    "calculator": {
+      "intro": "Verwenden Sie diesen Kreditrechner, um verschiedene Beträge und Laufzeiten zu vergleichen. Sie können das Vorhandensein einer Kreditgarantie und Wohneigentum simulieren.",
+      "labels": {
+        "desiredCredit": "Gewünschter Kredit",
+        "duration": "Kreditlaufzeit",
+        "wantGuarantee": "Wünschen Sie eine Kreditgarantie?",
+        "ownProperty": "Besitzen Sie Wohneigentum?",
+        "monthlyPayment": "Geschätzte monatliche Rate",
+        "requiredDocuments": "Erforderliche Dokumente"
+      },
+      "tooltips": {
+        "amount": "Kreditbetrag, den Sie beantragen möchten, von CHF 5'000 bis CHF 250'000",
+        "duration": "Rückzahlungsdauer des Kredits, von 6 bis 84 Monaten",
+        "guarantee": "Die Kreditgarantie schützt den Kredit bei Rückzahlungsschwierigkeiten",
+        "property": "Wohneigentum kann die Kreditkonditionen verbessern"
+      },
+      "hints": {
+        "amountRange": "Min CHF 5'000 - Max CHF 250'000",
+        "durationRange": "Min 6 Monate - Max 84 Monate",
+        "betterRates": "Mit Immobilieneigentum erhalten Sie günstigere Zinssätze"
+      },
+      "values": {
+        "yes": "Ja",
+        "no": "Nein",
+        "chf": "CHF {{value}}",
+        "months": "{{count}} Monate",
+        "to": "bis"
+      },
+      "results": {
+        "interestRateFrom": "Effektiver Jahreszins ab {{rate}} %",
+        "guaranteeFee": "Kreditgarantiegebühr: {{fee}}",
+        "totalCost": "Gesamtkosten des Kredits",
+        "totalRepayment": "Gesamtrückzahlungsbetrag",
+        "ctaButton": "Diesen Kredit beantragen →",
+        "autoSaveInfo": "Ihre Simulationsdaten werden automatisch gespeichert",
+        "disclaimer": "Die angegebenen Zinssätze sind rein indikativ und unterliegen der Kreditgenehmigung"
+      },
+      "documents": {
+        "title": "Für den Antrag erforderliche Dokumente",
+        "subtitle": "Halten Sie diese Dokumente bereit, um Ihren Kreditantrag abzuschließen",
+        "list": [
+          "Betreibungsregisterauszug (aktueller Wohnsitz)",
+          "Betreibungsregisterauszug (vorheriger Wohnsitz)",
+          "Personalausweis oder Reisepass",
+          "Gültige Aufenthaltsbewilligung",
+          "Letzte drei Lohnabrechnungen",
+          "Arbeitsvertrag",
+          "Mietvertrag oder Eigentumsnachweis",
+          "Krankenversicherungspolice",
+          "Beglaubigte Aufenthaltsbewilligung"
+        ],
+        "optional": "Bestehender Kreditvertrag (falls zutreffend)"
+      },
+      "stepsFlow": {
+        "documents": {
+          "title": "Erforderliche Dokumente",
+          "description": "Überprüfe jetzt die genaue Checkliste – es sind dieselben Unterlagen, die du im letzten Formularschritt hochlädst."
+        },
+        "simulation": {
+          "title": "Simulation konfigurieren",
+          "description": "Lege Betrag, Laufzeit und Präferenzen fest, um eine verlässliche monatliche Rate zu erhalten."
+        },
+        "summary": {
+          "title": "Zusammenfassung & nächste Schritte",
+          "description": "Prüfe die geschätzte Rate und bereite dich darauf vor, den Antrag mit deinen Dokumenten abzuschließen."
+        }
+      },
+      "navigation": {
+        "reviewDocuments": "Dokumente geprüft",
+        "viewSummary": "Zur Zusammenfassung"
+      }
+    },
+    "taxDeclaration": {
+      "eyebrow": "Steuererklärung",
+      "title": "Verwaltung der Steuererklärung",
+      "subtitle": "Vertrauen Sie Ihre Steuererklärung unseren Steuerexperten an. Füllen Sie das Formular mit Ihren Daten aus und laden Sie die erforderlichen Dokumente hoch."
+    },
+    "contactRequest": {
+      "eyebrow": "Kontaktieren Sie uns",
+      "title": "Benötigen Sie eine Beratung?",
+      "subtitle": "Füllen Sie das Formular aus, um von unseren Geschäftsberatern kontaktiert zu werden"
+    },
+    "insuranceConsulting": {
+      "eyebrow": "Beratung anfordern",
+      "title": "Lassen Sie uns über Ihre Versicherungsbedürfnisse sprechen",
+      "subtitle": "Füllen Sie das Formular aus, um personalisierte Beratung zu erhalten und die für Sie am besten geeigneten Versicherungslösungen zu entdecken."
+    },
+    "realEstate": {
+      "eyebrow": "Beratung anfordern",
+      "title": "Lassen Sie uns über Ihr Immobilienprojekt sprechen",
+      "subtitle": "Füllen Sie das Formular aus, um von unserem Team von Immobilienexperten kontaktiert zu werden."
+    },
+    "jobConsulting": {
+      "eyebrow": "Bewerbung einreichen",
+      "title": "Unterstützung bei der Jobsuche",
+      "subtitle": "Füllen Sie das Formular aus und laden Sie Ihre Dokumente hoch. Wir helfen Ihnen, die besten beruflichen Möglichkeiten in der Schweiz zu finden."
+    },
+    "legalConsulting": {
+      "eyebrow": "Beratung anfordern",
+      "title": "Professionelle Rechtsberatung",
+      "subtitle": "Beschreiben Sie Ihren Fall und wir bringen Sie mit unseren erfahrenen Anwälten in Kontakt."
+    },
+    "medicalConsulting": {
+      "eyebrow": "Termin buchen",
+      "title": "Medizinische Beratung anfordern",
+      "subtitle": "Füllen Sie das Formular aus und geben Sie den medizinischen Bereich und Ihre Versicherung an. Wir werden Sie kontaktieren, um einen Termin zu vereinbaren."
+    },
+    "readyToStart": {
+      "eyebrow": "Bereit anzufangen",
+      "title": "Fordern Sie Ihre dedizierte Beratung an",
+      "subtitle": "Senden Sie uns eine Anfrage: Wir antworten mit einem personalisierten Angebot und Aktivitätsplan.",
+      "primaryCta": "Mit einem Berater sprechen",
+      "secondaryCta": "Zurück zu allen Dienstleistungen"
+    }
+  },
+  "services": {
+    "assicurativa": {
+      "title": "Versicherungsberatung",
+      "subtitle": "Eine sichere und sorgenfreie Zukunft durch maßgeschneiderte Verwaltung",
+      "description": "Mit Swiss Consult Hub bieten wir eine Versicherungsberatung durch unseren Versicherungsgiganten-Partner an, die Stabilität und wirtschaftliche Sicherheit für Privatpersonen und Unternehmen garantiert.",
+      "sectionTitle": "Unsere Dienstleistungen umfassen:",
+      "points": [
+        "Alle Versicherungszweige, von der Kranken- und Altersvorsorgeversicherung für Privatpersonen bis zu allen Versicherungen für Unternehmen."
+      ],
+      "ctaPrimary": "Informationen anfordern",
+      "ctaSecondary": "Alle Dienstleistungen",
+      "idealFor": "Privatpersonen und Unternehmen, die umfassenden und kontinuierlichen Schutz suchen"
+    },
+    "immobiliare": {
+      "title": "Immobilienmakler und -verwaltung",
+      "subtitle": "Finden Sie Ihren idealen Platz in der Schweiz und im Ausland",
+      "description": "Unser Expertenteam begleitet Sie Schritt für Schritt bei der Suche nach der perfekten Wohn- oder Investitionslösung, sowohl in der Schweiz als auch im Ausland.",
+      "sectionTitle": "Was wir anbieten:",
+      "points": [
+        "Personalisierte Immobiliensuche: Ob Haus, Wohnung oder Zimmer, wir kümmern uns darum, die besten Optionen für Sie zu finden.",
+        "Unterstützung bei Vermietung und Kauf: Wir verwalten alle Phasen der Transaktion, von der Identifizierung der Immobilie bis zur Vertragsunterzeichnung.",
+        "Internationale Immobilieninvestitionen: Wir bieten Beratung für Investitionen in strategischen Märkten wie der Schweiz, Italien und anderen Ländern mit hoher Rendite.",
+        "Immobilienverwaltung: Wir kümmern uns um Ihre Immobilien zu 360 Grad und garantieren Ihnen 100% der Dienstleistungen."
+      ],
+      "ctaPrimary": "Informationen anfordern",
+      "ctaSecondary": "Dienstleistung entdecken",
+      "idealFor": "Diejenigen, die Immobilien suchen oder in den Immobiliensektor investieren möchten"
+    },
+    "lavorativa": {
+      "title": "Arbeits- und Berufsberatung",
+      "subtitle": "Von der Suche zum Vorstellungsgespräch: Der Job, den Sie verdienen, ist zum Greifen nah.",
+      "description": "Unsere Arbeitsberatung ist für diejenigen konzipiert, die ihre berufliche Position verbessern oder neue Chancen in der Schweiz und im Ausland finden möchten.\nWir konzentrieren uns auf jede Phase des Such- und Bewerbungsprozesses, um Ihnen konkrete Ergebnisse zu garantieren.",
+      "sectionTitle": "Was wir für Sie tun:",
+      "points": [
+        "Identifizierung der besten Jobchancen: Wir bewerten Ihr Profil und identifizieren Unternehmen und Positionen, die am besten zu Ihren Fähigkeiten passen.",
+        "Erstellung professioneller Lebensläufe und Anschreiben: Wir helfen Ihnen, sich auf dem Schweizer Arbeitsmarkt mit effektiven, klaren und personalisierten Dokumenten hervorzuheben.",
+        "Vorbereitung auf Vorstellungsgespräche: Wir bieten Coaching-Sitzungen an, um Ihre Kommunikationsfähigkeiten zu verbessern und Vorstellungsgespräche selbstbewusst zu führen.",
+        "Unser Ziel ist es, Sie zum Erfolg zu begleiten und den Arbeitsmarkt für Sie zugänglich und transparent zu machen."
+      ],
+      "ctaPrimary": "Bewerben",
+      "ctaSecondary": "Alle Dienstleistungen",
+      "idealFor": "Fachleute, die neue Karrieremöglichkeiten in der Schweiz suchen"
+    },
+    "legale": {
+      "title": "Rechtsberatung",
+      "subtitle": "Zuverlässige Rechtsberatung für komplexe Situationen",
+      "description": "Mit rechtlichen Fragen umzugehen kann komplex sein, aber mit Swiss Consult Hub und unseren erfahrenen Partnern können Sie auf professionelle Unterstützung zählen, die auf jede Situation zugeschnitten ist.",
+      "sectionTitle": "Unsere Dienstleistungen umfassen:",
+      "points": [
+        "Maßgeschneiderte Beratung: Wir analysieren Ihre Situation und schlagen Ihnen personalisierte Rechtslösungen vor, um Ihre Rechte zu schützen.",
+        "Vertragsgestaltung und Streitbeilegung: Wir unterstützen Sie bei der Erstellung und Verhandlung von Verträgen und verwalten mögliche Rechtsstreitigkeiten.",
+        "Fortlaufende Rechtsunterstützung: Wir bieten Rechtsschutzpläne an, die schnellen und vereinfachten Zugang zu unserem Expertenteam garantieren."
+      ],
+      "ctaPrimary": "Informationen anfordern",
+      "idealFor": "Komplexe Rechtssituationen, die professionelle Unterstützung erfordern"
+    },
+    "commerciale": {
+      "title": "Geschäftsberatung",
+      "subtitle": "Umfassende Unterstützung für Privatpersonen und Unternehmen",
+      "description": "Unsere Geschäftsberatung ist für diejenigen konzipiert, die ein neues Unternehmen gründen oder die Verwaltung eines bestehenden Unternehmens optimieren möchten.\nWir bieten umfassende Unterstützung für jede Phase des Unternehmenslebenszyklus.",
+      "sectionTitle": "Was wir anbieten:",
+      "points": [
+        "Geschäftsgründung: Von der Anfangsplanung bis zur rechtlichen Gründung begleiten wir Sie bei der Gründung Ihres Unternehmens ohne Probleme.",
+        "Steuern und Verwaltung: Unterstützung für Privatpersonen bei Steuererklärungen und Einkommensüberprüfungen, mit vollständiger Verwaltung für Unternehmen.",
+        "Strategische Beratung: Wir helfen Ihnen, die Produktivität zu verbessern und neue Wachstumschancen zu identifizieren."
+      ],
+      "ctaPrimary": "Informationen anfordern",
+      "idealFor": "Unternehmer und Unternehmen in der Gründungs- oder Wachstumsphase"
+    },
+    "medica": {
+      "title": "Medizinische Beratung",
+      "subtitle": "Privilegierter Zugang zu exzellenten Schweizer Gesundheitsdiensten",
+      "description": "",
+      "sectionTitle": "Unsere Dienstleistungen umfassen:",
+      "points": [
+        "Suche und Auswahl von Spezialisten: Wir helfen Ihnen, die besten Hausärzte, Spezialisten (z.B. Zahnärzte, Augenärzte, Physiotherapeuten, etc.) und Privatkliniken oder Krankenhäuser zu finden, je nach Ihren spezifischen Bedürfnissen und Ihrem Standort.",
+        "Verwaltungsunterstützung: Wir leiten Sie durch die Schweizer Gesundheitsverfahren, die Verwaltung von Dokumenten und die Koordination mit Ihrer Krankenkasse."
+      ],
+      "ctaPrimary": "Informationen anfordern",
+      "idealFor": "Privatpersonen, die Zugang zu spezialisierten medizinischen Leistungen benötigen"
+    },
+    "creditizia": {
+      "title": "Kreditberatung",
+      "subtitle": "Die richtigen Finanzlösungen für Sie",
+      "description": "Die Welt der Kredite und des Leasings kann komplex sein, aber mit Swiss Consult Hub wird alles einfach und transparent.",
+      "sectionTitle": "Unsere Dienstleistungen:",
+      "points": [
+        "Personalisierte Kredite: Wir helfen Ihnen bei der Auswahl von maßgeschneiderten Finanzierungen dank unserer Beratungskompetenz.",
+        "Wettbewerbsfähiges Leasing: Wir leiten Sie bei der Auswahl des besten Fahzeugleasings mit an Ihre Bedürfnisse angepassten Lösungen.",
+        "Personalisierte Beratung: Wir analysieren Ihre Bedürfnisse und finden mit Ihnen die beste Lösung, um Ihre Ziele zu erreichen, wie z.B. den Kauf einer Immobilie im Ausland."
+      ],
+      "ctaPrimary": "Jetzt anfordern",
+      "ctaSecondary": "Alle Dienstleistungen",
+      "idealFor": "Diejenigen, die Finanzierungen, Leasing oder personalisierte Kreditlösungen suchen"
+    }
+  }
+}

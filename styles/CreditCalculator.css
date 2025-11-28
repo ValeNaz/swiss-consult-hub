@@ -1,0 +1,854 @@
+/* ============================================
+   CREDIT CALCULATOR - STYLED WITH BRAND DESIGN
+   ============================================ */
+
+.credit-calculator {
+  width: 100%;
+}
+
+.calculator-intro {
+  text-align: center;
+  margin-bottom: var(--space-12);
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.calculator-intro p {
+  font-size: var(--text-body-xl);
+  color: var(--neutral-700);
+  line-height: 1.7;
+  margin: 0;
+}
+
+.calculator-stepper {
+  margin-bottom: var(--space-6);
+}
+
+.calculator-step-panel {
+  background: var(--white);
+  border: 1px solid var(--neutral-200);
+  border-radius: var(--radius-xl);
+  padding: var(--space-8);
+  box-shadow: var(--shadow-md);
+  margin-bottom: var(--space-6);
+  min-height: 400px;
+}
+
+.calculator-step {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.calculator-step.simulation-step {
+  padding: var(--space-4);
+}
+
+.calculator-step.summary-step {
+  gap: var(--space-8);
+}
+
+.calculator-step.documents-step {
+  padding: var(--space-2);
+}
+
+.calculator-step-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--space-3);
+}
+
+.calculator-nav-button {
+  border-radius: var(--radius-full);
+  padding: var(--space-3) var(--space-6);
+  font-weight: 600;
+  font-size: var(--text-body-sm);
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.calculator-nav-button.secondary {
+  border-color: var(--neutral-300);
+  color: var(--neutral-600);
+  background: var(--white);
+}
+
+.calculator-nav-button.secondary:hover {
+  border-color: var(--neutral-400);
+  color: var(--neutral-800);
+}
+
+.calculator-nav-button.primary {
+  background: var(--service-creditizia);
+  color: var(--white);
+  box-shadow: 0 10px 20px rgba(79, 70, 229, 0.2);
+}
+
+.calculator-nav-button.primary:hover {
+  background: var(--primary-navy);
+}
+
+/* ============================================
+   CALCULATOR CONTROLS
+   ============================================ */
+
+.calculator-controls {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+  background: var(--neutral-50);
+  padding: var(--space-8);
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--neutral-200);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.form-label {
+  font-size: var(--text-body-sm);
+  font-weight: 600;
+  color: var(--primary-navy);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+/* Tooltip styling */
+.tooltip-trigger {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  background: var(--neutral-200);
+  color: var(--neutral-600);
+  border-radius: 50%;
+  cursor: help;
+  transition: all var(--transition-fast);
+  flex-shrink: 0;
+}
+
+.tooltip-trigger:hover {
+  background: var(--service-creditizia);
+  color: var(--white);
+  transform: scale(1.1);
+}
+
+.tooltip-content {
+  position: absolute;
+  bottom: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--primary-navy);
+  color: var(--white);
+  padding: var(--space-3) var(--space-4);
+  border-radius: var(--radius-md);
+  font-size: var(--text-body-sm);
+  line-height: 1.5;
+  white-space: nowrap;
+  max-width: 280px;
+  white-space: normal;
+  box-shadow: var(--shadow-lg);
+  z-index: 1000;
+  pointer-events: none;
+}
+
+.tooltip-content::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 6px solid transparent;
+  border-top-color: var(--primary-navy);
+}
+
+.slider-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+/* Input with slider combined */
+.input-with-slider {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--space-2);
+}
+
+.number-input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.number-input {
+  width: 100%;
+  padding: var(--space-3) 70px var(--space-3) var(--space-4);
+  font-size: var(--text-h5);
+  font-weight: 700;
+  color: var(--service-creditizia);
+  background: var(--white);
+  border: 2px solid var(--neutral-300);
+  border-radius: var(--radius-md);
+  transition: all var(--transition-fast);
+  outline: none;
+  text-align: left;
+}
+
+.number-input:focus {
+  border-color: var(--service-creditizia);
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
+}
+
+.input-currency {
+  position: absolute;
+  right: var(--space-4);
+  font-size: var(--text-body);
+  font-weight: 600;
+  color: var(--neutral-500);
+  pointer-events: none;
+  user-select: none;
+}
+
+/* Slider range labels */
+.slider-range-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--text-body-xs);
+  color: var(--neutral-600);
+  margin-top: var(--space-1);
+}
+
+/* Field hint styling */
+.field-hint {
+  font-size: var(--text-body-xs);
+  color: var(--neutral-600);
+  margin-top: var(--space-1);
+}
+
+.field-hint.success {
+  color: var(--success-green);
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+/* Range input styling */
+input[type="range"] {
+  width: 100%;
+  height: 8px;
+  border-radius: 4px;
+  background: var(--neutral-200);
+  outline: none;
+  -webkit-appearance: none;
+  appearance: none;
+  cursor: pointer;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--service-creditizia);
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(79, 70, 229, 0.3);
+  border: 4px solid var(--white);
+  transition: all var(--transition-fast);
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+  transform: scale(1.15);
+  box-shadow: 0 4px 12px rgba(79, 70, 229, 0.4);
+}
+
+input[type="range"]::-webkit-slider-thumb:active {
+  transform: scale(1.05);
+  box-shadow: 0 2px 8px rgba(79, 70, 229, 0.5);
+}
+
+/* Firefox */
+input[type="range"]::-moz-range-thumb {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--service-creditizia);
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(79, 70, 229, 0.3);
+  border: 4px solid var(--white);
+  transition: all var(--transition-fast);
+}
+
+input[type="range"]::-moz-range-thumb:hover {
+  transform: scale(1.15);
+  box-shadow: 0 4px 12px rgba(79, 70, 229, 0.4);
+}
+
+input[type="range"]::-moz-range-track {
+  width: 100%;
+  height: 8px;
+  background: var(--neutral-200);
+  border-radius: 4px;
+  border: none;
+}
+
+.value-display {
+  font-size: var(--text-body);
+  font-weight: 700;
+  color: var(--service-creditizia);
+  display: block;
+  text-align: center;
+  padding: var(--space-2) 0;
+}
+
+/* Radio options styling - Legacy */
+.options {
+  display: flex;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+}
+
+.options label {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  cursor: pointer;
+  font-size: var(--text-body-sm);
+  color: var(--neutral-700);
+  transition: all var(--transition-fast);
+  padding: var(--space-2) var(--space-3);
+  border-radius: var(--radius-md);
+  border: 2px solid transparent;
+}
+
+.options label:hover {
+  background: rgba(79, 70, 229, 0.05);
+  border-color: var(--service-creditizia);
+}
+
+.options input[type="radio"] {
+  cursor: pointer;
+  width: 18px;
+  height: 18px;
+  accent-color: var(--service-creditizia);
+}
+
+.options input[type="radio"]:checked + span {
+  color: var(--service-creditizia);
+  font-weight: 600;
+}
+
+/* Button group styling */
+.button-group {
+  display: flex;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+}
+
+.button-group button {
+  flex: 1;
+  min-width: 120px;
+  padding: var(--space-3) var(--space-5);
+  font-size: var(--text-body);
+  font-weight: 600;
+  color: var(--neutral-700);
+  background: var(--white);
+  border: 2px solid var(--neutral-300);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.button-group button:hover {
+  border-color: var(--service-creditizia);
+  color: var(--service-creditizia);
+  background: rgba(79, 70, 229, 0.05);
+}
+
+.button-group button.active {
+  background: var(--service-creditizia);
+  border-color: var(--service-creditizia);
+  color: var(--white);
+  box-shadow: 0 4px 12px rgba(79, 70, 229, 0.25);
+}
+
+/* Modern option cards */
+.options-modern {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: var(--space-3);
+}
+
+.option-card {
+  position: relative;
+  cursor: pointer;
+}
+
+.option-card input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.option-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-4);
+  background: var(--white);
+  border: 2px solid var(--neutral-300);
+  border-radius: var(--radius-lg);
+  transition: all var(--transition-fast);
+  text-align: center;
+}
+
+.option-content:hover {
+  border-color: var(--service-creditizia);
+  box-shadow: 0 4px 12px rgba(79, 70, 229, 0.15);
+  transform: translateY(-2px);
+}
+
+.option-card input[type="radio"]:checked + .option-content {
+  background: linear-gradient(135deg, var(--service-creditizia-light), rgba(79, 70, 229, 0.08));
+  border-color: var(--service-creditizia);
+  box-shadow: 0 4px 16px rgba(79, 70, 229, 0.25);
+}
+
+.option-icon {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--neutral-600);
+  transition: all var(--transition-fast);
+}
+
+.option-card input[type="radio"]:checked + .option-content .option-icon {
+  color: var(--service-creditizia);
+}
+
+.option-label {
+  font-size: var(--text-body-sm);
+  font-weight: 600;
+  color: var(--neutral-700);
+  transition: all var(--transition-fast);
+}
+
+.option-card input[type="radio"]:checked + .option-content .option-label {
+  color: var(--service-creditizia);
+}
+
+/* ============================================
+   CALCULATOR RESULTS
+   ============================================ */
+
+.calculator-results {
+  background: linear-gradient(135deg, rgba(79, 70, 229, 0.08) 0%, rgba(79, 70, 229, 0.03) 100%);
+  border: 2px solid var(--service-creditizia);
+  border-radius: var(--radius-xl);
+  padding: var(--space-8);
+  margin-bottom: var(--space-6);
+}
+
+.calculator-results h3 {
+  font-size: var(--text-h4);
+  font-weight: 700;
+  color: var(--primary-navy);
+  margin: 0 0 var(--space-6) 0;
+  text-align: center;
+}
+
+.result-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-4);
+}
+
+.result-column {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  padding: var(--space-5);
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  border: 2px solid var(--neutral-200);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  text-align: center;
+  transition: all var(--transition-fast);
+}
+
+.result-column:hover {
+  border-color: var(--service-creditizia);
+  box-shadow: 0 4px 16px rgba(79, 70, 229, 0.15);
+  transform: translateY(-2px);
+}
+
+.result-label {
+  font-size: var(--text-body-sm);
+  color: var(--neutral-600);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.result-value {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--service-creditizia);
+  line-height: 1.2;
+}
+
+.interest-rate {
+  font-size: var(--text-body-sm);
+  color: var(--neutral-600);
+  font-weight: 600;
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.monthly-payment {
+  font-size: 36px;
+  font-weight: 800;
+  color: var(--service-creditizia);
+  display: block;
+  line-height: 1.1;
+  margin: var(--space-2) 0;
+}
+
+.guarantee-fee {
+  font-size: var(--text-body-xs);
+  color: var(--neutral-600);
+  display: block;
+  padding-top: var(--space-2);
+  border-top: 1px solid var(--neutral-200);
+  font-style: italic;
+}
+
+.total-repayment {
+  font-size: var(--text-body-sm);
+  color: var(--neutral-700);
+  font-weight: 600;
+  margin-top: var(--space-1);
+}
+
+.auto-save-info {
+  font-size: var(--text-body-xs);
+  color: var(--neutral-600);
+  text-align: center;
+  margin-top: var(--space-3);
+  font-style: italic;
+}
+
+.disclaimer {
+  font-size: var(--text-body-xs);
+  color: var(--neutral-600);
+  text-align: center;
+  margin-top: var(--space-4);
+  padding: var(--space-3) var(--space-4);
+  background: rgba(255, 193, 7, 0.08);
+  border-left: 3px solid rgba(255, 193, 7, 0.6);
+  border-radius: var(--radius-md);
+  line-height: 1.6;
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  justify-content: center;
+}
+
+/* ============================================
+   CALCULATOR CTA
+   ============================================ */
+
+.calculator-cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-3);
+  margin-top: var(--space-6);
+}
+
+.cta-info {
+  font-size: var(--text-body-xs);
+  color: var(--neutral-600);
+  text-align: center;
+  font-style: italic;
+}
+
+/* ============================================
+   DOCUMENTS SECTION
+   ============================================ */
+
+.calculator-documents,
+.documents-step {
+  margin-top: var(--space-12);
+  background: linear-gradient(135deg, var(--neutral-50) 0%, var(--white) 100%);
+  border: 1px solid var(--neutral-200);
+  border-radius: var(--radius-xl);
+  padding: var(--space-10);
+}
+
+.documents-header {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+  margin-bottom: var(--space-6);
+  padding-bottom: var(--space-4);
+  border-bottom: 2px solid var(--neutral-200);
+}
+
+.documents-header svg {
+  color: var(--service-creditizia);
+  flex-shrink: 0;
+  margin-top: var(--space-1);
+}
+
+.documents-header h3 {
+  font-size: var(--text-h4);
+  font-weight: 700;
+  color: var(--primary-navy);
+  margin: 0;
+}
+
+.documents-subtitle {
+  font-size: var(--text-body-sm);
+  color: var(--neutral-600);
+  margin-top: var(--space-1);
+  line-height: 1.5;
+}
+
+.documents-icon {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--service-creditizia-light);
+  color: var(--service-creditizia);
+  border-radius: var(--radius-md);
+  flex-shrink: 0;
+}
+
+.documents-header-content h3 {
+  font-size: var(--text-h4);
+  font-weight: 600;
+  color: var(--primary-navy);
+  margin: 0;
+}
+
+.documents-header-content p {
+  font-size: var(--text-body-sm);
+  color: var(--neutral-600);
+  margin: var(--space-1) 0 0 0;
+  line-height: 1.5;
+}
+
+.documents-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-3);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.document-item {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+  padding: var(--space-4);
+  background: var(--white);
+  border: 2px solid var(--neutral-200);
+  border-radius: var(--radius-md);
+  transition: all var(--transition-fast);
+}
+
+.document-item svg {
+  color: var(--success-green);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.document-item:hover {
+  border-color: var(--service-creditizia);
+  box-shadow: 0 4px 12px rgba(79, 70, 229, 0.12);
+  transform: translateY(-2px);
+}
+
+.document-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-2);
+  width: 100%;
+  font-size: var(--text-body-sm);
+  color: var(--neutral-700);
+  line-height: 1.5;
+}
+
+.document-optional-badge {
+  font-size: var(--text-body-xs);
+  padding: 4px 10px;
+  border-radius: var(--radius-full);
+  background: rgba(79, 70, 229, 0.1);
+  color: var(--service-creditizia);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.document-bullet {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--success-green);
+  color: var(--white);
+  border-radius: 50%;
+  font-size: 12px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.document-text {
+  font-size: var(--text-body-sm);
+  color: var(--neutral-700);
+  line-height: 1.5;
+  flex: 1;
+}
+
+.documents-optional {
+  margin-top: var(--space-6);
+  padding: var(--space-4);
+  background: rgba(255, 193, 7, 0.08);
+  border-left: 3px solid rgba(255, 193, 7, 0.6);
+  border-radius: var(--radius-md);
+  font-size: var(--text-body-sm);
+  color: var(--neutral-700);
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  line-height: 1.6;
+}
+
+.documents-optional svg {
+  color: rgba(255, 193, 7, 0.8);
+  flex-shrink: 0;
+}
+
+/* ============================================
+   RESPONSIVE DESIGN
+   ============================================ */
+
+@media (max-width: 768px) {
+  .calculator-controls {
+    padding: var(--space-6);
+  }
+
+  .calculator-step-panel {
+    padding: var(--space-6);
+    min-height: auto;
+  }
+
+  .result-row {
+    grid-template-columns: 1fr;
+    gap: var(--space-3);
+  }
+
+  .monthly-payment {
+    font-size: 28px;
+  }
+
+  .result-value {
+    font-size: 24px;
+  }
+
+  .calculator-results {
+    padding: var(--space-6);
+  }
+
+  .button-group {
+    flex-direction: column;
+  }
+
+  .button-group button {
+    width: 100%;
+  }
+
+  .options-modern {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .documents-list {
+    grid-template-columns: 1fr;
+  }
+
+  .calculator-documents,
+  .documents-step {
+    padding: var(--space-6);
+  }
+
+  .tooltip-content {
+    max-width: 220px;
+    font-size: var(--text-body-xs);
+  }
+
+  .number-input {
+    font-size: var(--text-h6);
+  }
+}
+
+@media (max-width: 640px) {
+  .calculator-intro p {
+    font-size: var(--text-body);
+  }
+
+  .calculator-results h3 {
+    font-size: var(--text-h5);
+  }
+
+  .monthly-payment {
+    font-size: 24px;
+  }
+
+  .result-value {
+    font-size: 22px;
+  }
+
+  .result-column {
+    padding: var(--space-4);
+  }
+
+  .documents-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .calculator-step-panel {
+    padding: var(--space-5);
+  }
+
+  .documents-header-content h3 {
+    font-size: var(--text-h5);
+  }
+
+  .number-input {
+    font-size: var(--text-body-sm);
+  }
+}

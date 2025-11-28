@@ -1,0 +1,41 @@
+{
+  "banner": {
+    "title": "Utilizziamo i Cookie",
+    "settingsTitle": "Impostazioni Cookie",
+    "description": "Utilizziamo cookie per migliorare la tua esperienza sul nostro sito. I cookie essenziali sono sempre attivi. Puoi scegliere quali cookie accettare.",
+    "readMore": "Leggi la nostra",
+    "cookiePolicy": "Cookie Policy",
+    "and": "e",
+    "privacyPolicy": "Privacy Policy",
+    "closeButton": "Chiudi banner",
+    "buttons": {
+      "customize": "Personalizza",
+      "rejectAll": "Rifiuta Tutto",
+      "acceptAll": "Accetta Tutto",
+      "back": "← Indietro",
+      "savePreferences": "Salva Preferenze"
+    }
+  },
+  "categories": {
+    "essential": {
+      "title": "Cookie Essenziali",
+      "badge": "Sempre Attivi",
+      "description": "Necessari per il funzionamento del sito. Includono autenticazione, preferenze e funzionalità di base.",
+      "ariaLabel": "Cookie essenziali sempre attivi"
+    },
+    "analytics": {
+      "title": "Cookie di Analisi",
+      "badgeEnabled": "Attivati",
+      "badgeDisabled": "Disattivati",
+      "description": "Ci aiutano a capire come utilizzi il sito per migliorare l'esperienza utente. Include Google Analytics con IP anonimizzato.",
+      "ariaLabel": "Cookie di analisi"
+    },
+    "marketing": {
+      "title": "Cookie di Marketing",
+      "badgeEnabled": "Attivati",
+      "badgeDisabled": "Disattivati",
+      "description": "Utilizzati per mostrare pubblicità rilevante. Attualmente non utilizzati, ma disponibili per future implementazioni.",
+      "ariaLabel": "Cookie di marketing"
+    }
+  }
+}
